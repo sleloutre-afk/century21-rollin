@@ -17,8 +17,11 @@ export function EmplacementPhoto({ libelle, surFondSombre = false, etiquette = "
   const fond = surFondSombre ? "bg-grey-dark border border-grey-medium text-grey-light" : "bg-grey-light text-grey-dark";
   const position = etiquette === "bas-gauche" ? "items-end justify-start" : "items-start justify-end";
 
+  // Positionné « relative » par défaut, sauf s'il est placé en « absolute » pour couvrir une carte.
+  const positionnement = /\babsolute\b/.test(className) ? "" : "relative";
+
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div className={`${positionnement} overflow-hidden ${className}`}>
       <div
         role="img"
         aria-label={`Emplacement photo : ${libelle}`}

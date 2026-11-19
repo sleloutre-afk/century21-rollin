@@ -33,7 +33,7 @@ test("l'accueil s'affiche en français, avec un seul titre principal", async ({ 
   await page.goto("/");
   await expect(page.locator("html")).toHaveAttribute("lang", "fr");
   await expect(page.locator("h1")).toHaveCount(1);
-  await expect(page.locator("h1")).toHaveText("Cabinet Rollin – CENTURY 21 Les Chartrons");
+  await expect(page.locator("h1")).toHaveText("Les Chartrons, on les connaît par cœur. Depuis 1993.");
   await expect(page.locator("body")).toHaveCSS("background-color", "rgb(255, 255, 255)");
   await expect(page.locator("body")).toHaveCSS("color", "rgb(37, 37, 38)");
 });

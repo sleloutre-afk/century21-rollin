@@ -28,6 +28,7 @@ export function verifierContenus() {
   for (const slug of doublons(membres.map((m) => m.slug))) problemes.push(`equipe.json : slug en double « ${slug} »`);
   for (const id of doublons(poles.map((p) => p.id))) problemes.push(`equipe.json : pôle en double « ${id} »`);
   for (const slug of doublons(secteurs.map((s) => s.slug))) problemes.push(`quartiers.json : secteur en double « ${slug} »`);
+  for (const slug of doublons(articles.map((a) => a.slug))) problemes.push(`articles.json : adresse d'article en double « ${slug} »`);
 
   const polesDeclares = new Set(poles.map((p) => p.id));
   for (const m of membres) {

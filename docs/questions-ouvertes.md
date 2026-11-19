@@ -65,7 +65,8 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Paramètre `?vue=carte`** : la maquette l'utilise pour la vue carte de la recherche, la spec ne le cite pas dans la liste des filtres de l'URL. Je l'ajouterai aux paramètres de l'URL (lot 4).
 - [x] **Avis, Agence et Contact absents du menu principal** (brief §7) → résolu par la maquette : ils sont dans la barre utilitaire de l'en-tête (avec le barème), dans le menu mobile et dans le pied de page.
 - [x] **Deux couleurs hors charte dans la maquette** : gris #3A3A3B (emplacements photo sur fond sombre) et noir #000000 (survol des boutons sombres et des liens). → *Proposition acceptée par Simon le 19/11/2026* : emplacements sur fond sombre en Obsessed Grey avec filet Medium Grey ; boutons sombres dont le texte passe en or au survol.
-- [ ] **« Plus de 600 propriétaires nous confient déjà leur bien »** : même formulation dans la carte « Je fais louer ou gérer » de la planche d'accueil (Main). Sera écrite « plus de 600 biens gérés » au lot 2, comme décidé pour l'article 3.
+- [x] **« Plus de 600 propriétaires nous confient déjà leur bien »** (carte « Je fais louer ou gérer », planche Main) → écrit « Plus de 600 biens gérés par notre équipe » au lot 2, comme décidé pour l'article 3.
+- [x] **Or foncé sur fond blanc dans la maquette** : numéros « 01 / 02 / 03 » des cartes d'aiguillage et étoiles des avis (#A19276 sur blanc, contraste insuffisant, interdit par la charte). → Affichés en Obsessed Grey.
 
 ## 5. Points ouverts au lot 1 (gabarit et composants)
 
@@ -74,3 +75,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Lien « Réseau CENTURY 21 » du pied de page** : adresse du site du réseau non fournie dans le dossier. Affiché « [lien à fournir] ». — Qui : Agence
 - [ ] **Période des « biens en gestion »** : la maquette affiche « 600+ biens en gestion » sans période. Par prudence (un chiffre d'activité s'affiche avec sa période), la période est ajoutée comme pour les ventes et les locations, en attendant la réponse de l'agence. — Qui : Agence
 - [ ] **Barre utilitaire** : « 32 cours Evrard de Fayolle, Bordeaux · Du lundi au vendredi », comme dans la maquette. À compléter si l'agence ouvre le samedi. — Qui : Agence
+
+## 6. Points ouverts au lot 2 (accueil)
+
+- [x] **Étoiles sur les emplacements d'avis** → *Simon, 19/11/2026 : afficher 5 étoiles.* À la connexion du flux Google, chaque carte affichera la note réelle de l'avis. — Lot : après V1
+- [x] **« Agence Centurion depuis 2016 »** → *Simon, 19/11/2026 : sans « à confirmer ».* La mention « [années suivantes à confirmer, 2026 incluse] » a été retirée de la frise (`contenus/agence.json`). À garder en tête : la formule « depuis 2016 » suppose une distinction chaque année.
+- [x] **Formulaire de rappel** → *Simon, 19/11/2026 : contrôle des champs et anti-spam réels, envoi simulé.* Le message de confirmation porte la mention « [Démonstration : aucun message n'est encore transmis à l'agence.] », à retirer au branchement de l'envoi réel.
+- [x] **Adresses des articles** → *Simon, 19/11/2026 : tirées du titre court* (`/ressources/dpe-2026`, `/ressources/estimer-aux-chartrons`, `/ressources/gestion-locative`, `/ressources/vivre-aux-chartrons`). Modifiables au lot 8.
+- [ ] **Adresses de réception des demandes** par pôle (transaction, location, gestion locative) : à fournir par l'agence, nécessaires pour brancher l'envoi réel (Resend). — Qui : Agence · Lot : 3 ou 9
+- [ ] **Anti-spam en production** : la limite de 5 envois en 10 minutes par visiteur est gardée en mémoire du serveur. Suffisant pour la démonstration ; à renforcer à la mise en production (stockage partagé ou protection de l'outil d'envoi). — Qui : Simon · Lot : 11
+- [ ] **Lien « Itinéraire »** (planche Accueil-mobile-2, bloc contact) : non réalisé, il dépend du fournisseur de carte à choisir. — Qui : Simon · Lot : 9
+- [ ] **Temps de lecture des articles** : calculé à 230 mots par minute (résultat : 2 minutes pour les 4 articles). — Qui : Simon · Lot : 8

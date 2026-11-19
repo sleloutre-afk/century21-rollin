@@ -36,6 +36,22 @@
   }
 }
 
+/* Apparition douce du haut de page (maquette : classes rise, rise2, rise3). Coupée si prefers-reduced-motion. */
+@keyframes montee {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility animate-montee {
+  animation: montee 1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
 @layer base {
   html {
     background: var(--color-white);

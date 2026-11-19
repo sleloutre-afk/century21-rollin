@@ -69,7 +69,8 @@ export function Compteur({
   const couleurChiffre = accent && surFondSombre ? "text-gold" : "";
 
   return (
-    <div ref={ref} className="flex flex-col-reverse gap-2">
+    // flex-col-reverse + justify-end : les chiffres restent alignés en haut, quelle que soit la longueur de la légende.
+    <div ref={ref} className="flex flex-col-reverse justify-end gap-2">
       <p className={`m-0 text-base ${surFondSombre ? "text-grey-light" : ""}`}>{legende}</p>
       <p className={`m-0 font-display text-[64px] font-medium leading-[0.95] tabular-nums md:text-[96px] ${couleurChiffre}`}>
         <span className="sr-only">{valeur}</span>
