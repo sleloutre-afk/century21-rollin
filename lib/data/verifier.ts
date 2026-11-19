@@ -44,6 +44,7 @@ export function verifierContenus() {
   }
 
   for (const s of secteurs) {
+    if (s.auteur && !slugsMembres.has(s.auteur)) problemes.push(`quartiers.json : « ${s.slug} » cite un auteur inconnu « ${s.auteur} »`);
     if (s.conseillerReferent && !slugsMembres.has(s.conseillerReferent)) {
       problemes.push(`quartiers.json : « ${s.slug} » cite un conseiller inconnu « ${s.conseillerReferent} »`);
     }

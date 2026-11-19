@@ -32,7 +32,7 @@ export function FormulaireAlerte({ criteres, lienModifier }: { criteres: string[
       </div>
       <MessageErreur message={etat.statut === "erreur" ? etat.message : undefined} />
       <div className="flex flex-col gap-2">
-        <div className="flex flex-col gap-2 bg-white p-2 md:flex-row">
+        <div className="flex flex-col gap-2 border border-grey-medium bg-white p-2 md:flex-row">
           <label htmlFor={`${id}-email`} className="sr-only">
             Votre e-mail
           </label>

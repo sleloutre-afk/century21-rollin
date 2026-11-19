@@ -1,5 +1,5 @@
 {
-  "_source": "6 secteurs de vente. Prix au m² : aucun chiffre sans source datée.",
+  "_source": "6 secteurs de vente. Prix au m² : aucun chiffre sans source datée. Textes des Chartrons et des Bassins à flot repris de la maquette (planche QuartierDesktop) : réserves retirées et éléments sans contenu masqués à la demande de Simon le 19/11/2026, à relire avec l'agence. Les 4 autres secteurs : textes à fournir. Positions de la carte stylisée (en %) reprises de la maquette : approximatives, à valider par l'agence.",
   "secteurs": [
     {
       "slug": "chartrons",
@@ -7,7 +7,56 @@
       "accroche": "L'ancien quartier des négociants en vin, entre les quais et le Jardin Public. Notre quartier depuis 1993.",
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Chartrons",
+      "photoVignette": "Photo · quai des Chartrons",
+      "carte": {
+        "gauche": 50,
+        "haut": 29,
+        "largeur": 31,
+        "hauteur": 27
+      },
+      "prep": "aux Chartrons",
+      "photo": "Grande photo · façades en pierre blonde et quais",
+      "photo2": "Photo · rue Notre-Dame",
+      "photo3": "Photo · quais réaménagés",
+      "bref": [
+        "Ancien quartier des négociants en vin, au nord du centre historique, le long de la Garonne.",
+        "Façades en pierre blonde, échoppes et immeubles de négoce.",
+        "Rue Notre-Dame et ses antiquaires.",
+        "Tram B le long des quais ; Jardin Public à proximité.",
+        "L'agence y est installée depuis 1993."
+      ],
+      "ambianceTitre": "Un village au cœur de Bordeaux",
+      "ambiance": "Marchés, commerces de bouche, terrasses : la vie de quartier se joue à pied, des quais réaménagés jusqu'au Jardin Public.",
+      "vivre": [
+        {
+          "titre": "Transports",
+          "texte": "Tram B le long des quais."
+        },
+        {
+          "titre": "Commerces",
+          "texte": "Rue Notre-Dame, commerces de bouche, marchés."
+        },
+        {
+          "titre": "Espaces verts",
+          "texte": "Le Jardin Public et les quais."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Combien vaut un appartement aux Chartrons ?",
+          "a": "Tout dépend de la rue, de l'étage, du caractère de l'ancien et des extérieurs, rares dans le quartier. Prix moyen au m² : [donnée à venir, source à préciser]. Pour votre bien, demandez une estimation."
+        },
+        {
+          "q": "Le loyer est-il encadré aux Chartrons ?",
+          "a": "Bordeaux applique l'encadrement des loyers aux baux signés depuis le 15 juillet 2022. L'expérimentation prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation."
+        },
+        {
+          "q": "Qu'est-ce qui fait le prix d'un bien ici ?",
+          "a": "L'emplacement exact, l'étage et la lumière, la pierre, le parquet et les moulures, une terrasse ou un jardin, le stationnement, l'état, le DPE et la copropriété."
+        }
+      ]
     },
     {
       "slug": "jardin-public",
@@ -15,7 +64,15 @@
       "accroche": null,
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Jardin Public",
+      "photoVignette": "Photo · Jardin Public",
+      "carte": {
+        "gauche": 35,
+        "haut": 60,
+        "largeur": 27,
+        "hauteur": 20
+      }
     },
     {
       "slug": "fondaudege-david-johnston",
@@ -23,7 +80,15 @@
       "accroche": null,
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Fondaudège",
+      "photoVignette": "Photo · échoppes",
+      "carte": {
+        "gauche": 5,
+        "haut": 52,
+        "largeur": 27,
+        "hauteur": 22
+      }
     },
     {
       "slug": "parc-riviere",
@@ -31,7 +96,15 @@
       "accroche": null,
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Parc Rivière",
+      "photoVignette": "Photo · Parc Rivière",
+      "carte": {
+        "gauche": 26,
+        "haut": 14,
+        "largeur": 24,
+        "hauteur": 17
+      }
     },
     {
       "slug": "allee-haussmann",
@@ -39,7 +112,15 @@
       "accroche": null,
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Haussmann",
+      "photoVignette": "Photo · allée Haussmann",
+      "carte": {
+        "gauche": 5,
+        "haut": 28,
+        "largeur": 19,
+        "hauteur": 18
+      }
     },
     {
       "slug": "bassins-a-flot",
@@ -47,8 +128,47 @@
       "accroche": "Les anciens bassins portuaires, devenus un quartier en pleine transformation, au nord des Chartrons.",
       "prixMoyenM2": null,
       "sourcePrix": null,
-      "conseillerReferent": null
+      "conseillerReferent": null,
+      "court": "Bassins à flot",
+      "photoVignette": "Photo · Bassins à flot",
+      "carte": {
+        "gauche": 54,
+        "haut": 5,
+        "largeur": 27,
+        "hauteur": 19
+      },
+      "prep": "aux Bassins à flot",
+      "photo": "Grande photo · bassins et immeubles neufs",
+      "photo2": "Photo · Cité du Vin",
+      "photo3": "Photo · base sous-marine",
+      "bref": [
+        "Anciens bassins portuaires au nord des Chartrons.",
+        "Quartier en pleine transformation, avec de nombreux programmes neufs.",
+        "La Cité du Vin et les Bassins des Lumières, dans l'ancienne base sous-marine.",
+        "Tram B ; pont Jacques Chaban-Delmas vers la rive droite."
+      ],
+      "ambianceTitre": "Le Bordeaux qui se construit",
+      "ambiance": "Entre les bassins, les nouvelles places et les lieux culturels, un quartier qui change d'année en année.",
+      "vivre": [
+        {
+          "titre": "Transports",
+          "texte": "Tram B, pont Jacques Chaban-Delmas."
+        },
+        {
+          "titre": "Culture",
+          "texte": "Cité du Vin, Bassins des Lumières."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Combien vaut un appartement aux Bassins à flot ?",
+          "a": "Tout dépend de l'immeuble, de l'étage, de la vue et des extérieurs. Prix moyen au m² : [donnée à venir, source à préciser]. Pour votre bien, demandez une estimation."
+        },
+        {
+          "q": "Le loyer est-il encadré aux Bassins à flot ?",
+          "a": "Bordeaux applique l'encadrement des loyers aux baux signés depuis le 15 juillet 2022. L'expérimentation prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation."
+        }
+      ]
     }
-  ],
-  "detail": "Le contenu complet des pages Chartrons et Bassins à flot (En bref, Vivre, FAQ) est dans maquette/planches/QuartierDesktop.dc.html (objet data du script). Les 4 autres secteurs : textes à fournir."
+  ]
 }

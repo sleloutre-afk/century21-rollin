@@ -33,7 +33,7 @@ export function FormulaireAdresse({
         type="text"
         placeholder={libelle}
         autoComplete="street-address"
-        className="h-14 min-w-0 flex-[1_1_280px] border-0 px-4 text-lg text-grey-dark md:h-[60px]"
+        className="h-14 min-w-0 border-0 px-4 text-lg text-grey-dark md:h-[60px] md:flex-[1_1_280px]"
       />
       <button type="submit" className={`min-h-14 cursor-pointer px-9 font-display text-base font-semibold uppercase tracking-[0.14em] md:min-h-[60px] ${couleurs}`}>
         {bouton}

@@ -66,7 +66,7 @@ describe("les schémas refusent les données invalides", () => {
   });
 
   it("prix au m² sans source", () => {
-    const secteur = { slug: "chartrons", nom: "Chartrons", accroche: null, prixMoyenM2: 5000, sourcePrix: null, conseillerReferent: null };
+    const secteur = { slug: "chartrons", nom: "Chartrons", court: "Chartrons", photoVignette: "Photo", carte: { gauche: 1, haut: 1, largeur: 1, hauteur: 1 }, accroche: null, prixMoyenM2: 5000, sourcePrix: null, conseillerReferent: null };
     expect(secteurSchema.safeParse(secteur).success).toBe(false);
   });
 });

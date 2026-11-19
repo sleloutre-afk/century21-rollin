@@ -123,3 +123,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Relevé de gérance** : format et périodicité. — Qui : Agence
 - [ ] **Réponse sur l'encadrement des loyers** (FAQ bailleurs) : phrase factuelle conservée (« prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation »). À mettre à jour selon le vote de la prolongation. — Qui : Agence / Juriste
 - [x] **Section équipe** : fond blanc au lieu du Light Grey de la maquette, pour que les emplacements de portraits restent visibles (à revoir quand les vraies photos seront là).
+
+## 10. Points ouverts au lot 6 (quartiers)
+
+- [x] **Réserves des textes des Chartrons et des Bassins à flot** → *Simon, 19/11/2026 : retirées.* Éléments sans contenu masqués : pavé « Écoles » (les deux quartiers), « Commerces » des Bassins à flot, 5e point « En bref » des Bassins, questions « Combien de temps pour vendre aux Chartrons ? » et « Revendre un appartement acheté neuf ». Emplacements de chiffres conservés (prix au m², délai). Textes dans `contenus/quartiers.json`, à relire avec l'agence. — Qui : Agence
+- [x] **Les 4 autres secteurs** → *Simon, 19/11/2026 :* pages créées sur le même gabarit ; En bref, ambiance, vie quotidienne et FAQ masqués jusqu'à réception des textes. — Qui : Agence (textes, photos)
+- [ ] **Carte stylisée** : positions des 6 secteurs reprises de la maquette (en %, dans `contenus/quartiers.json`), approximatives, à valider par l'agence (allée Haussmann et Parc Rivière en particulier). — Qui : Agence
+- [ ] **Marché immobilier** : la maquette distingue le prix au m² des appartements et des maisons, l'évolution sur 12 mois et le délai moyen de vente. Les données ne prévoient qu'un prix moyen par secteur : le modèle sera complété quand la source (DVF, base notariale, agence) sera choisie. — Qui : Simon + Agence
+- [ ] **Auteur et date de mise à jour** des pages quartier (champs `auteur`, `dateMiseAJour`) : à fournir. — Qui : Agence
+- [ ] **Conseiller référent de chaque secteur** (avec sa présentation à la première personne) : à fournir. — Qui : Agence
+- [ ] **Préposition des 4 secteurs sans texte** : « dans le secteur Parc Rivière », faute de mieux (« au Jardin Public », « à Fondaudège » ?). Champ `prep` à compléter. — Qui : Agence
+- [x] **Défaut corrigé** : sur téléphone, le champ « Adresse de votre bien » des blocs d'estimation (Vendre, Biens vendus, fiche bien, Acheter, Faire louer ou gérer, quartiers) était démesuré.
