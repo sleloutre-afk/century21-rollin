@@ -11,16 +11,18 @@ import { slugsNouveaux } from "@/lib/biens/nouveaux";
 import { BUDGETS, filtrer, FILTRES_PAR_DEFAUT, PIECES, trier } from "@/lib/biens/recherche";
 import { getAgence, getAnnonces, getLocalisations } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Page « Acheter » (brief prompt 3 ; maquette AcheterDesktop, AcheterMobile).
  * Plus courte que « Vendre » : action principale = la recherche, dès le haut de page.
  */
 
-export const metadata: Metadata = {
-  title: "Acheter aux Chartrons",
+export const metadata: Metadata = metaPage({
+  titre: "Acheter aux Chartrons",
   description: "Votre projet d'achat à Bordeaux, compris et accompagné de bout en bout : recherche, visites, offre, compromis, acte.",
-};
+  chemin: "/acheter",
+});
 
 // Déroulé de la maquette (AcheterDesktop). À VALIDER : partenaires de financement (étape 5), rôle de l'agence dans l'avant-contrat (étape 6).
 const ETAPES = [

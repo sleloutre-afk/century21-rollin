@@ -18,16 +18,19 @@ import { IconeCalendrier } from "@/components/ui/Icones";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";
 import { getAgence, getAnnonces, getArticles } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Page de démonstration des composants (lot 1). Non indexée, absente du menu et du futur sitemap.
  * Tous les textes viennent de la maquette ou de contenus/ : rien n'est inventé.
  */
 
-export const metadata: Metadata = {
-  title: "Composants",
-  robots: { index: false, follow: false },
-};
+export const metadata: Metadata = metaPage({
+  titre: "Composants",
+  description: "Page de travail : composants du site.",
+  chemin: "/styleguide",
+  indexable: false,
+});
 
 // Couleurs de docs/04-charte-graphique.md.
 const COULEURS = [

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Semi_Condensed } from "next/font/google";
 import { verifierContenus } from "@/lib/data";
+import { INDEXABLE, NOM_SITE, URL_SITE } from "@/lib/seo";
 import "./globals.css";
 
 // Police téléchargée au moment du build et servie par le site lui-même :
@@ -13,13 +14,15 @@ const barlow = Barlow_Semi_Condensed({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(URL_SITE),
   title: {
-    default: "Cabinet Rollin – CENTURY 21 Les Chartrons",
-    template: "%s · Cabinet Rollin – CENTURY 21 Les Chartrons",
+    default: NOM_SITE,
+    template: `%s · ${NOM_SITE}`,
   },
   description: "Agence immobilière aux Chartrons, à Bordeaux, depuis 1993 : vente, location et gestion locative.",
-  // À VALIDER : site non indexé tant qu'il n'est pas en production (lot 11).
-  robots: { index: false, follow: false },
+  openGraph: { siteName: NOM_SITE, locale: "fr_FR", type: "website" },
+  // Site non référencé tant que SITE_INDEXABLE n'est pas « oui » (mise en production). Voir lib/seo.ts.
+  robots: INDEXABLE ? { index: true, follow: true } : { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

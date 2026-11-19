@@ -18,6 +18,8 @@ import { emplacementsVentes, toutesLesVentes } from "@/lib/biens/ventes";
 import { getAgence, getAnnonces, getMembre, getSecteur, getSecteurs } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import { dansLeQuartier } from "@/lib/quartiers";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { donneesFaq, metaPage } from "@/lib/seo";
 
 /**
  * Page quartier : un seul gabarit pour les 6 secteurs (brief prompt 6 ; maquette QuartierDesktop, QuartierMobile).
@@ -41,10 +43,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const secteur = getSecteur((await params).slug);
   if (!secteur) return { title: "Quartier introuvable" };
-  return {
-    title: `Quartier ${secteur.nom}, Bordeaux`,
+  return metaPage({
+    titre: `Quartier ${secteur.nom}, Bordeaux`,
     description: secteur.accroche ?? `Vendre, louer ou acheter ${dansLeQuartier(secteur)}, à Bordeaux, avec Cabinet Rollin – CENTURY 21 Les Chartrons.`,
-  };
+    chemin: `${ROUTES.quartiers}/${secteur.slug}`,
+  });
 }
 
 const dater = (d: string | null | undefined) =>
@@ -74,6 +77,7 @@ export default async function PageQuartier({ params }: Props) {
 
   return (
     <>
+      {secteur.faq && <JsonLd donnees={donneesFaq(secteur.faq)} />}
       <FilAriane etapes={[{ libelle: "Nos quartiers", href: ROUTES.quartiers }, { libelle: secteur.nom }]} />
 
       {/* GRANDE PHOTO */}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ListeLegale, PageLegale } from "@/components/legal/PageLegale";
 import { getAgence } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Politique de confidentialité : structure, liste factuelle des formulaires du site et des données qu'ils demandent,
@@ -8,7 +9,11 @@ import { getAgence } from "@/lib/data";
  * à rédiger par l'agence ou son juriste (RGPD). Aucune donnée n'est stockée par le site à ce jour (envois simulés).
  */
 
-export const metadata: Metadata = { title: "Politique de confidentialité" };
+export const metadata: Metadata = metaPage({
+  titre: "Politique de confidentialité",
+  description: "Politique de confidentialité de Cabinet Rollin – CENTURY 21 Les Chartrons : données demandées par les formulaires du site.",
+  chemin: "/confidentialite",
+});
 
 // Formulaires du site et champs demandés (état du site, à tenir à jour).
 const FORMULAIRES: [string, string][] = [

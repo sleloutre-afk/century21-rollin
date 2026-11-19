@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { PageLegale } from "@/components/legal/PageLegale";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Barème d'honoraires (lien dans la barre utilitaire et le pied de page de toutes les pages, brief §10).
  * À VALIDER : barème à fournir par l'agence (montants, TTC, part à la charge de l'acquéreur ou du locataire, date d'application).
  */
 
-export const metadata: Metadata = { title: "Barème d'honoraires" };
+export const metadata: Metadata = metaPage({
+  titre: "Barème d'honoraires",
+  description: "Barème d'honoraires de Cabinet Rollin – CENTURY 21 Les Chartrons : transaction, location et gestion locative.",
+  chemin: "/honoraires",
+});
 
 export default function PageHonoraires() {
   return (

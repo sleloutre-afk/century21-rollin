@@ -12,6 +12,8 @@ import { TitreSection } from "@/components/ui/TitreSection";
 import { getAgence, getArticles, getFaq, getMembres, getPoles } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import type { Membre } from "@/lib/schemas/equipe";
+import { donneesFaq, metaPage } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 /**
  * Page « Faire louer ou gérer » (brief prompt 5 ; maquette GererDesktop, GererMobile).
@@ -21,10 +23,11 @@ import type { Membre } from "@/lib/schemas/equipe";
  * À VALIDER : garantie des loyers impayés (assureur, conditions, coût) et périodicité du relevé de gérance.
  */
 
-export const metadata: Metadata = {
-  title: "Faire louer ou gérer votre bien à Bordeaux",
+export const metadata: Metadata = metaPage({
+  titre: "Faire louer ou gérer votre bien à Bordeaux",
   description: "Mise en location ou gestion locative complète, dans toute la métropole bordelaise. Plus de 600 biens gérés par notre équipe.",
-};
+  chemin: "/faire-louer-ou-gerer",
+});
 
 const ESTIMER_LOUER = `${ROUTES.estimation}?projet=faire-louer`;
 const ESTIMER_GERER = `${ROUTES.estimation}?projet=confier-la-gestion`;
@@ -99,6 +102,7 @@ export default function PageGerer() {
 
   return (
     <>
+      <JsonLd donnees={donneesFaq(faq)} />
       <FilAriane etapes={[{ libelle: "Faire louer ou gérer" }]} />
 
       {/* HAUT DE PAGE */}

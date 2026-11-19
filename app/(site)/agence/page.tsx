@@ -5,6 +5,8 @@ import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { getAgence } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { metaPage } from "@/lib/seo";
+import { JsonLdAgence } from "@/components/seo/JsonLdAgence";
 
 /**
  * « L'agence » (brief prompt 9 ; maquette AgenceDesktop, AgenceMobile) : histoire depuis 1993, chiffres clés datés,
@@ -12,10 +14,11 @@ import { ROUTES } from "@/lib/navigation";
  * (décision de Simon, 19/11/2026). Balisage RealEstateAgent : lot 10.
  */
 
-export const metadata: Metadata = {
-  title: "L'agence",
+export const metadata: Metadata = metaPage({
+  titre: "L'agence",
   description: "Cabinet Rollin – CENTURY 21 Les Chartrons : une agence familiale aux Chartrons depuis 1993, dans le réseau CENTURY 21 depuis 2001.",
-};
+  chemin: "/agence",
+});
 
 const nombre = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
 const dater = (d: string | null) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[date à fournir]");
@@ -31,6 +34,7 @@ export default function PageAgence() {
 
   return (
     <>
+      <JsonLdAgence />
       <FilAriane etapes={[{ libelle: "L'agence" }]} />
 
       <section aria-labelledby="h1-agence" className="py-10 md:py-16">

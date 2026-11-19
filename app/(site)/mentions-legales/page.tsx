@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { ListeLegale, PageLegale } from "@/components/legal/PageLegale";
 import { getAgence } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
 
 /** Mentions légales : structure et emplacements. À VALIDER : contenu complet à fournir par l'agence ou son juriste. */
 
-export const metadata: Metadata = { title: "Mentions légales" };
+export const metadata: Metadata = metaPage({
+  titre: "Mentions légales",
+  description: "Mentions légales de Cabinet Rollin – CENTURY 21 Les Chartrons, agence immobilière à Bordeaux.",
+  chemin: "/mentions-legales",
+});
 
 const aFournir = (v: string | null) => v ?? "[à fournir]";
 

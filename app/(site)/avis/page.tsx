@@ -5,6 +5,7 @@ import { BoutonLien } from "@/components/ui/Bouton";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { getAgence } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { metaPage } from "@/lib/seo";
 
 /**
  * « Avis clients » (brief prompt 9 ; maquette AvisDesktop, AvisMobile).
@@ -13,10 +14,11 @@ import { ROUTES } from "@/lib/navigation";
  * emplacements conservés (règle n° 4 : signaler, ne pas trancher). Bouton « Laisser un avis Google » masqué (lien à fournir).
  */
 
-export const metadata: Metadata = {
-  title: "Avis clients",
+export const metadata: Metadata = metaPage({
+  titre: "Avis clients",
   description: "Les avis Google et les notes Qualitelis de Cabinet Rollin – CENTURY 21 Les Chartrons, en vente, location et gestion locative.",
-};
+  chemin: "/avis",
+});
 
 const nombre = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
 const dater = (d: string | null) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[date à fournir]");

@@ -7,16 +7,18 @@ import { FilAriane } from "@/components/ui/FilAriane";
 import { IconeTelephone } from "@/components/ui/Icones";
 import { getAgence, getMembres, getPoles } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { metaPage } from "@/lib/seo";
 
 /**
  * « L'équipe » (brief prompt 7 ; maquette EquipeDesktop, EquipeMobile).
  * Noms publiés (décision de Simon, 19/11/2026) ; portraits : emplacements jusqu'à réception des photos.
  */
 
-export const metadata: Metadata = {
-  title: "L'équipe",
+export const metadata: Metadata = metaPage({
+  titre: "L'équipe",
   description: "Direction, transaction, suivi des ventes, location, gestion locative, accueil : un spécialiste pour chaque besoin, aux Chartrons.",
-};
+  chemin: "/equipe",
+});
 
 export default function PageEquipe() {
   const agence = getAgence();

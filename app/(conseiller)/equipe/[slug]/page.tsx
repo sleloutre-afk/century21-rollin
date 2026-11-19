@@ -14,6 +14,8 @@ import { estVisibleEnRecherche } from "@/lib/biens/recherche";
 import { toutesLesVentes } from "@/lib/biens/ventes";
 import { getAgence, getAnnonces, getArticles, getMembre, getMembres, getPoles } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { metaPage, NOM_SITE, sansEmplacement, URL_SITE, urlAbsolue } from "@/lib/seo";
 
 /**
  * Fiche conseiller (brief prompt 7 ; maquette ConseillerDesktop, ConseillerMobile). Un gabarit pour les 21 membres.
@@ -36,7 +38,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const membre = getMembre((await params).slug);
   if (!membre) return { title: "Conseiller introuvable" };
-  return { title: `${membre.nom}, ${membre.role}`, description: `${membre.nom}, ${membre.role} chez Cabinet Rollin – CENTURY 21 Les Chartrons, à Bordeaux.` };
+  const role = sansEmplacement(membre.role);
+  return metaPage({ titre: `${membre.nom}, ${role}`, description: `${membre.nom}, ${role} chez Cabinet Rollin – CENTURY 21 Les Chartrons, à Bordeaux.`, chemin: `${ROUTES.equipe}/${membre.slug}` });
 }
 
 // Pôles dont les membres sont cités dans les avis clients (emplacements d'avis affichés).
@@ -62,6 +65,17 @@ export default async function FicheConseiller({ params }: Props) {
 
   return (
     <>
+      {/* Person (schema.org) : nom, fonction affichée, agence. */}
+      <JsonLd
+        donnees={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: membre.nom,
+          jobTitle: sansEmplacement(membre.role),
+          url: urlAbsolue(`${ROUTES.equipe}/${membre.slug}`),
+          worksFor: { "@type": "RealEstateAgent", name: NOM_SITE, url: URL_SITE },
+        }}
+      />
       <FilAriane etapes={[{ libelle: "L'équipe", href: ROUTES.equipe }, { libelle: membre.nom }]} />
 
       {/* PRÉSENTATION */}

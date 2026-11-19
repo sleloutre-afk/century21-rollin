@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageLegale } from "@/components/legal/PageLegale";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Gestion des cookies : structure et emplacements. À VALIDER : texte à fournir par l'agence.
@@ -7,7 +8,11 @@ import { PageLegale } from "@/components/legal/PageLegale";
  * aucun bandeau n'est donc affiché. Toute mesure d'audience future devra être décidée avec Simon (CLAUDE.md, règle 7).
  */
 
-export const metadata: Metadata = { title: "Gestion des cookies" };
+export const metadata: Metadata = metaPage({
+  titre: "Gestion des cookies",
+  description: "Gestion des cookies sur le site de Cabinet Rollin – CENTURY 21 Les Chartrons.",
+  chemin: "/cookies",
+});
 
 export default function PageCookies() {
   return (

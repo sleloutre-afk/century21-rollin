@@ -19,6 +19,7 @@ import { getAgence, getAnnonce, getAnnonces, getLocalisations, getMembre, getSec
 import { formaterPrix, formaterSurface } from "@/lib/format/nombres";
 import { ROUTES } from "@/lib/navigation";
 import type { Annonce } from "@/lib/schemas/annonce";
+import { metaPage, sansEmplacement } from "@/lib/seo";
 
 /**
  * Fiche bien (maquette FicheDesktop, FicheMobile ; annotations « Gabarit alimenté par données »,
@@ -50,10 +51,12 @@ function annonceVisible(slug: string): Annonce | undefined {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const annonce = annonceVisible((await params).slug);
   if (!annonce) return { title: "Bien introuvable" };
-  return {
-    title: `${annonce.titre}, ${formaterSurface(annonce.surfaceHabitable)} · ${annonce.quartierLibelle}`,
-    description: `${annonce.titre} de ${formaterSurface(annonce.surfaceHabitable)}, ${annonce.pieces} pièces, ${annonce.quartierLibelle}, Bordeaux. ${prixAffiche(annonce)}.`,
-  };
+  const lieu = sansEmplacement(annonce.quartierLibelle);
+  return metaPage({
+    titre: `${annonce.titre}, ${formaterSurface(annonce.surfaceHabitable)} · ${lieu}`,
+    description: sansEmplacement(`${annonce.titre} de ${formaterSurface(annonce.surfaceHabitable)}, ${annonce.pieces} pièces, ${lieu}, Bordeaux. ${prixAffiche(annonce)}.`),
+    chemin: `/biens/${annonce.slug}`,
+  });
 }
 
 const TYPES: Record<Annonce["type"], string> = { maison: "Maison", appartement: "Appartement" };

@@ -14,17 +14,19 @@ import { TitreSection } from "@/components/ui/TitreSection";
 import { getAgence, getFaq, getMembre, getMembres } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import type { Membre } from "@/lib/schemas/equipe";
+import { donneesFaq, metaPage } from "@/lib/seo";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 /**
  * Page « Vendre » (brief prompt 2 ; maquette VendreDesktop, VendreMobile).
  * Action principale « Estimer mon bien », répétée en tête, en milieu et en fin de page.
  */
 
-export const metadata: Metadata = {
-  title: "Vendre votre bien aux Chartrons",
-  description:
-    "Vendre aux Chartrons avec ceux qui connaissent votre rue : estimation par un expert du quartier, mise en valeur, suivi jusqu'à l'acte. Depuis 1993.",
-};
+export const metadata: Metadata = metaPage({
+  titre: "Vendre votre bien aux Chartrons",
+  description: "Vendre aux Chartrons avec ceux qui connaissent votre rue : estimation par un expert du quartier, mise en valeur, suivi jusqu'à l'acte. Depuis 1993.",
+  chemin: "/vendre",
+});
 
 const nombre = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
 const dater = (d: string | null) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[date à fournir]");
@@ -80,6 +82,7 @@ export default function PageVendre() {
 
   return (
     <>
+      <JsonLd donnees={donneesFaq(faq)} />
       <FilAriane etapes={[{ libelle: "Vendre" }]} />
 
       {/* HAUT DE PAGE */}

@@ -27,6 +27,7 @@ export function Logo({ taille = "normal", surFondSombre = false, lien = true }: 
     <>
       <span className={`font-display font-semibold leading-none tracking-[0.07em] ${t.marque}`}>CENTURY 21.</span>
       <span className={`leading-none tracking-[0.02em] ${t.agence}`}>Cabinet Rollin · Les Chartrons</span>
+      {lien && <span className="sr-only"> – retour à l&apos;accueil</span>}
     </>
   );
 
@@ -37,7 +38,6 @@ export function Logo({ taille = "normal", surFondSombre = false, lien = true }: 
   return (
     <Link
       href="/"
-      aria-label="Cabinet Rollin – CENTURY 21 Les Chartrons, accueil"
       className={`flex flex-none flex-col no-underline transition-all duration-300 ${t.gap} ${couleur}`}
     >
       {contenu}

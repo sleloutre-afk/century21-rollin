@@ -4,6 +4,8 @@ import { PriseRendezVous } from "@/components/formulaires/PriseRendezVous";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { getAgence } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
+import { JsonLdAgence } from "@/components/seo/JsonLdAgence";
 
 /**
  * Contact (brief prompt 9 ; maquette ContactDesktop, ContactMobile) : formulaire par type de projet orienté
@@ -12,16 +14,18 @@ import { getAgence } from "@/lib/data";
  * À VALIDER : fournisseur de carte à choisir (spec §7).
  */
 
-export const metadata: Metadata = {
-  title: "Contact et rendez-vous",
+export const metadata: Metadata = metaPage({
+  titre: "Contact et rendez-vous",
   description: "Appelez-nous, écrivez-nous ou prenez rendez-vous : Cabinet Rollin – CENTURY 21 Les Chartrons, 32 cours Evrard de Fayolle, Bordeaux.",
-};
+  chemin: "/contact",
+});
 
 export default function PageContact() {
   const agence = getAgence();
 
   return (
     <>
+      <JsonLdAgence />
       <FilAriane etapes={[{ libelle: "Contact" }]} />
 
       <div className="conteneur flex flex-wrap items-end justify-between gap-6 pb-8 pt-10 md:pb-12 md:pt-14">

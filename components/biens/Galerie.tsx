@@ -80,12 +80,14 @@ export function Galerie({ photos, resume, medias }: Props) {
     <section aria-label="Galerie photos" className="md:conteneur md:pt-6">
       {/* Grand écran : mosaïque */}
       <div className="hidden h-[572px] grid-cols-[2fr_1fr_1fr] grid-rows-2 gap-2 md:grid">
-        <button type="button" onClick={() => ouvrir(0)} aria-label="Ouvrir la galerie en plein écran" className="group relative row-span-2 cursor-pointer overflow-hidden border-0 p-0">
+        <button type="button" onClick={() => ouvrir(0)} className="group relative row-span-2 cursor-pointer overflow-hidden border-0 p-0">
           <Visuel photo={principale} priorite tailles="(min-width: 768px) 50vw, 100vw" />
+          <span className="sr-only"> – ouvrir la galerie en plein écran</span>
         </button>
         {vignettes.slice(0, 4).map((p, i) => (
-          <button key={p.libelle} type="button" onClick={() => ouvrir(i + 1)} aria-label={`Ouvrir la photo ${i + 2} sur ${total}`} className="group relative cursor-pointer overflow-hidden border-0 p-0">
+          <button key={p.libelle} type="button" onClick={() => ouvrir(i + 1)} className="group relative cursor-pointer overflow-hidden border-0 p-0">
             <Visuel photo={p} tailles="25vw" />
+            <span className="sr-only"> – ouvrir en plein écran (photo {i + 2} sur {total})</span>
           </button>
         ))}
       </div>
@@ -94,8 +96,9 @@ export function Galerie({ photos, resume, medias }: Props) {
       <ul className="m-0 flex list-none snap-x snap-mandatory gap-2 overflow-x-auto p-0 md:hidden">
         {photos.map((p, i) => (
           <li key={p.libelle} className="w-[88%] flex-none snap-start first:pl-0">
-            <button type="button" onClick={() => ouvrir(i)} aria-label={`Ouvrir la photo ${i + 1} sur ${total} en plein écran`} className="relative block h-[280px] w-full cursor-pointer overflow-hidden border-0 p-0">
+            <button type="button" onClick={() => ouvrir(i)} className="relative block h-[280px] w-full cursor-pointer overflow-hidden border-0 p-0">
               <Visuel photo={p} tailles="90vw" priorite={i === 0} />
+              <span className="sr-only"> – ouvrir en plein écran (photo {i + 1} sur {total})</span>
             </button>
           </li>
         ))}

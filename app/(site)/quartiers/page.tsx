@@ -7,16 +7,18 @@ import { FilAriane } from "@/components/ui/FilAriane";
 import { getSecteurs } from "@/lib/data";
 import { prixAuM2 } from "@/lib/quartiers";
 import { ROUTES } from "@/lib/navigation";
+import { metaPage } from "@/lib/seo";
 
 /**
  * « Nos quartiers » (brief prompt 6 ; maquette QuartiersDesktop, QuartiersMobile) :
  * carte stylisée cliquable des 6 secteurs, fiche du secteur choisi, vignettes, appel à l'estimation.
  */
 
-export const metadata: Metadata = {
-  title: "Nos quartiers à Bordeaux",
+export const metadata: Metadata = metaPage({
+  titre: "Nos quartiers à Bordeaux",
   description: "Chartrons, Jardin Public, Fondaudège–David Johnston, Parc Rivière, allée Haussmann, Bassins à flot : nos six secteurs de vente, connus rue par rue.",
-};
+  chemin: "/quartiers",
+});
 
 export default function PageQuartiers() {
   const secteurs = getSecteurs();

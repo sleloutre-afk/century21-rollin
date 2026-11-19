@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Icône PROVISOIRE et neutre (couleurs de la charte, sans lettres) : à remplacer par l'icône officielle
+       tirée du logo fourni par le réseau CENTURY 21. Ne pas redessiner le logo. -->
+  <rect width="32" height="32" fill="#252526"/>
+  <rect x="6" y="20" width="20" height="3" fill="#BEAF87"/>
+</svg>

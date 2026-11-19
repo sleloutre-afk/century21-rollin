@@ -5,16 +5,18 @@ import { FormulaireAdresse } from "@/components/estimation/FormulaireAdresse";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { emplacementsVentes, toutesLesVentes } from "@/lib/biens/ventes";
 import { getAgence, getSecteurs } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
 
 /**
  * Biens vendus (brief prompt 4 ; maquette VendusDesktop, VendusMobile) : page de preuve pour les vendeurs.
  * Délai moyen de vente : emplacement tant que l'agence ne l'a pas fourni.
  */
 
-export const metadata: Metadata = {
-  title: "Biens vendus par l'agence",
+export const metadata: Metadata = metaPage({
+  titre: "Biens vendus par l'agence",
   description: "Les ventes menées par Cabinet Rollin – CENTURY 21 Les Chartrons, quartier par quartier, à Bordeaux.",
-};
+  chemin: "/biens-vendus",
+});
 
 const nombre = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
 const dater = (d: string | null) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[date à fournir]");

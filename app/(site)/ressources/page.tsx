@@ -4,16 +4,18 @@ import { FormulaireLettre } from "@/components/formulaires/FormulaireLettre";
 import { ListeArticles, ListeArticlesAvecParametres, type ApercuArticle } from "@/components/ressources/ListeArticles";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { getArticles } from "@/lib/data";
+import { metaPage } from "@/lib/seo";
 
 /**
  * « Ressources » (brief prompt 8 ; maquette RessourcesDesktop, RessourcesMobile) : guides du propriétaire,
  * filtres par catégorie, lettre d'information. Articles publiés depuis contenus/articles.json (back-office plus tard).
  */
 
-export const metadata: Metadata = {
-  title: "Les guides du propriétaire",
+export const metadata: Metadata = metaPage({
+  titre: "Les guides du propriétaire",
   description: "Vendre, louer, faire gérer, comprendre le quartier : des réponses courtes, écrites par l'équipe de Cabinet Rollin – CENTURY 21 Les Chartrons.",
-};
+  chemin: "/ressources",
+});
 
 const dater = (d: string | null | undefined) =>
   d ? new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date(`${d}T00:00:00`)) : "[date à fournir]";

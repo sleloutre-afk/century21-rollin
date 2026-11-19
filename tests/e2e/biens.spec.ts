@@ -90,7 +90,7 @@ test.describe("fiche bien", () => {
   test("galerie plein écran : clavier, compteur, Échap", async ({ page }, info) => {
     test.skip(info.project.name !== "desktop");
     await page.goto(url);
-    await page.getByRole("button", { name: "Ouvrir la galerie en plein écran" }).click();
+    await page.getByRole("button", { name: /ouvrir la galerie en plein écran/ }).click();
     const galerie = page.getByRole("dialog", { name: "Galerie photos du bien" });
     await expect(galerie).toContainText("1 / 5");
     await page.keyboard.press("ArrowRight");

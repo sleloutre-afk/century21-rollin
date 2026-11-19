@@ -165,3 +165,16 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Lien « Laisser un avis Google »** (fiche Google de l'agence) et lien « Réseau CENTURY 21 » du pied de page. — Qui : Agence
 - [ ] **Accès à l'agence** : station de tram, lignes de bus, stationnement, accessibilité. — Qui : Agence
 - [ ] **Appel à l'action de l'article DPE** : peut désormais mener à `/contact#rendez-vous` plutôt qu'à la page Faire louer ou gérer. À décider. — Qui : Simon
+
+## 14. Points ouverts au lot 10 (référencement, accessibilité, performance)
+
+- [x] **Domaine de production** → *Simon, 19/11/2026 :* `https://www.century21-cabinet-rollin-bordeaux.com` (domaine du site actuel), réglable par la variable `NEXT_PUBLIC_SITE_URL` (`lib/seo.ts`).
+- [x] **Outils de contrôle** → *accord de Simon, 19/11/2026 :* axe-core (`@axe-core/playwright`, outil de développement, ajouté aux tests) et Lighthouse (lancé ponctuellement, non ajouté au projet).
+- [x] **Résultats Lighthouse sur téléphone (19/11/2026)** : performance 95 à 100, accessibilité 100, bonnes pratiques 100 ; référencement 66 en démonstration (pages volontairement bloquées) et 100 avec `SITE_INDEXABLE=oui`.
+- [x] **Accessibilité** : 20 pages × 2 formats sans erreur axe (WCAG 2.1 A et AA) ; corrections : nom du logo et des vignettes de la galerie, barre de progression de l'estimation dans l'en-tête. Parcours testés au clavier : lien d'évitement, focus visible, menu, estimation complète, menu mobile.
+- [ ] **Mise en production : activer le référencement** en définissant `SITE_INDEXABLE=oui` (robots.txt, balises robots). À ne faire qu'après le traitement des éléments bloquants (pages légales, mentions des annonces…). — Qui : Simon · Lot : après 11
+- [ ] **Note Google dans les données structurées** : non déclarée (date non fournie ; Google ignore les étoiles qu'une entreprise déclare sur son propre site). À revoir avec le flux d'avis. — Qui : Simon
+- [ ] **Horaires dans les données structurées** : non déclarés tant que le vendredi matin et le samedi ne sont pas confirmés. — Qui : Agence
+- [ ] **Icône du site (favicon)** : icône provisoire neutre (carré Obsessed Grey, filet or, sans lettres), en attendant l'icône officielle du réseau. — Qui : Agence
+- [ ] **Image d'aperçu de partage** (réseaux sociaux, messageries) : aucune pour l'instant, faute de photo et de logo. — Qui : Agence
+- [ ] **Audit au lecteur d'écran** (VoiceOver) par une personne : les tests automatiques et clavier ne remplacent pas un essai réel. À faire avant la mise en production. — Qui : Simon

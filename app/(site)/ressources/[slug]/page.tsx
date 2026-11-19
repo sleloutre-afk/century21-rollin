@@ -8,6 +8,8 @@ import { EnBref } from "@/components/ui/EnBref";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { getArticle, getArticles, getMembres } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { donneesFaq, estRenseigne, metaPage, NOM_SITE, URL_SITE, urlAbsolue } from "@/lib/seo";
 
 /**
  * Article (brief prompt 8 ; maquette ArticleDesktop, ArticleMobile) : un seul gabarit pour les 4 articles.
@@ -28,7 +30,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticle((await params).slug);
   if (!article) return { title: "Article introuvable" };
-  return { title: article.titre, description: article.chapeau };
+  return metaPage({ titre: article.titre, description: article.chapeau, chemin: `${ROUTES.ressources}/${article.slug}` });
 }
 
 type EntreeSommaire = { n: number; id: string; h2: string };
@@ -63,8 +65,23 @@ export default async function PageArticle({ params }: Props) {
   const autres = getArticles().filter((a) => a.slug !== article.slug);
   const sommaire = article.sections.map((s, i) => ({ n: i + 1, id: `s-${s.id}`, h2: s.h2 }));
 
+  // Article (schema.org) : auteur et date seulement s'ils sont renseignés (pas d'emplacement « [à confirmer] »).
+  const donneesArticle = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.titre,
+    description: article.chapeau,
+    inLanguage: "fr-FR",
+    mainEntityOfPage: urlAbsolue(`${ROUTES.ressources}/${article.slug}`),
+    ...(estRenseigne(article.auteur) ? { author: { "@type": "Person", name: article.auteur, ...(auteur ? { url: urlAbsolue(`${ROUTES.equipe}/${auteur.slug}`) } : {}) } } : {}),
+    ...(article.dateMiseAJour ? { dateModified: article.dateMiseAJour } : {}),
+    publisher: { "@type": "RealEstateAgent", name: NOM_SITE, url: URL_SITE },
+  };
+
   return (
     <>
+      <JsonLd donnees={donneesArticle} />
+      <JsonLd donnees={donneesFaq(article.faq)} />
       <FilAriane etapes={[{ libelle: "Ressources", href: ROUTES.ressources }, { libelle: article.court }]} />
 
       <article aria-labelledby="h1-article">
