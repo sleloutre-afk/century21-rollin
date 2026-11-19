@@ -1,0 +1,1215 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-11-19T14:42:54Z"
+  },
+  "title": "Cabinet Rollin – CENTURY 21 Les Chartrons · Maquette V0",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [
+    {
+      "id": "accueil",
+      "name": "Accueil"
+    },
+    {
+      "id": "vendre",
+      "name": "Vendre + estimation"
+    },
+    {
+      "id": "acheter",
+      "name": "Acheter"
+    },
+    {
+      "id": "biens",
+      "name": "Biens : recherche, fiche, vendus"
+    },
+    {
+      "id": "gerer",
+      "name": "Faire louer ou gérer"
+    },
+    {
+      "id": "quartiers",
+      "name": "Quartiers"
+    },
+    {
+      "id": "equipe",
+      "name": "Équipe"
+    },
+    {
+      "id": "ressources",
+      "name": "Ressources et articles"
+    },
+    {
+      "id": "agence",
+      "name": "Avis, agence, contact"
+    }
+  ],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 6720,
+      "title": "Accueil · desktop · 1/2 (en-tête → estimation)",
+      "expand": "fill",
+      "is_interactive": true
+    },
+    "Accueil-desktop-2.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 1440,
+      "h": 5304,
+      "title": "Accueil · desktop · 2/2 (en-tête compacté → pied de page)",
+      "expand": "fill",
+      "is_interactive": true
+    },
+    "Accueil-mobile-1.dc.html": {
+      "x": 4000,
+      "y": 0,
+      "w": 390,
+      "h": 5216,
+      "title": "Accueil · mobile · 1/2"
+    },
+    "Accueil-mobile-2.dc.html": {
+      "x": 4470,
+      "y": 0,
+      "w": 390,
+      "h": 5216,
+      "title": "Accueil · mobile · 2/2"
+    },
+    "VendreDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 6852,
+      "title": "Vendre · desktop",
+      "expand": "fill",
+      "page": "vendre"
+    },
+    "VendreMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 6020,
+      "title": "Vendre · mobile",
+      "page": "vendre"
+    },
+    "EstimDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Estimation · desktop · étape 1 (parcours cliquable)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "vendre"
+    },
+    "EstimDesktopEtape2.dc.html": {
+      "x": 3000,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "Estimation · desktop · étape 2",
+      "expand": "fill",
+      "page": "vendre"
+    },
+    "EstimDesktopResultat.dc.html": {
+      "x": 3000,
+      "y": 2040,
+      "w": 1440,
+      "h": 900,
+      "title": "Estimation · desktop · résultat",
+      "expand": "fill",
+      "page": "vendre"
+    },
+    "EstimMobile.dc.html": {
+      "x": 5000,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · 1 Adresse (cliquable)",
+      "is_interactive": true,
+      "page": "vendre"
+    },
+    "EstimMobileEtape2.dc.html": {
+      "x": 5470,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · 2 Votre bien",
+      "page": "vendre"
+    },
+    "EstimMobileEtape3.dc.html": {
+      "x": 5940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · 3 Caractéristiques",
+      "page": "vendre"
+    },
+    "EstimMobileEtape4.dc.html": {
+      "x": 6410,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · 4 Projet",
+      "page": "vendre"
+    },
+    "EstimMobileEtape5.dc.html": {
+      "x": 6880,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · 5 Coordonnées",
+      "page": "vendre"
+    },
+    "EstimMobileResultat.dc.html": {
+      "x": 7350,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Estimation · mobile · résultat",
+      "page": "vendre"
+    },
+    "AcheterDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 3812,
+      "title": "Acheter · desktop",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "acheter"
+    },
+    "AcheterMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 4730,
+      "title": "Acheter · mobile",
+      "page": "acheter"
+    },
+    "RechercheDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 2240,
+      "title": "Recherche · desktop · vue liste (bascule Liste / Carte cliquable)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "biens"
+    },
+    "RechercheDesktopCarte.dc.html": {
+      "x": 0,
+      "y": 2360,
+      "w": 1440,
+      "h": 2640,
+      "title": "Recherche · desktop · vue carte",
+      "expand": "fill",
+      "page": "biens"
+    },
+    "RechercheMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 3940,
+      "title": "Recherche · mobile",
+      "page": "biens"
+    },
+    "FicheDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 5472,
+      "title": "Fiche bien · desktop · Palais Gallien",
+      "expand": "fill",
+      "page": "biens"
+    },
+    "FicheGalerie.dc.html": {
+      "x": 3000,
+      "y": 5592,
+      "w": 1440,
+      "h": 900,
+      "title": "Fiche bien · galerie plein écran (cliquable)",
+      "expand": "fill",
+      "page": "biens",
+      "is_interactive": true
+    },
+    "FicheMobile.dc.html": {
+      "x": 5000,
+      "y": 0,
+      "w": 390,
+      "h": 4440,
+      "title": "Fiche bien · mobile",
+      "page": "biens"
+    },
+    "VendusDesktop.dc.html": {
+      "x": 6000,
+      "y": 0,
+      "w": 1440,
+      "h": 2900,
+      "title": "Biens vendus · desktop (filtres cliquables)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "biens"
+    },
+    "VendusMobile.dc.html": {
+      "x": 8000,
+      "y": 0,
+      "w": 390,
+      "h": 2700,
+      "title": "Biens vendus · mobile",
+      "page": "biens"
+    },
+    "GererDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 6792,
+      "title": "Faire louer ou gérer · desktop",
+      "expand": "fill",
+      "page": "gerer"
+    },
+    "GererMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 6760,
+      "title": "Faire louer ou gérer · mobile",
+      "page": "gerer"
+    },
+    "QuartiersDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 2920,
+      "title": "Nos quartiers · desktop (carte cliquable)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "quartiers"
+    },
+    "QuartiersMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 2340,
+      "title": "Nos quartiers · mobile",
+      "page": "quartiers"
+    },
+    "QuartierDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 5360,
+      "title": "Quartier · Chartrons · desktop (gabarit)",
+      "expand": "fill",
+      "page": "quartiers"
+    },
+    "QuartierBassinsDesktop.dc.html": {
+      "x": 5000,
+      "y": 0,
+      "w": 1440,
+      "h": 5360,
+      "title": "Quartier · Bassins à flot · desktop (même gabarit)",
+      "expand": "fill",
+      "page": "quartiers"
+    },
+    "QuartierMobile.dc.html": {
+      "x": 7000,
+      "y": 0,
+      "w": 390,
+      "h": 4960,
+      "title": "Quartier · Chartrons · mobile",
+      "page": "quartiers"
+    },
+    "QuartierBassinsMobile.dc.html": {
+      "x": 7470,
+      "y": 0,
+      "w": 390,
+      "h": 4960,
+      "title": "Quartier · Bassins à flot · mobile",
+      "page": "quartiers"
+    },
+    "EquipeDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 4740,
+      "title": "L'équipe · desktop (filtres cliquables)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "equipe"
+    },
+    "EquipeMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 5520,
+      "title": "L'équipe · mobile",
+      "page": "equipe"
+    },
+    "ConseillerDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 4180,
+      "title": "Fiche conseiller · Grégory Coutant · desktop",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "equipe"
+    },
+    "ConseillerMobile.dc.html": {
+      "x": 5000,
+      "y": 0,
+      "w": 390,
+      "h": 3800,
+      "title": "Fiche conseiller · Grégory Coutant · mobile",
+      "page": "equipe"
+    },
+    "RessourcesDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 2060,
+      "title": "Ressources · desktop (filtres cliquables)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "ressources"
+    },
+    "RessourcesMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 2060,
+      "title": "Ressources · mobile",
+      "page": "ressources"
+    },
+    "ArticleDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 5390,
+      "title": "Article 1 · DPE 2026 · desktop (gabarit)",
+      "expand": "fill",
+      "page": "ressources"
+    },
+    "ArticleDesktop2.dc.html": {
+      "x": 4520,
+      "y": 0,
+      "w": 1440,
+      "h": 5320,
+      "title": "Article 2 · Estimer aux Chartrons · desktop",
+      "expand": "fill",
+      "page": "ressources"
+    },
+    "ArticleDesktop3.dc.html": {
+      "x": 6040,
+      "y": 0,
+      "w": 1440,
+      "h": 5140,
+      "title": "Article 3 · Gestion locative · desktop",
+      "expand": "fill",
+      "page": "ressources"
+    },
+    "ArticleDesktop4.dc.html": {
+      "x": 7560,
+      "y": 0,
+      "w": 1440,
+      "h": 5340,
+      "title": "Article 4 · Vivre aux Chartrons · desktop",
+      "expand": "fill",
+      "page": "ressources"
+    },
+    "ArticleMobile.dc.html": {
+      "x": 9560,
+      "y": 0,
+      "w": 390,
+      "h": 5810,
+      "title": "Article · mobile (gabarit, article 1)",
+      "page": "ressources"
+    },
+    "AvisDesktop.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 2700,
+      "title": "Avis clients · desktop (filtres cliquables)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "agence"
+    },
+    "AvisMobile.dc.html": {
+      "x": 2000,
+      "y": 0,
+      "w": 390,
+      "h": 3080,
+      "title": "Avis clients · mobile",
+      "page": "agence"
+    },
+    "AgenceDesktop.dc.html": {
+      "x": 3000,
+      "y": 0,
+      "w": 1440,
+      "h": 3360,
+      "title": "L'agence · desktop",
+      "expand": "fill",
+      "page": "agence"
+    },
+    "AgenceMobile.dc.html": {
+      "x": 5000,
+      "y": 0,
+      "w": 390,
+      "h": 3780,
+      "title": "L'agence · mobile",
+      "page": "agence"
+    },
+    "ContactDesktop.dc.html": {
+      "x": 6000,
+      "y": 0,
+      "w": 1440,
+      "h": 2500,
+      "title": "Contact · desktop (projet et créneaux cliquables)",
+      "expand": "fill",
+      "is_interactive": true,
+      "page": "agence"
+    },
+    "ContactMobile.dc.html": {
+      "x": 8000,
+      "y": 0,
+      "w": 390,
+      "h": 3120,
+      "title": "Contact · mobile",
+      "page": "agence"
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Accueil-desktop-2.dc.html",
+    "Accueil-mobile-1.dc.html",
+    "Accueil-mobile-2.dc.html",
+    "VendreDesktop.dc.html",
+    "VendreMobile.dc.html",
+    "EstimDesktop.dc.html",
+    "EstimDesktopEtape2.dc.html",
+    "EstimDesktopResultat.dc.html",
+    "EstimMobile.dc.html",
+    "EstimMobileEtape2.dc.html",
+    "EstimMobileEtape3.dc.html",
+    "EstimMobileEtape4.dc.html",
+    "EstimMobileEtape5.dc.html",
+    "EstimMobileResultat.dc.html",
+    "AcheterDesktop.dc.html",
+    "AcheterMobile.dc.html",
+    "RechercheDesktop.dc.html",
+    "RechercheDesktopCarte.dc.html",
+    "RechercheMobile.dc.html",
+    "FicheDesktop.dc.html",
+    "FicheGalerie.dc.html",
+    "FicheMobile.dc.html",
+    "VendusDesktop.dc.html",
+    "VendusMobile.dc.html",
+    "GererDesktop.dc.html",
+    "GererMobile.dc.html",
+    "QuartiersDesktop.dc.html",
+    "QuartiersMobile.dc.html",
+    "QuartierDesktop.dc.html",
+    "QuartierBassinsDesktop.dc.html",
+    "QuartierMobile.dc.html",
+    "QuartierBassinsMobile.dc.html",
+    "EquipeDesktop.dc.html",
+    "EquipeMobile.dc.html",
+    "ConseillerDesktop.dc.html",
+    "ConseillerMobile.dc.html",
+    "RessourcesDesktop.dc.html",
+    "RessourcesMobile.dc.html",
+    "ArticleDesktop.dc.html",
+    "ArticleDesktop2.dc.html",
+    "ArticleDesktop3.dc.html",
+    "ArticleDesktop4.dc.html",
+    "ArticleMobile.dc.html",
+    "AvisDesktop.dc.html",
+    "AvisMobile.dc.html",
+    "AgenceDesktop.dc.html",
+    "AgenceMobile.dc.html",
+    "ContactDesktop.dc.html",
+    "ContactMobile.dc.html"
+  ],
+  "notes": {
+    "t_desktop": {
+      "x": 0,
+      "y": -300,
+      "text": "Accueil · desktop 1440 px",
+      "kind": "title1",
+      "maxW": 3440
+    },
+    "t_mobile": {
+      "x": 4000,
+      "y": -300,
+      "text": "Accueil · mobile 390 px",
+      "kind": "title1",
+      "maxW": 1340
+    },
+    "n_header": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "text": "EN-TÊTE FIXE\nIl se compacte au défilement (état compact en haut de la planche 2/2). Téléphone cliquable et « Estimer mon bien » toujours visibles. Barre utilitaire : barème d'honoraires accessible depuis toutes les pages.\nLogo : bloc typographique provisoire, à remplacer par le SVG officiel fourni par le réseau."
+    },
+    "n_hero": {
+      "x": 1520,
+      "y": 420,
+      "w": 400,
+      "fill": "gray",
+      "text": "HERO\nEmplacement vidéo (fichier à fournir), image de remplacement et voile réglable (Tweaks). Le champ adresse ouvre directement le module d'estimation, adresse pré-remplie.\nLa date de la note Google est à compléter."
+    },
+    "n_biens": {
+      "x": 1520,
+      "y": 2000,
+      "w": 400,
+      "fill": "teal",
+      "text": "DYNAMIQUE · ANNONCES\nCartes alimentées par le back-office, mêmes champs pour toutes : quartier, type, surface, pièces, prix honoraires inclus, part acquéreur, DPE / GES, badge Exclusivité.\nLa sélection « coup de cœur » se coche dans le back-office. Le mini-moteur envoie ses filtres vers la page de recherche."
+    },
+    "n_vendus": {
+      "x": 1520,
+      "y": 3720,
+      "w": 400,
+      "fill": "teal",
+      "text": "DYNAMIQUE · BIENS VENDUS\nUne annonce passée au statut « Vendu » apparaît ici automatiquement, avec son quartier et son délai de vente (champ à saisir).\nDonnées à fournir par l'agence : emplacements laissés vides."
+    },
+    "n_quartiers": {
+      "x": 1520,
+      "y": 4640,
+      "w": 400,
+      "fill": "gray",
+      "text": "QUARTIERS\nPrix moyen au m² volontairement vide : aucun chiffre inventé. Source à choisir avec l'agence.\nAvec de vraies photos, le cartouche blanc garantit la lisibilité du texte."
+    },
+    "n_estim": {
+      "x": 1520,
+      "y": 5900,
+      "w": 400,
+      "fill": "gray",
+      "text": "ESTIMATION\nParcours complet en 5 étapes + écran de résultat : prompt 2. Mention RGPD et consentement prévus sur chaque formulaire."
+    },
+    "n_compact": {
+      "x": 3520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "text": "EN-TÊTE COMPACTÉ\nÉtat après défilement : 64 px, sans barre utilitaire, logo réduit."
+    },
+    "n_equipe": {
+      "x": 3520,
+      "y": 360,
+      "w": 400,
+      "fill": "orange",
+      "text": "ÉQUIPE · À VÉRIFIER\nPortraits à fournir, avec l'accord écrit de chaque salarié.\nLa liste du prompt compte 21 personnes, le texte annonce 20 professionnels : chiffre à confirmer."
+    },
+    "n_avis": {
+      "x": 3520,
+      "y": 1500,
+      "w": 400,
+      "fill": "teal",
+      "text": "DYNAMIQUE · AVIS\nFlux Google mis à jour automatiquement (prénom, note, extrait, date). Défilement manuel uniquement, jamais automatique.\nAucun avis inventé : emplacements en attendant la connexion au flux. Mention sur le contrôle des avis à valider."
+    },
+    "n_ressources": {
+      "x": 3520,
+      "y": 3200,
+      "w": 400,
+      "fill": "teal",
+      "text": "DYNAMIQUE · RESSOURCES\nLes 3 derniers articles publiés depuis le back-office : catégorie, auteur (membre de l'équipe), temps de lecture, date de mise à jour."
+    },
+    "n_contact": {
+      "x": 3520,
+      "y": 3980,
+      "w": 400,
+      "fill": "gray",
+      "text": "CONTACT\nFormulaire court + prise de rendez-vous en ligne. Case de consentement RGPD obligatoire."
+    },
+    "n_footer": {
+      "x": 3520,
+      "y": 4800,
+      "w": 400,
+      "fill": "orange",
+      "text": "PIED DE PAGE · À COMPLÉTER\nMentions professionnelles obligatoires : n° de carte professionnelle et CCI, garant financier, assurance RCP, médiateur de la consommation."
+    },
+    "n_mobile": {
+      "x": 4940,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "text": "MOBILE\nBarre d'actions fixe en bas d'écran : Appeler · Estimer · Nos biens. Elle est montrée en bas de chaque planche.\nHero : image fixe à la place de la vidéo, pour la vitesse de chargement.\nUn seul groupe d'information par écran, rangées défilables au doigt."
+    },
+    "t_vendre": {
+      "x": 0,
+      "y": -300,
+      "text": "Vendre · desktop et mobile",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "vendre"
+    },
+    "t_estim": {
+      "x": 3000,
+      "y": -300,
+      "text": "Module d'estimation",
+      "kind": "title1",
+      "maxW": 4740,
+      "page": "vendre"
+    },
+    "n_v_seo": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "vendre",
+      "text": "SEO · STRUCTURE\nFil d'Ariane, un seul H1, hiérarchie de titres logique. Action principale : « Estimer mon bien », répétée en tête, en milieu et en fin de page."
+    },
+    "n_v_methode": {
+      "x": 1520,
+      "y": 960,
+      "w": 400,
+      "fill": "gray",
+      "page": "vendre",
+      "text": "MÉTHODE EN 4 ÉTAPES\nGrille alternée photo / texte. L'étape 4 présente Gwendoline Delaire, qui suit chaque vente du mandat à l'acte.\nPhotos de mise en situation à prévoir avec l'agence (pas de banque d'images)."
+    },
+    "n_v_preuves": {
+      "x": 1520,
+      "y": 2840,
+      "w": 400,
+      "fill": "teal",
+      "page": "vendre",
+      "text": "DYNAMIQUE · PREUVES\nLes 3 dernières ventes et les avis Google filtrés sur le service « vente ». Note Qualitelis transaction datée.\nAucun avis inventé."
+    },
+    "n_v_conseillers": {
+      "x": 1520,
+      "y": 3840,
+      "w": 400,
+      "fill": "orange",
+      "page": "vendre",
+      "text": "CONSEILLERS · À COMPLÉTER\nSecteur de chaque conseiller à fournir : il sert aussi à afficher le bon référent à la fin de l'estimation."
+    },
+    "n_v_faq": {
+      "x": 1520,
+      "y": 4980,
+      "w": 400,
+      "fill": "orange",
+      "page": "vendre",
+      "text": "FAQ VENDEURS · À VALIDER\nBalisage FAQPage (schema.org) prévu. Réponses courtes et prudentes : coût de l'estimation, délai moyen et liste des diagnostics à faire valider par l'agence."
+    },
+    "n_v_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "vendre",
+      "text": "VENDRE · MOBILE\nMêmes sections, empilées. Conseillers et ventes en rangées défilables au doigt. FAQ repliée. Barre d'actions fixe en bas."
+    },
+    "n_e_desktop": {
+      "x": 3000,
+      "y": 3060,
+      "w": 640,
+      "fill": "teal",
+      "page": "vendre",
+      "text": "PARCOURS D'ESTIMATION\nCliquez sur Lecture sur l'étape 1 pour parcourir les 5 étapes jusqu'au résultat. L'adresse saisie sur l'accueil arrive pré-remplie.\nRésultat : fourchette de prix, ou de loyer si le projet est de faire louer ou gérer. Aucun chiffre affiché tant que l'algorithme et sa source (DVF, base notariale…) ne sont pas choisis.\nLe conseiller référent est choisi selon le secteur de l'adresse."
+    },
+    "n_e_mobile": {
+      "x": 5000,
+      "y": 964,
+      "w": 640,
+      "fill": "gray",
+      "page": "vendre",
+      "text": "MOBILE\nUn seul groupe de questions par écran, gros boutons de choix (48 px min.), bouton Continuer toujours visible en bas. Consentement RGPD à l'étape 5."
+    },
+    "t_acheter": {
+      "x": 0,
+      "y": -300,
+      "text": "Acheter · desktop et mobile",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "acheter"
+    },
+    "n_a_role": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "acheter",
+      "text": "RÔLE DE LA PAGE\nPlus courte que « Vendre ». Action principale : la recherche, accessible dès le haut de page. Les acheteurs venus d'un portail arrivent plutôt sur une fiche bien ; cette page sert à ceux qui passent par le menu."
+    },
+    "n_a_search": {
+      "x": 1520,
+      "y": 560,
+      "w": 400,
+      "fill": "teal",
+      "page": "acheter",
+      "text": "DYNAMIQUE · RECHERCHE\nLe formulaire ouvre la page de recherche (prompt 4) avec les filtres pré-remplis. Les 3 derniers biens à vendre s'affichent automatiquement."
+    },
+    "n_a_financement": {
+      "x": 1520,
+      "y": 1700,
+      "w": 400,
+      "fill": "orange",
+      "page": "acheter",
+      "text": "DÉROULÉ · À CONFIRMER\nÉtape 5 : partenaires de financement (courtiers) à confirmer avec l'agence. Étape 6 : rôle exact de l'agence dans la rédaction de l'avant-contrat à valider."
+    },
+    "n_a_alerte": {
+      "x": 1520,
+      "y": 2400,
+      "w": 400,
+      "fill": "teal",
+      "page": "acheter",
+      "text": "DYNAMIQUE · ALERTE E-MAIL\nUn e-mail à chaque nouveau bien correspondant, géré par le back-office. Critères repris de la dernière recherche. Consentement RGPD et désinscription en un clic."
+    },
+    "n_a_vendeur": {
+      "x": 1520,
+      "y": 2960,
+      "w": 400,
+      "fill": "gray",
+      "page": "acheter",
+      "text": "PASSERELLE VERS L'ESTIMATION\nPour les acheteurs qui ont aussi un bien à vendre : l'adresse saisie ouvre le module d'estimation."
+    },
+    "n_a_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "acheter",
+      "text": "ACHETER · MOBILE\nRecherche directement sous le titre, déroulé vertical, barre d'actions fixe en bas."
+    },
+    "t_recherche": {
+      "x": 0,
+      "y": -300,
+      "text": "Recherche de biens",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "biens"
+    },
+    "t_fiche": {
+      "x": 3000,
+      "y": -300,
+      "text": "Fiche bien",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "biens"
+    },
+    "t_vendus": {
+      "x": 6000,
+      "y": -300,
+      "text": "Biens vendus",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "biens"
+    },
+    "n_r_dyn": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "biens",
+      "text": "DYNAMIQUE · RECHERCHE\nLes 8 annonces viennent du back-office. Filtres et tri s'appliquent sans recharger la page ; l'adresse de la page garde les filtres (partage, retour arrière, SEO).\nBarre de filtres fixe au défilement."
+    },
+    "n_r_carte": {
+      "x": 1520,
+      "y": 2360,
+      "w": 400,
+      "fill": "gray",
+      "page": "biens",
+      "text": "VUE CARTE\nListe à gauche, carte à droite qui reste visible. Une étiquette de prix par bien. Fond de carte sobre, aux couleurs de la charte. Fournisseur de carte à choisir au développement."
+    },
+    "n_r_alerte": {
+      "x": 1520,
+      "y": 620,
+      "w": 400,
+      "fill": "teal",
+      "page": "biens",
+      "text": "ALERTE\n« Créer une alerte » enregistre les filtres en cours et l'e-mail ; envoi automatique à chaque nouveau bien correspondant."
+    },
+    "n_r_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "biens",
+      "text": "RECHERCHE · MOBILE\nFiltres dans un panneau, barre Filtres · Trier · Carte fixe en haut. Cartes de biens empilées."
+    },
+    "n_f_gabarit": {
+      "x": 4520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "biens",
+      "text": "GABARIT ALIMENTÉ PAR DONNÉES\nMêmes champs pour toutes les annonces : galerie, vidéo, visite virtuelle, plan, points forts, description, caractéristiques, DPE / GES, dépenses d'énergie, copropriété, conseiller, quartier.\nUn champ vide masque son bloc."
+    },
+    "n_f_legal": {
+      "x": 4520,
+      "y": 2300,
+      "w": 400,
+      "fill": "orange",
+      "page": "biens",
+      "text": "MENTIONS OBLIGATOIRES\nPrix honoraires inclus et part acquéreur ; classes DPE et GES ; fourchette de dépenses d'énergie avec année de référence ; mention « logement à consommation énergétique excessive » si F ou G ; copropriété ; lien Géorisques.\nToutes les valeurs du Palais Gallien sont à fournir."
+    },
+    "n_f_conseiller": {
+      "x": 4520,
+      "y": 700,
+      "w": 400,
+      "fill": "orange",
+      "page": "biens",
+      "text": "CONSEILLER DU BIEN · À FOURNIR\nNom, photo et ligne directe du conseiller en charge du bien. Le bouton « Demander une visite » ouvre un formulaire court."
+    },
+    "n_f_quartier": {
+      "x": 4520,
+      "y": 3300,
+      "w": 400,
+      "fill": "orange",
+      "page": "biens",
+      "text": "QUARTIER\nLe Palais Gallien ne fait pas partie des 6 secteurs du prompt : choisir la page quartier vers laquelle renvoyer."
+    },
+    "n_f_galerie": {
+      "x": 4520,
+      "y": 5592,
+      "w": 400,
+      "fill": "gray",
+      "page": "biens",
+      "text": "GALERIE PLEIN ÉCRAN\nOuverte au clic sur une photo. Navigation au clavier et au doigt, compteur, onglets Photos · Vidéo · Visite virtuelle · Plan."
+    },
+    "n_f_mobile": {
+      "x": 5470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "biens",
+      "text": "FICHE · MOBILE\nGalerie en tête, défilable au doigt. Barre fixe propre à la fiche : Appeler · Demander une visite."
+    },
+    "n_v_dyn": {
+      "x": 7520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "biens",
+      "text": "DYNAMIQUE · BIENS VENDUS\nUne annonce passée au statut « Vendu » rejoint cette page automatiquement. Champ « délai de vente » à saisir dans le back-office. Prix de vente non affiché, sauf accord du vendeur."
+    },
+    "n_v_mob": {
+      "x": 8470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "biens",
+      "text": "BIENS VENDUS · MOBILE\nFiltres par quartier en rangée défilable, grille sur 2 colonnes."
+    },
+    "t_gerer": {
+      "x": 0,
+      "y": -300,
+      "text": "Faire louer ou gérer · desktop et mobile",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "gerer"
+    },
+    "n_g_offres": {
+      "x": 1520,
+      "y": 900,
+      "w": 400,
+      "fill": "orange",
+      "page": "gerer",
+      "text": "OFFRES · À VALIDER\nContenu des deux offres repris de l'article « Ce que fait vraiment votre gestionnaire ». Aucun tarif affiché : renvoi au barème.\nGarantie des loyers impayés, périodicité du relevé de gérance : à confirmer avec l'agence."
+    },
+    "n_g_dpe": {
+      "x": 1520,
+      "y": 2200,
+      "w": 400,
+      "fill": "gray",
+      "page": "gerer",
+      "text": "ENCART DPE\nCalendrier vérifié : G interdit à la location depuis le 1er janvier 2025, F en 2028, E en 2034. Renvoie vers l'article DPE 2026."
+    },
+    "n_g_cta": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "gerer",
+      "text": "ACTION PRINCIPALE\n« Estimer mon loyer » ouvre le module d'estimation, projet « Faire louer » ou « Confier la gestion » : le résultat affiche alors une fourchette de loyer."
+    },
+    "n_g_faq": {
+      "x": 1520,
+      "y": 5100,
+      "w": 400,
+      "fill": "orange",
+      "page": "gerer",
+      "text": "FAQ BAILLEURS · À METTRE À JOUR\nLa réponse sur l'encadrement des loyers dépend du vote définitif de la prolongation (fin prévue le 24 novembre 2026). Deux réponses restent à fournir par l'agence. Balisage FAQPage prévu."
+    },
+    "n_g_equipe": {
+      "x": 1520,
+      "y": 3900,
+      "w": 400,
+      "fill": "orange",
+      "page": "gerer",
+      "text": "ÉQUIPE · À VÉRIFIER\nRôles repris du prompt. Intitulé de poste de Marie Brac de la Perrière (« assistante ») à préciser : gestion ou agence ?"
+    },
+    "n_g_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "gerer",
+      "text": "MOBILE\nLes deux offres sont empilées, gestion en fond sombre. Équipe en rangée défilable, FAQ repliée."
+    },
+    "t_q_overview": {
+      "x": 0,
+      "y": -300,
+      "text": "Nos quartiers",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "quartiers"
+    },
+    "t_q_pages": {
+      "x": 3000,
+      "y": -300,
+      "text": "Pages quartier : Chartrons et Bassins à flot",
+      "kind": "title1",
+      "maxW": 4860,
+      "page": "quartiers"
+    },
+    "n_qo_map": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "orange",
+      "page": "quartiers",
+      "text": "CARTE STYLISÉE · À VALIDER\nCarte simplifiée, pas une carte géographique exacte : la position relative des 6 secteurs est approximative et doit être validée par l'agence (en particulier allée Haussmann et Parc Rivière).\nCliquer un secteur met à jour la fiche à droite."
+    },
+    "n_qo_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "quartiers",
+      "text": "NOS QUARTIERS · MOBILE\nCarte réduite en tête, puis liste des 6 secteurs avec vignette photo."
+    },
+    "n_q_gabarit": {
+      "x": 4520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "quartiers",
+      "text": "UN SEUL GABARIT\nChartrons et Bassins à flot utilisent le même fichier, alimenté par des données (réglage « quartier » dans Tweaks). Les 4 autres secteurs suivront le même modèle.\nAuteur et date de mise à jour affichés sous le titre (SEO et moteurs IA)."
+    },
+    "n_q_bref": {
+      "x": 4520,
+      "y": 820,
+      "w": 400,
+      "fill": "orange",
+      "page": "quartiers",
+      "text": "EN BREF · À FAIRE VALIDER\nPoints factuels limités à ce qui est connu et vérifiable (histoire du quartier, rue Notre-Dame, tram B, Jardin Public, Cité du Vin, base sous-marine). Les lignes de bus, écoles et commerces restent à compléter par l'agence."
+    },
+    "n_q_marche": {
+      "x": 4520,
+      "y": 1520,
+      "w": 400,
+      "fill": "orange",
+      "page": "quartiers",
+      "text": "MARCHÉ · AUCUN CHIFFRE INVENTÉ\nPrix au m², évolution, délai de vente et graphique sont des emplacements. Source à choisir (DVF, base notariale, données de l'agence) et à afficher avec sa date."
+    },
+    "n_q_bassins": {
+      "x": 6520,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "quartiers",
+      "text": "BASSINS À FLOT · ÉTAT VIDE\nAucune des 8 annonces n'y est située : la page montre l'état « aucun bien en vente » avec la création d'alerte. Les biens vendus restent visibles."
+    },
+    "n_q_mobile": {
+      "x": 7940,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "quartiers",
+      "text": "PAGES QUARTIER · MOBILE\nMême gabarit, sections empilées, biens en rangée défilable. Barre d'actions fixe en bas."
+    },
+    "t_equipe": {
+      "x": 0,
+      "y": -300,
+      "text": "L'équipe",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "equipe"
+    },
+    "t_conseiller": {
+      "x": 3000,
+      "y": -300,
+      "text": "Fiche conseiller",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "equipe"
+    },
+    "n_eq_filtres": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "equipe",
+      "text": "FILTRES PAR PÔLE\nDirection, Transaction, Suivi des ventes, Location, Gestion locative, Accueil. Barre de filtres fixe au défilement. Cliquez une carte de Grégory Coutant pour ouvrir sa fiche."
+    },
+    "n_eq_donnees": {
+      "x": 1520,
+      "y": 640,
+      "w": 400,
+      "fill": "orange",
+      "page": "equipe",
+      "text": "À FOURNIR PAR L'AGENCE\nPortraits (avec accord écrit de chacun), spécialité et quartiers de chaque conseiller transaction. La liste du prompt compte 21 personnes : chiffre « 20 professionnels » à corriger ou confirmer.\nBalisage schema.org Person prévu pour chaque fiche."
+    },
+    "n_eq_mobile": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "equipe",
+      "text": "ÉQUIPE · MOBILE\nFiltres en rangée défilable, grille sur 2 colonnes."
+    },
+    "n_c_contenu": {
+      "x": 4520,
+      "y": 0,
+      "w": 400,
+      "fill": "orange",
+      "page": "equipe",
+      "text": "FICHE CONSEILLER · À RÉDIGER\nPrésentation à la première personne, spécialité et apport concret : à faire rédiger par Grégory Coutant.\nAucun bien ne lui est attribué dans la maquette : ses biens en cours et vendus seront filtrés par le back-office."
+    },
+    "n_c_rdv": {
+      "x": 4520,
+      "y": 3500,
+      "w": 400,
+      "fill": "teal",
+      "page": "equipe",
+      "text": "PRISE DE RENDEZ-VOUS\nCréneaux reliés à l'agenda du conseiller (outil à choisir). Les créneaux affichés sont des exemples d'interface. Cliquables dans la maquette."
+    },
+    "n_c_mobile": {
+      "x": 5470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "equipe",
+      "text": "FICHE · MOBILE\nBarre fixe propre à la fiche : Appeler · Prendre rendez-vous."
+    },
+    "t_ress": {
+      "x": 0,
+      "y": -300,
+      "text": "Ressources",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "ressources"
+    },
+    "t_articles": {
+      "x": 3000,
+      "y": -300,
+      "text": "Gabarit article · 4 articles",
+      "kind": "title1",
+      "maxW": 6000,
+      "page": "ressources"
+    },
+    "t_amobile": {
+      "x": 9560,
+      "y": -300,
+      "text": "Article · mobile",
+      "kind": "title1",
+      "maxW": 870,
+      "page": "ressources"
+    },
+    "n_r_dyn2": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "ressources",
+      "text": "DYNAMIQUE · RESSOURCES\nArticles publiés depuis le back-office : catégorie, auteur (membre de l'équipe), date de mise à jour, temps de lecture calculé automatiquement. Filtres par catégorie cliquables. Inscription à la lettre d'information des propriétaires avec consentement."
+    },
+    "n_r_mob2": {
+      "x": 2470,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "ressources",
+      "text": "RESSOURCES · MOBILE\nArticle à la une, filtres en rangée défilable, liste compacte."
+    },
+    "n_art_gabarit": {
+      "x": 9080,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "ressources",
+      "text": "UN SEUL GABARIT D'ARTICLE\nTitre, chapeau, auteur et date, image, sommaire fixe, En bref, intertitres, encadré « Le conseil de l'agence », FAQ de 3 questions (balisage FAQPage), appel à l'action adapté au sujet, articles liés.\nLes 4 articles utilisent le même fichier (réglage « article » dans Tweaks)."
+    },
+    "n_art_faits": {
+      "x": 9080,
+      "y": 720,
+      "w": 400,
+      "fill": "orange",
+      "page": "ressources",
+      "text": "RÉDACTION · À RELIRE PAR L'AGENCE\n500 à 700 mots par article. Seuls les faits fournis sont utilisés ; le reste est entre [crochets].\nArticle 1 : faits DPE vérifiés (arrêté du 13 août 2025, JO du 26 août 2025, coefficient 2,3 → 1,9, calendrier G 2025 / F 2028 / E 2034). Le chiffre de 850 000 logements est présenté comme l'estimation initiale du gouvernement."
+    },
+    "n_art_mobile": {
+      "x": 10030,
+      "y": 0,
+      "w": 400,
+      "fill": "gray",
+      "page": "ressources",
+      "text": "ARTICLE · MOBILE\nSommaire replié en tête, puis le même contenu en une colonne. Les 4 articles s'affichent avec le même gabarit (réglage « article »)."
+    },
+    "t_avis": {
+      "x": 0,
+      "y": -300,
+      "text": "Avis clients",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "agence"
+    },
+    "t_agence": {
+      "x": 3000,
+      "y": -300,
+      "text": "L'agence",
+      "kind": "title1",
+      "maxW": 2390,
+      "page": "agence"
+    },
+    "t_contact": {
+      "x": 6000,
+      "y": -300,
+      "text": "Contact",
+      "kind": "title1",
+      "maxW": 2870,
+      "page": "agence"
+    },
+    "n_av_dyn": {
+      "x": 1520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "agence",
+      "text": "DYNAMIQUE · AVIS\nFlux Google mis à jour automatiquement, filtrable par service (vente, location, gestion). Le service de chaque avis est attribué dans le back-office. Notes globales datées.\nAucun avis inventé : emplacements."
+    },
+    "n_av_legal": {
+      "x": 1520,
+      "y": 700,
+      "w": 400,
+      "fill": "orange",
+      "page": "agence",
+      "text": "INFORMATION SUR LES AVIS · À VALIDER\nLe Code de la consommation impose d'indiquer si les avis font l'objet d'un contrôle et comment ils sont classés. Texte de l'encart à valider par l'agence.\nAvis mis en avant : uniquement avec l'accord du client."
+    },
+    "n_ag_contenu": {
+      "x": 4520,
+      "y": 0,
+      "w": 400,
+      "fill": "orange",
+      "page": "agence",
+      "text": "L'AGENCE · À FOURNIR\nMot de Dominique et Myriam Rollin, photo de l'agence et de l'équipe, distinction Centurion (années à confirmer, 2026 incluse), visuel officiel de la distinction fourni par le réseau.\nBalisage RealEstateAgent prévu."
+    },
+    "n_ct_form": {
+      "x": 7520,
+      "y": 0,
+      "w": 400,
+      "fill": "teal",
+      "page": "agence",
+      "text": "CONTACT\nFormulaire court par type de projet : il oriente la demande vers le bon pôle. Prise de rendez-vous en ligne (outil à choisir). Consentement RGPD.\nAccès (tram, stationnement) et horaire du samedi : à compléter."
+    }
+  },
+  "designSystems": []
+}

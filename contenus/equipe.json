@@ -1,0 +1,310 @@
+{
+  "_source": "21 personnes (le texte du site annonce 20 professionnels : à confirmer). Aucune photo ni nom publié sans accord écrit (accordPublication).",
+  "poles": [
+    {
+      "id": "direction",
+      "nom": "Direction",
+      "desc": "Les gérants de l'agence depuis 2013."
+    },
+    {
+      "id": "transaction",
+      "nom": "Transaction",
+      "desc": "Estimation, vente et accompagnement des acquéreurs."
+    },
+    {
+      "id": "suivi-des-ventes",
+      "nom": "Suivi des ventes",
+      "desc": "Du mandat à l'acte authentique."
+    },
+    {
+      "id": "location",
+      "nom": "Location",
+      "desc": "Mise en location dans toute la métropole."
+    },
+    {
+      "id": "gestion-locative",
+      "nom": "Gestion locative",
+      "desc": "Plus de 600 biens gérés au quotidien."
+    },
+    {
+      "id": "accueil",
+      "nom": "Accueil",
+      "desc": "Votre premier contact, au téléphone et à l'agence."
+    }
+  ],
+  "membres": [
+    {
+      "slug": "dominique-rollin",
+      "nom": "Dominique Rollin",
+      "role": "Gérant · Direction transaction",
+      "pole": "direction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "myriam-rollin",
+      "nom": "Myriam Rollin",
+      "role": "Gérante · Direction gestion et location",
+      "pole": "direction",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "gregory-coutant",
+      "nom": "Grégory Coutant",
+      "role": "Manager transaction [rôle exact à confirmer]",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "mely-potet",
+      "nom": "Mély Potet",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "adeline-selles",
+      "nom": "Adeline Selles",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "mathilde-rollin",
+      "nom": "Mathilde Rollin",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "thomas-boret",
+      "nom": "Thomas Boret",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "gregory-bourdil",
+      "nom": "Grégory Bourdil",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "laurence-lebreton",
+      "nom": "Laurence Lebreton",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "alois-phalip",
+      "nom": "Aloïs Phalip",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "mathieu-seninck",
+      "nom": "Mathieu Seninck",
+      "role": "Transaction",
+      "pole": "transaction",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "gwendoline-delaire",
+      "nom": "Gwendoline Delaire",
+      "role": "Suivi des ventes",
+      "pole": "suivi-des-ventes",
+      "specialite": "Du mandat à l'acte",
+      "secteurs": "Tous les secteurs",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "elodie-fournier",
+      "nom": "Elodie Fournier",
+      "role": "Location",
+      "pole": "location",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "claire-chevet",
+      "nom": "Claire Chevet",
+      "role": "Location",
+      "pole": "location",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "lena-duporte",
+      "nom": "Léna Duporté",
+      "role": "Location",
+      "pole": "location",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "gwenaelle-aubin",
+      "nom": "Gwenaelle Aubin",
+      "role": "Gestion locative",
+      "pole": "gestion-locative",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "georgia-cross",
+      "nom": "Georgia Cross",
+      "role": "Gestion locative",
+      "pole": "gestion-locative",
+      "specialite": null,
+      "secteurs": "Toute la métropole",
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "cecile-boirie",
+      "nom": "Cécile Boirie",
+      "role": "Gestionnaire comptable",
+      "pole": "gestion-locative",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "marie-brac-de-la-perriere",
+      "nom": "Marie Brac de la Perrière",
+      "role": "Assistante [gestion locative ou agence : à préciser]",
+      "pole": "gestion-locative",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "avrile-piveteau",
+      "nom": "Avrile Piveteau",
+      "role": "Accueil",
+      "pole": "accueil",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    },
+    {
+      "slug": "lucas-michelon",
+      "nom": "Lucas Michelon",
+      "role": "Accueil",
+      "pole": "accueil",
+      "specialite": null,
+      "secteurs": null,
+      "telephoneDirect": null,
+      "email": null,
+      "photo": null,
+      "accordPublication": false,
+      "presentation": null
+    }
+  ]
+}

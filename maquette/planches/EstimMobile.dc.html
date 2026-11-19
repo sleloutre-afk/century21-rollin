@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Estimation en ligne · mobile · Cabinet Rollin – CENTURY 21 Les Chartrons</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; font-family: Oakes, Arial, Helvetica, sans-serif; color: #252526; background: #FFFFFF">
+
+  <header style="height: 56px; flex: none; box-sizing: border-box; padding: 0 8px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E6E7E8">
+    <a href="Accueil-mobile-1.dc.html" aria-label="Quitter l'estimation" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; color: #252526">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </a>
+    <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase">{{stepLabel}}</span>
+    <a href="tel:+33557877979" aria-label="Appeler l'agence au 05 57 87 79 79" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; color: #252526">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>
+    </a>
+  </header>
+  <div role="progressbar" aria-label="Progression de l'estimation" aria-valuemin="0" aria-valuemax="5" aria-valuenow="{{progressNow}}" style="height: 4px; flex: none; background: #E6E7E8">
+    <div style="height: 4px; background: #252526; width: {{progressPct}}; transition: width .5s"></div>
+  </div>
+
+  <main style="flex: 1; min-height: 0; overflow-y: auto; box-sizing: border-box; padding: 28px 24px; display: flex; flex-direction: column; gap: 24px">
+
+    <sc-if value="{{s1}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Adresse</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Où se situe votre bien ?</h1>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5">On l'estime à la rue près.</p>
+      </div>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Adresse du bien
+        <input type="text" placeholder="Numéro et rue, Bordeaux" autocomplete="street-address" style="height: 60px; box-sizing: border-box; border: 1px solid #252526; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526">
+      </label>
+      <div style="display: flex; flex-direction: column; border-top: 1px solid #E6E7E8">
+        <span style="min-height: 52px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #E6E7E8; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>[Suggestion d'adresse 1]</span>
+        <span style="min-height: 52px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #E6E7E8; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>[Suggestion d'adresse 2]</span>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{s2}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Votre bien</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Parlez-nous de votre bien</h1>
+      </div>
+      <fieldset style="border: 0; margin: 0; padding: 0">
+        <legend style="font-size: 14px; padding: 0; margin-bottom: 10px">Type de bien</legend>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+          <sc-for list="{{typeOpts}}" as="o" hint-placeholder-count="2">
+            <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="height: 56px; border: 1px solid #252526; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, sans-serif; font-size: 16px">{{o.label}}</button></sc-if>
+            <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="height: 56px; border: 1px solid #808285; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 16px">{{o.label}}</button></sc-if>
+          </sc-for>
+        </div>
+      </fieldset>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Surface habitable (m²)<input type="number" inputmode="decimal" placeholder="Ex. 75" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Pièces<input type="number" inputmode="numeric" placeholder="Ex. 3" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526; width: 100%"></label>
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Chambres<input type="number" inputmode="numeric" placeholder="Ex. 2" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526; width: 100%"></label>
+      </div>
+      <sc-if value="{{isMaison}}" hint-placeholder-val="{{ false }}">
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Terrain (m²)<input type="number" inputmode="decimal" placeholder="Ex. 120" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+      </sc-if>
+    </sc-if>
+
+    <sc-if value="{{s3}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Caractéristiques</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Quelques précisions</h1>
+      </div>
+      <sc-for list="{{groups3}}" as="g" hint-placeholder-count="3">
+        <fieldset style="border: 0; margin: 0; padding: 0">
+          <legend style="font-size: 14px; padding: 0; margin-bottom: 10px">{{g.legend}}</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{g.opts}}" as="o" hint-placeholder-count="4">
+              <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="min-height: 48px; padding: 0 16px; border: 1px solid #252526; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, sans-serif; font-size: 15px">{{o.label}}</button></sc-if>
+              <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="min-height: 48px; padding: 0 16px; border: 1px solid #808285; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 15px">{{o.label}}</button></sc-if>
+            </sc-for>
+          </div>
+        </fieldset>
+      </sc-for>
+    </sc-if>
+
+    <sc-if value="{{s4}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Votre projet</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Quel est votre projet ?</h1>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <sc-for list="{{projetOpts}}" as="o" hint-placeholder-count="4">
+          <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="min-height: 76px; padding: 14px 18px; border: 1px solid #252526; background: #252526; color: #FFFFFF; text-align: left; display: flex; flex-direction: column; gap: 4px; font-family: Oakes, Arial, sans-serif"><span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 21px; font-weight: 500; text-transform: uppercase">{{o.label}}</span><span style="font-size: 13px; color: #E6E7E8">{{o.sub}}</span></button></sc-if>
+          <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="min-height: 76px; padding: 14px 18px; border: 1px solid #808285; background: #FFFFFF; color: #252526; text-align: left; display: flex; flex-direction: column; gap: 4px; font-family: Oakes, Arial, sans-serif"><span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 21px; font-weight: 500; text-transform: uppercase">{{o.label}}</span><span style="font-size: 13px">{{o.sub}}</span></button></sc-if>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{s5}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Coordonnées</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Où vous envoyer votre estimation ?</h1>
+      </div>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Prénom et nom<input type="text" autocomplete="name" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">E-mail<input type="email" autocomplete="email" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px">Téléphone<input type="tel" autocomplete="tel" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+      <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 13px; line-height: 1.5"><input type="checkbox" style="width: 20px; height: 20px; margin: 0; flex: none; accent-color: #252526">J'accepte que mes données servent à mon estimation et à être recontacté. [Mention RGPD à rédiger]</label>
+    </sc-if>
+
+    <sc-if value="{{s6}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase">Votre résultat</p>
+        <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1.02; text-transform: uppercase">Votre première fourchette</h1>
+      </div>
+      <div style="background: #BEAF87; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+        <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase">{{resultLabel}}</span>
+        <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 38px; font-weight: 600; line-height: 1">{{resultRange}}</span>
+        <span style="font-size: 13px">{{resultSub}}</span>
+      </div>
+      <p style="margin: 0; font-size: 13px; line-height: 1.5">Fourchette indicative, calculée à partir de [source des données]. Seule la visite d'un expert permet d'établir un prix précis.</p>
+      <div style="display: flex; align-items: center; gap: 14px; background: #252526; color: #FFFFFF; padding: 14px">
+        <div aria-hidden="true" style="width: 64px; height: 80px; flex: none; background: #3A3A3B"></div>
+        <div style="display: flex; flex-direction: column; gap: 3px">
+          <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #BEAF87">Votre conseiller référent</span>
+          <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 20px; font-weight: 500">[Prénom Nom]</span>
+          <span style="font-size: 13px; color: #E6E7E8">Secteur [Chartrons] · [ligne directe]</span>
+        </div>
+      </div>
+      <a href="#" style="display: flex; align-items: center; justify-content: center; text-align: center; min-height: 56px; padding: 0 12px; background: #252526; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase">Être rappelé par un expert</a>
+      <a href="#" style="display: flex; align-items: center; justify-content: center; text-align: center; min-height: 56px; padding: 0 12px; border: 1px solid #252526; color: #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase">Recevoir seulement l'estimation</a>
+      <button type="button" onClick="{{restart}}" style="align-self: center; min-height: 44px; border: 0; background: transparent; font-family: Oakes, Arial, sans-serif; font-size: 14px; color: #252526; text-decoration: underline">Modifier mes réponses</button>
+    </sc-if>
+  </main>
+
+  <sc-if value="{{showNav}}" hint-placeholder-val="{{ true }}">
+    <div style="flex: none; box-sizing: border-box; padding: 14px 16px 18px; border-top: 1px solid #E6E7E8; background: #FFFFFF; display: flex; gap: 10px">
+      <sc-if value="{{canBack}}" hint-placeholder-val="{{ false }}">
+        <button type="button" aria-label="Étape précédente" onClick="{{back}}" style="width: 56px; height: 56px; flex: none; border: 1px solid #252526; background: #FFFFFF; color: #252526; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+      </sc-if>
+      <button type="button" onClick="{{next}}" style="flex: 1; height: 56px; border: 0; background: #BEAF87; color: #252526; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase">{{nextLabel}}</button>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"startStep":{"editor":"enum","options":[1,2,3,4,5,6],"default":1},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const s = Number(props.startStep) || 1;
+    this.state = { step: s, type: 'Appartement', epoque: 'Avant 1949', etat: 'Bon état', parking: 'Aucun', projet: 'Vendre' };
+  }
+  componentDidUpdate(prev) {
+    if (prev.startStep !== this.props.startStep) this.setState({ step: Number(this.props.startStep) || 1 });
+  }
+  renderVals() {
+    const st = this.state;
+    const step = st.step;
+    const self = this;
+    const opts = (key, labels) => labels.map((l) => ({ label: l, on: st[key] === l, off: st[key] !== l, pick: () => self.setState({ [key]: l }) }));
+    const louer = st.projet === 'Faire louer' || st.projet === 'Confier la gestion';
+    return {
+      s1: step === 1, s2: step === 2, s3: step === 3, s4: step === 4, s5: step === 5, s6: step === 6,
+      showNav: step < 6,
+      canBack: step > 1 && step < 6,
+      nextLabel: step === 5 ? 'Voir mon estimation' : 'Continuer',
+      stepLabel: step === 6 ? 'Résultat' : ('Étape ' + step + ' / 5'),
+      progressNow: Math.min(step, 5),
+      progressPct: (Math.min(step, 5) * 20) + '%',
+      next: () => this.setState({ step: Math.min(step + 1, 6) }),
+      back: () => this.setState({ step: Math.max(step - 1, 1) }),
+      restart: () => this.setState({ step: 1 }),
+      isMaison: st.type === 'Maison',
+      typeOpts: opts('type', ['Appartement', 'Maison']),
+      groups3: [
+        { legend: 'Époque de construction', opts: opts('epoque', ['Avant 1949', '1949 – 1974', '1975 – 2000', 'Après 2000']) },
+        { legend: 'État général', opts: opts('etat', ['À rénover', 'À rafraîchir', 'Bon état', 'Refait à neuf']) },
+        { legend: 'Stationnement', opts: opts('parking', ['Aucun', 'Place de parking', 'Box ou garage']) }
+      ],
+      projetOpts: [
+        { label: 'Vendre', sub: 'Estimer le prix de vente' },
+        { label: 'Faire louer', sub: 'Estimer le loyer' },
+        { label: 'Confier la gestion', sub: 'Estimer le loyer et la gestion' },
+        { label: 'Simple curiosité', sub: 'Connaître la valeur de mon bien' }
+      ].map((o) => ({ ...o, on: st.projet === o.label, off: st.projet !== o.label, pick: () => self.setState({ projet: o.label }) })),
+      resultLabel: louer ? 'Loyer mensuel estimé, hors charges' : 'Prix de vente estimé',
+      resultRange: louer ? 'X XXX € – X XXX €' : 'XXX 000 € – XXX 000 €',
+      resultSub: louer ? 'Plafond de l’encadrement vérifié [si le dispositif est prolongé]' : 'Soit [X XXX] € / m²'
+    };
+  }
+}
+</script>
+</body>
+</html>

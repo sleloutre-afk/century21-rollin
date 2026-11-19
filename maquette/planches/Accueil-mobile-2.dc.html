@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil mobile 2/2 · Cabinet Rollin – CENTURY 21 Les Chartrons</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#252526}a:hover{color:#000000}
+.card{text-decoration:none;color:#252526}
+.flink{color:#E6E7E8;text-decoration:none}
+.scroller{scrollbar-width:none}
+.scroller::-webkit-scrollbar{display:none}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid #A19276;outline-offset:2px}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 5216px; font-family: Oakes, Arial, Helvetica, sans-serif; color: #252526; background: #FFFFFF; display: flex; flex-direction: column">
+
+<header style="position: sticky; top: 0; z-index: 50; height: 64px; background: #FFFFFF; border-bottom: 1px solid #E6E7E8; padding: 0 16px 0 20px; display: flex; align-items: center; justify-content: space-between">
+  <a href="#" aria-label="Cabinet Rollin – CENTURY 21 Les Chartrons, accueil" style="display: flex; flex-direction: column; gap: 3px; text-decoration: none; color: #252526">
+    <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; font-size: 19px; letter-spacing: 0.07em; line-height: 1">CENTURY 21.</span>
+    <span style="font-size: 11px; line-height: 1">Cabinet Rollin · Les Chartrons</span>
+  </a>
+  <div style="display: flex; gap: 4px">
+    <a href="tel:+33557877979" aria-label="Appeler l'agence au 05 57 87 79 79" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; color: #252526">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>
+    </a>
+    <button type="button" aria-label="Ouvrir le menu" style="width: 48px; height: 48px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; color: #252526">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg>
+    </button>
+  </div>
+</header>
+
+<main style="flex: 1">
+<!-- ÉQUIPE -->
+<section aria-labelledby="m-h-equipe" style="min-height: 720px; padding: 56px 0; display: flex; flex-direction: column; gap: 24px">
+  <div style="padding: 0 24px; display: flex; flex-direction: column; gap: 12px">
+    <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase">L'équipe</p>
+    <h2 id="m-h-equipe" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; text-transform: uppercase">Un spécialiste pour chaque besoin</h2>
+    <p style="margin: 0; font-size: 15px; line-height: 1.45">Chacun son rôle, tous au service de votre projet.</p>
+  </div>
+  <div class="scroller" style="display: flex; gap: 14px; overflow-x: auto; padding: 0 24px; scroll-snap-type: x mandatory">
+    <sc-for list="{{team}}" as="p" hint-placeholder-count="4">
+      <a class="card" href="#" style="flex: 0 0 220px; scroll-snap-align: start; display: flex; flex-direction: column; gap: 12px">
+        <div style="position: relative; height: 275px; background: #E6E7E8; display: flex; align-items: flex-end; padding: 12px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase">Portrait à fournir</span><span style="position: absolute; top: 12px; left: 12px; background: #252526; color: #BEAF87; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; padding: 4px 8px">{{p.pole}}</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <h3 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 21px">{{p.nom}}</h3>
+          <span style="font-size: 14px">{{p.role}}</span>
+        </div>
+      </a>
+    </sc-for>
+  </div>
+  <a href="#" style="margin: 0 24px; align-self: flex-start; font-size: 15px; font-weight: bold; text-decoration: none; border-bottom: 1px solid #252526; padding-bottom: 2px">Toute l'équipe →</a>
+</section>
+
+<!-- AVIS -->
+<section aria-labelledby="m-h-avis" style="min-height: 900px; padding: 56px 24px; background: #E6E7E8; display: flex; flex-direction: column; gap: 20px">
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase">Avis clients</p>
+    <h2 id="m-h-avis" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; text-transform: uppercase">Ils nous ont confié leur projet</h2>
+  </div>
+  <div style="background: #252526; color: #FFFFFF; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+    <div style="display: flex; align-items: baseline; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 72px; font-weight: 500; line-height: 0.9; color: #BEAF87">4,8</span><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 24px">/5</span></div>
+    <div style="display: flex; flex-direction: column; gap: 6px; text-align: right"><span aria-label="Note moyenne 4,8 sur 5" style="color: #BEAF87; font-size: 18px; letter-spacing: 3px">★★★★★</span><span style="font-size: 13px; color: #E6E7E8">468 avis Google<br>au [date]</span></div>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+    <div style="background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase">Qualitelis · Vente</span><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 40px; font-weight: 500; line-height: 1">9,2<span style="font-size: 18px">/10</span></span><span style="font-size: 11px">Au [date]</span></div>
+    <div style="background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase">Qualitelis · Gestion</span><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 40px; font-weight: 500; line-height: 1">9,3<span style="font-size: 18px">/10</span></span><span style="font-size: 11px">Au [date]</span></div>
+  </div>
+  <figure style="margin: 0; background: #FFFFFF; padding: 24px; display: flex; flex-direction: column; gap: 14px; min-height: 220px">
+    <div style="display: flex; justify-content: space-between; align-items: center"><span aria-label="Note 5 sur 5" style="color: #A19276; font-size: 16px; letter-spacing: 3px">★★★★★</span><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase">Google · Vente</span></div>
+    <blockquote style="margin: 0; font-size: 16px; line-height: 1.5; flex: 1">[Extrait de l'avis Google, importé automatiquement depuis le flux]</blockquote>
+    <figcaption style="display: flex; justify-content: space-between; font-size: 13px; border-top: 1px solid #E6E7E8; padding-top: 12px"><strong>[Prénom]</strong><span>[date]</span></figcaption>
+  </figure>
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.1em">1 / 6</span>
+    <div style="display: flex; gap: 10px">
+      <button type="button" aria-label="Avis précédent" style="width: 48px; height: 48px; border: 1px solid #252526; background: #FFFFFF; color: #252526; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+      <button type="button" aria-label="Avis suivant" style="width: 48px; height: 48px; border: 0; background: #252526; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+    </div>
+  </div>
+  <p style="margin: 0; font-size: 12px; line-height: 1.5">Avis issus de Google, du plus récent au plus ancien. [Mention sur le contrôle des avis à valider]</p>
+</section>
+
+<!-- DEPUIS 1993 -->
+<section aria-labelledby="m-h-histoire" style="min-height: 920px; padding: 56px 24px; background: #252526; color: #FFFFFF; display: flex; flex-direction: column; gap: 32px">
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase; color: #BEAF87">Depuis 1993</p>
+    <h2 id="m-h-histoire" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; text-transform: uppercase">Une agence familiale, au cœur des Chartrons</h2>
+  </div>
+  <ol style="list-style: none; margin: 0; padding: 0 0 0 20px; border-left: 2px solid #BEAF87; display: flex; flex-direction: column; gap: 24px">
+    <li style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #BEAF87; line-height: 1">1993</span><span style="font-size: 15px; color: #E6E7E8">Création de l'agence aux Chartrons.</span></li>
+    <li style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #BEAF87; line-height: 1">2001</span><span style="font-size: 15px; color: #E6E7E8">Entrée dans le réseau CENTURY 21, en restant indépendante.</span></li>
+    <li style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #BEAF87; line-height: 1">2013</span><span style="font-size: 15px; color: #E6E7E8">Reprise par Dominique et Myriam Rollin.</span></li>
+    <li style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #BEAF87; line-height: 1">2016</span><span style="font-size: 15px; color: #E6E7E8">Première distinction « Agence Centurion ».</span></li>
+  </ol>
+  <dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; border-top: 1px solid rgba(190,175,135,0.45); padding-top: 24px">
+    <div style="display: flex; flex-direction: column-reverse; gap: 4px"><dt style="font-size: 13px; color: #E6E7E8">ventes [période]</dt><dd style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 56px; font-weight: 500; line-height: 1">80+</dd></div>
+    <div style="display: flex; flex-direction: column-reverse; gap: 4px"><dt style="font-size: 13px; color: #E6E7E8">locations [période]</dt><dd style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 56px; font-weight: 500; line-height: 1">170+</dd></div>
+    <div style="display: flex; flex-direction: column-reverse; gap: 4px"><dt style="font-size: 13px; color: #E6E7E8">biens en gestion</dt><dd style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 56px; font-weight: 500; line-height: 1">600+</dd></div>
+    <div style="display: flex; flex-direction: column-reverse; gap: 4px"><dt style="font-size: 13px; color: #E6E7E8">ans aux Chartrons</dt><dd style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 56px; font-weight: 500; line-height: 1; color: #BEAF87">33</dd></div>
+  </dl>
+</section>
+
+<!-- RESSOURCES -->
+<section aria-labelledby="m-h-ressources" style="min-height: 660px; padding: 56px 24px; display: flex; flex-direction: column; gap: 24px">
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase">Ressources</p>
+    <h2 id="m-h-ressources" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; text-transform: uppercase">Les guides du propriétaire</h2>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 16px">
+    <sc-for list="{{articles}}" as="a" hint-placeholder-count="3">
+      <a class="card" href="#" style="display: flex; gap: 14px; border-bottom: 1px solid #E6E7E8; padding-bottom: 16px">
+        <div aria-hidden="true" style="width: 96px; height: 96px; flex: none; background: #E6E7E8"></div>
+        <div style="display: flex; flex-direction: column; gap: 6px">
+          <span style="align-self: flex-start; background: #BEAF87; color: #252526; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; padding: 3px 8px">{{a.cat}}</span>
+          <h3 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 18px; line-height: 1.15">{{a.titre}}</h3>
+          <span style="font-size: 12px">{{a.meta}}</span>
+        </div>
+      </a>
+    </sc-for>
+  </div>
+  <a href="#" style="align-self: flex-start; font-size: 15px; font-weight: bold; text-decoration: none; border-bottom: 1px solid #252526; padding-bottom: 2px">Toutes les ressources →</a>
+</section>
+
+<!-- CONTACT -->
+<section aria-labelledby="m-h-contact" style="min-height: 1240px; display: flex; flex-direction: column">
+  <div style="background: #252526; color: #FFFFFF; padding: 48px 24px; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.26em; text-transform: uppercase; color: #BEAF87">Contact</p>
+    <h2 id="m-h-contact" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 34px; line-height: 1; text-transform: uppercase">Parlons de votre projet</h2>
+    <a href="tel:+33557877979" style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 32px; font-weight: 500; color: #BEAF87; text-decoration: none">05 57 87 79 79</a>
+    <address style="font-style: normal; font-size: 15px; line-height: 1.5; color: #E6E7E8">32 cours Evrard de Fayolle, 33000 Bordeaux</address>
+    <dl style="margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 14px; color: #E6E7E8">
+      <dt style="font-weight: bold; color: #FFFFFF">Lun. – jeu.</dt><dd style="margin: 0">9h30 – 12h30 · 14h – 18h30</dd>
+      <dt style="font-weight: bold; color: #FFFFFF">Vendredi</dt><dd style="margin: 0">9h30 – 12h30 · 14h – 18h</dd>
+      <dt style="font-weight: bold; color: #FFFFFF">Samedi</dt><dd style="margin: 0">[à confirmer]</dd>
+    </dl>
+    <a href="#" style="align-self: flex-start; color: #FFFFFF; text-decoration: none; border-bottom: 1px solid #BEAF87; padding-bottom: 2px; font-size: 15px">Itinéraire →</a>
+  </div>
+  <form aria-label="Être rappelé" style="padding: 48px 24px; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 26px">Un conseiller vous rappelle</h3>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px">Nom<input type="text" autocomplete="name" style="height: 54px; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 16px; color: #252526"></label>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px">Téléphone<input type="tel" autocomplete="tel" style="height: 54px; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 16px; color: #252526"></label>
+    <fieldset style="border: 0; margin: 0; padding: 0">
+      <legend style="font-size: 14px; padding: 0; margin-bottom: 10px">Votre projet</legend>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <button type="button" aria-pressed="true" style="height: 48px; border: 1px solid #252526; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, sans-serif; font-size: 15px">Vendre</button>
+        <button type="button" aria-pressed="false" style="height: 48px; border: 1px solid #252526; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 15px">Faire louer</button>
+        <button type="button" aria-pressed="false" style="height: 48px; border: 1px solid #252526; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 15px">Faire gérer</button>
+        <button type="button" aria-pressed="false" style="height: 48px; border: 1px solid #252526; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 15px">Acheter</button>
+      </div>
+    </fieldset>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px">Message (facultatif)<textarea rows="3" style="border: 1px solid #808285; padding: 12px 14px; font-family: Oakes, Arial, sans-serif; font-size: 16px; color: #252526"></textarea></label>
+    <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 12px; line-height: 1.5"><input type="checkbox" style="width: 20px; height: 20px; margin: 0; flex: none; accent-color: #252526">J'accepte que mes données soient utilisées pour être recontacté. [Mention RGPD à rédiger]</label>
+    <button type="submit" style="height: 56px; border: 0; background: #252526; color: #FFFFFF; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Être rappelé</button>
+    <a href="#" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 56px; border: 1px solid #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="1"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
+      Prendre rendez-vous
+    </a>
+  </form>
+</section>
+</main>
+
+<!-- PIED DE PAGE -->
+<footer style="min-height: 640px; background: #252526; color: #E6E7E8; border-top: 4px solid #BEAF87; padding: 48px 24px; display: flex; flex-direction: column; gap: 24px">
+  <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5">
+    <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.07em; color: #FFFFFF; line-height: 1">CENTURY 21.</span>
+    <span style="color: #FFFFFF">Cabinet Rollin · Les Chartrons</span>
+    <span>32 cours Evrard de Fayolle, 33000 Bordeaux</span>
+  </div>
+  <div style="display: flex; flex-direction: column">
+    <sc-for list="{{footerGroups}}" as="g" hint-placeholder-count="4">
+      <details style="border-top: 1px solid rgba(230,231,232,0.25)">
+        <summary style="min-height: 52px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: #BEAF87; list-style: none">{{g.titre}}<span aria-hidden="true" style="color: #E6E7E8">+</span></summary>
+        <p style="margin: 0 0 16px; font-size: 14px; line-height: 1.8">{{g.liens}}</p>
+      </details>
+    </sc-for>
+  </div>
+  <a class="flink" href="#" style="color: #FFFFFF; font-weight: bold; font-size: 15px">Barème d'honoraires</a>
+  <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; line-height: 1.6; letter-spacing: 0.02em">Carte professionnelle n° [à fournir], CCI [à fournir] · Garant financier : [à fournir] · Assurance RCP : [à fournir] · Médiateur : [à fournir]<br>Agence indépendante membre du réseau CENTURY 21. [Mention à valider]</p>
+</footer>
+
+<nav aria-label="Actions rapides" style="position: sticky; bottom: 0; z-index: 60; height: 72px; background: #252526; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #BEAF87">
+  <a href="tel:+33557877979" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>Appeler
+  </a>
+  <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; background: #BEAF87; color: #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>Estimer
+  </a>
+  <a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>Nos biens
+  </a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":5216}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      team: [
+        { nom: 'Dominique Rollin', role: 'Gérant · Direction transaction', pole: 'Direction' },
+        { nom: 'Myriam Rollin', role: 'Gérante · Direction gestion et location', pole: 'Direction' },
+        { nom: 'Grégory Coutant', role: 'Manager transaction', pole: 'Transaction' },
+        { nom: 'Gwendoline Delaire', role: 'Suivi des ventes, du mandat à l’acte', pole: 'Suivi des ventes' }
+      ],
+      articles: [
+        { cat: 'Faire gérer', titre: 'DPE 2026 : ce qui change pour les propriétaires bordelais', meta: '[x] min · Mis à jour le [date]' },
+        { cat: 'Vendre', titre: 'Estimer son bien aux Chartrons : les critères qui font vraiment le prix', meta: 'Grégory Coutant · [x] min' },
+        { cat: 'Faire gérer', titre: 'Gestion locative : ce que fait vraiment votre gestionnaire', meta: '[x] min · Mis à jour le [date]' }
+      ],
+      footerGroups: [
+        { titre: 'Services', liens: 'Vendre · Estimer mon bien · Faire louer ou gérer · Acheter · Trouver une location · Biens vendus' },
+        { titre: 'Quartiers', liens: 'Chartrons · Jardin Public · Fondaudège–David Johnston · Parc Rivière · Allée Haussmann · Bassins à flot' },
+        { titre: 'L’agence', liens: 'Notre histoire · L’équipe · Avis clients · Ressources · Contact · Réseau CENTURY 21' },
+        { titre: 'Informations', liens: 'Mentions légales · Politique de confidentialité · Gestion des cookies' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

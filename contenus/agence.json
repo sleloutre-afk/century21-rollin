@@ -1,0 +1,72 @@
+{
+  "_source": "Faits fournis dans le brief. Une note ne s'affiche jamais sans sa date ; les null sont à fournir.",
+  "nomTexte": "Cabinet Rollin – CENTURY 21 Les Chartrons",
+  "adresse": {
+    "rue": "32 cours Evrard de Fayolle",
+    "codePostal": "33000",
+    "ville": "Bordeaux"
+  },
+  "telephone": "05 57 87 79 79",
+  "telephoneE164": "+33557877979",
+  "horaires": [
+    {
+      "jours": "Lundi – jeudi",
+      "plages": "9h30 – 12h30 · 14h – 18h30"
+    },
+    {
+      "jours": "Vendredi",
+      "plages": "9h30 – 12h30 [matin à confirmer] · 14h – 18h"
+    },
+    {
+      "jours": "Samedi",
+      "plages": "[à confirmer]"
+    }
+  ],
+  "histoire": [
+    {
+      "annee": 1993,
+      "evenement": "Création de l'agence aux Chartrons"
+    },
+    {
+      "annee": 2001,
+      "evenement": "Entrée dans le réseau CENTURY 21, en restant indépendante"
+    },
+    {
+      "annee": 2013,
+      "evenement": "Reprise par Dominique et Myriam Rollin"
+    },
+    {
+      "annee": 2016,
+      "evenement": "Première distinction Agence Centurion [années suivantes à confirmer, 2026 incluse]"
+    }
+  ],
+  "chiffres": {
+    "periode": "[à confirmer : année 2025 ou 12 derniers mois]",
+    "ventes": "80+",
+    "locations": "170+",
+    "biensGeres": "600+",
+    "professionnels": "[20 ou 21 : à confirmer]"
+  },
+  "avis": {
+    "google": {
+      "note": 4.8,
+      "nombre": 468,
+      "date": null
+    },
+    "qualitelis": {
+      "transaction": 9.2,
+      "gestion": 9.3,
+      "date": null,
+      "nombreReponses": null
+    }
+  },
+  "mentionsProfessionnelles": {
+    "carteProfessionnelle": null,
+    "cci": null,
+    "garantFinancier": null,
+    "assuranceRCP": null,
+    "mediateur": null,
+    "mentionIndependance": "[formulation exacte exigée par le réseau à fournir]"
+  },
+  "encadrementDesLoyers": "Bordeaux applique l'encadrement des loyers aux baux signés depuis le 15 juillet 2022. L'expérimentation prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation. [À vérifier avant toute mise en ligne]"
+}

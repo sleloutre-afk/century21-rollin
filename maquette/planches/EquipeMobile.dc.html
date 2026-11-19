@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>L'équipe · mobile · Cabinet Rollin – CENTURY 21 Les Chartrons</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#252526}
+.scroller{scrollbar-width:none}
+.scroller::-webkit-scrollbar{display:none}
+a:focus-visible,button:focus-visible{outline:2px solid #A19276;outline-offset:2px}
+</style>
+</helmet>
+<div style="width: 390px; min-height: 5520px; font-family: Oakes, Arial, Helvetica, sans-serif; color: #252526; background: #FFFFFF; display: flex; flex-direction: column">
+
+<header style="position: sticky; top: 0; z-index: 50; height: 64px; background: #FFFFFF; border-bottom: 1px solid #E6E7E8; padding: 0 16px 0 20px; display: flex; align-items: center; justify-content: space-between">
+  <a href="Accueil-mobile-1.dc.html" aria-label="Cabinet Rollin – CENTURY 21 Les Chartrons, accueil" style="display: flex; flex-direction: column; gap: 3px; text-decoration: none; color: #252526">
+    <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; font-size: 19px; letter-spacing: 0.07em; line-height: 1">CENTURY 21.</span>
+    <span style="font-size: 11px; line-height: 1">Cabinet Rollin · Les Chartrons</span>
+  </a>
+  <button type="button" aria-label="Ouvrir le menu" style="width: 48px; height: 48px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; color: #252526">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"></path></svg>
+  </button>
+</header>
+
+<nav aria-label="Fil d'Ariane" style="border-bottom: 1px solid #E6E7E8">
+  <ol style="list-style: none; margin: 0; padding: 0 24px; height: 44px; display: flex; align-items: center; gap: 8px; font-size: 13px">
+    <li><a href="Accueil-mobile-1.dc.html" style="text-decoration: none">Accueil</a></li><li aria-hidden="true">›</li>
+    <li aria-current="page" style="font-weight: bold">L'équipe</li>
+  </ol>
+</nav>
+
+<main style="flex: 1">
+<section aria-labelledby="me-h1" style="min-height: 280px; background: #252526; color: #FFFFFF; padding: 32px 24px; display: flex; flex-direction: column; gap: 12px">
+  <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; color: #BEAF87">L'équipe</p>
+  <h1 id="me-h1" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 40px; line-height: 1; text-transform: uppercase">Un spécialiste pour <span style="color: #BEAF87">chaque besoin</span></h1>
+  <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #E6E7E8">Six pôles, un rôle précis pour chacun.</p>
+</section>
+
+<div class="scroller" role="group" aria-label="Filtrer par pôle" style="position: sticky; top: 64px; z-index: 40; background: #FFFFFF; min-height: 80px; display: flex; gap: 8px; overflow-x: auto; padding: 16px 24px; border-bottom: 1px solid #E6E7E8">
+  <sc-for list="{{chips}}" as="c" hint-placeholder-count="7">
+    <button type="button" aria-pressed="{{c.pressed}}" style="flex: none; height: 48px; padding: 0 14px; border: 1px solid {{c.border}}; background: {{c.bg}}; color: {{c.fg}}; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase">{{c.label}}</button>
+  </sc-for>
+</div>
+
+<div style="padding: 32px 24px 48px; display: flex; flex-direction: column; gap: 40px">
+  <sc-for list="{{groups}}" as="g" hint-placeholder-count="6">
+    <section aria-label="{{g.nom}}" style="display: flex; flex-direction: column; gap: 16px">
+      <div style="border-bottom: 2px solid #252526; padding-bottom: 10px; display: flex; flex-direction: column; gap: 4px">
+        <h2 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 26px; text-transform: uppercase">{{g.nom}}</h2>
+        <span style="font-size: 13px">{{g.desc}}</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 12px">
+        <sc-for list="{{g.membres}}" as="p" hint-placeholder-count="2">
+          <a href="{{p.href}}" style="display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: #252526">
+            <div style="aspect-ratio: 4 / 5; background: #E6E7E8; display: flex; align-items: flex-end; padding: 8px"><span style="font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase">Portrait</span></div>
+            <div style="display: flex; flex-direction: column; gap: 3px">
+              <h3 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 17px; line-height: 1.1">{{p.nom}}</h3>
+              <span style="font-size: 12px; font-weight: bold">{{p.role}}</span>
+              <span style="font-size: 11px">Spécialité : {{p.spec}}</span>
+              <span style="font-size: 11px">Quartiers : {{p.quartiers}}</span>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+  </sc-for>
+</div>
+
+<section aria-labelledby="me-cta" style="min-height: 340px; padding: 48px 24px; background: #BEAF87; display: flex; flex-direction: column; gap: 14px">
+  <h2 id="me-cta" style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 32px; line-height: 1; text-transform: uppercase">Un projet ? Parlons-en</h2>
+  <p style="margin: 0; font-size: 15px; line-height: 1.5">Nous vous orientons vers la bonne personne, dès le premier appel.</p>
+  <a href="tel:+33557877979" style="display: flex; align-items: center; justify-content: center; height: 56px; margin-top: 4px; background: #252526; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 17px">05 57 87 79 79</a>
+</section>
+</main>
+
+<footer style="min-height: 260px; background: #252526; color: #E6E7E8; border-top: 4px solid #BEAF87; padding: 36px 24px; display: flex; flex-direction: column; gap: 14px">
+  <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; font-size: 22px; letter-spacing: 0.07em; color: #FFFFFF; line-height: 1">CENTURY 21.</span>
+  <div style="display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px">
+    <a href="#" style="color: #FFFFFF; font-weight: bold; text-decoration: none">Barème d'honoraires</a>
+    <a href="#" style="color: #E6E7E8; text-decoration: none">Mentions légales</a>
+    <a href="#" style="color: #E6E7E8; text-decoration: none">Confidentialité</a>
+  </div>
+  <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; line-height: 1.6">Carte professionnelle n° [à fournir] · Garant financier : [à fournir] · Médiateur : [à fournir]. Agence indépendante membre du réseau CENTURY 21.</p>
+</footer>
+
+<nav aria-label="Actions rapides" style="position: sticky; bottom: 0; z-index: 60; height: 72px; background: #252526; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #BEAF87">
+  <a href="tel:+33557877979" style="display: flex; align-items: center; justify-content: center; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Appeler</a>
+  <a href="EstimMobile.dc.html" style="display: flex; align-items: center; justify-content: center; background: #BEAF87; color: #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Estimer</a>
+  <a href="RechercheMobile.dc.html" style="display: flex; align-items: center; justify-content: center; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase">Nos biens</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":5520}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const S = '[à préciser]';
+    const m = (nom, role, o) => Object.assign({ nom: nom, role: role, spec: S, quartiers: S, href: '#' }, o || {});
+    const M = 'Toute la métropole';
+    const groups = [
+      { nom: 'Direction', desc: 'Les gérants de l’agence depuis 2013.', membres: [m('Dominique Rollin', 'Gérant · Dir. transaction'), m('Myriam Rollin', 'Gérante · Dir. gestion', { quartiers: M })] },
+      { nom: 'Transaction', desc: 'Estimation, vente, acquéreurs.', membres: [m('Grégory Coutant', 'Manager transaction', { href: 'ConseillerMobile.dc.html' }), m('Mély Potet', 'Transaction'), m('Adeline Selles', 'Transaction'), m('Mathilde Rollin', 'Transaction'), m('Thomas Boret', 'Transaction'), m('Grégory Bourdil', 'Transaction'), m('Laurence Lebreton', 'Transaction'), m('Aloïs Phalip', 'Transaction'), m('Mathieu Seninck', 'Transaction')] },
+      { nom: 'Suivi des ventes', desc: 'Du mandat à l’acte.', membres: [m('Gwendoline Delaire', 'Suivi des ventes', { spec: 'Du mandat à l’acte', quartiers: 'Tous' })] },
+      { nom: 'Location', desc: 'Mise en location, toute la métropole.', membres: [m('Elodie Fournier', 'Location', { quartiers: M }), m('Claire Chevet', 'Location', { quartiers: M }), m('Léna Duporté', 'Location', { quartiers: M })] },
+      { nom: 'Gestion locative', desc: 'Plus de 600 biens gérés.', membres: [m('Gwenaelle Aubin', 'Gestion locative', { quartiers: M }), m('Georgia Cross', 'Gestion locative', { quartiers: M }), m('Cécile Boirie', 'Gestionnaire comptable', { quartiers: '—' }), m('Marie Brac de la Perrière', 'Assistante', { quartiers: '—' })] },
+      { nom: 'Accueil', desc: 'Votre premier contact.', membres: [m('Avrile Piveteau', 'Accueil', { quartiers: '—' }), m('Lucas Michelon', 'Accueil', { quartiers: '—' })] }
+    ];
+    const labels = ['Tous', 'Direction', 'Transaction', 'Suivi des ventes', 'Location', 'Gestion', 'Accueil'];
+    return {
+      groups: groups,
+      chips: labels.map((l, i) => ({ label: l, pressed: i === 0 ? 'true' : 'false', bg: i === 0 ? '#252526' : '#FFFFFF', fg: i === 0 ? '#FFFFFF' : '#252526', border: i === 0 ? '#252526' : '#808285' }))
+    };
+  }
+}
+</script>
+</body>
+</html>

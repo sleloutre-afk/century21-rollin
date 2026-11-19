@@ -1,0 +1,376 @@
+{
+  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies.",
+  "annonces": [
+    {
+      "slug": "maison-de-ville-bourgeoise-palais-gallien",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "maison",
+      "titre": "Maison de ville bourgeoise",
+      "quartierLibelle": "Palais Gallien",
+      "secteur": null,
+      "surfaceHabitable": 189,
+      "pieces": 8,
+      "chambres": null,
+      "prixHonorairesInclus": 1099000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": true,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Pierre de taille",
+        "3 niveaux",
+        "Terrasse",
+        "Box"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null,
+      "niveaux": 3,
+      "exterieur": "Terrasse · [surface à fournir]",
+      "stationnement": "Box",
+      "quartierPage": "[à choisir : Chartrons ou autre]"
+    },
+    {
+      "slug": "maison-bourgeoise-croix-de-seguey",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "maison",
+      "titre": "Maison bourgeoise",
+      "quartierLibelle": "Croix de Seguey",
+      "secteur": null,
+      "surfaceHabitable": 278.84,
+      "pieces": 10,
+      "chambres": null,
+      "prixHonorairesInclus": 995000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": false,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Jardin",
+        "Cheminées"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "maison-de-charme-chartrons-cours-journu-auber",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "maison",
+      "titre": "Maison de charme",
+      "quartierLibelle": "Chartrons · cours Journu-Auber",
+      "secteur": null,
+      "surfaceHabitable": 136,
+      "pieces": 4,
+      "chambres": null,
+      "prixHonorairesInclus": 749000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": false,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Charme de l'ancien",
+        "Quartier familial"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "grand-t4-3-chambres-chartrons-cote-bacalan",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "appartement",
+      "titre": "Grand T4, 3 chambres",
+      "quartierLibelle": "Chartrons · côté Bacalan [localisation exacte à confirmer]",
+      "secteur": null,
+      "surfaceHabitable": 147,
+      "pieces": 4,
+      "chambres": null,
+      "prixHonorairesInclus": 665000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": false,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Jardin de 120 m²",
+        "Patio",
+        "Calme"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "t3-traversant-saint-seurin",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "appartement",
+      "titre": "T3 traversant",
+      "quartierLibelle": "Saint-Seurin",
+      "secteur": null,
+      "surfaceHabitable": 88,
+      "pieces": 3,
+      "chambres": null,
+      "prixHonorairesInclus": 380100,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": false,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Immeuble en pierre",
+        "Volumes généreux"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "t3-bis-refait-a-neuf-chartrons-place-picard",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "appartement",
+      "titre": "T3 bis refait à neuf",
+      "quartierLibelle": "Chartrons · place Picard",
+      "secteur": null,
+      "surfaceHabitable": 75,
+      "pieces": 3,
+      "chambres": null,
+      "prixHonorairesInclus": 320000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": false,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Lumineux",
+        "Calme"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "t3-cle-en-main-chartrons-pres-des-quais",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "appartement",
+      "titre": "T3 clé en main",
+      "quartierLibelle": "Chartrons · près des quais",
+      "secteur": null,
+      "surfaceHabitable": 70.5,
+      "pieces": 3,
+      "chambres": null,
+      "prixHonorairesInclus": 280000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": true,
+      "coupDeCoeur": true,
+      "atouts": [],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    },
+    {
+      "slug": "t3-avec-terrasse-chartrons-cours-du-medoc",
+      "statut": "en_vente",
+      "transaction": "vente",
+      "type": "appartement",
+      "titre": "T3 avec terrasse",
+      "quartierLibelle": "Chartrons · cours du Médoc",
+      "secteur": null,
+      "surfaceHabitable": 64.54,
+      "pieces": 3,
+      "chambres": null,
+      "prixHonorairesInclus": 250000,
+      "prixHorsHonoraires": null,
+      "partHonorairesAcquereurPct": null,
+      "exclusivite": true,
+      "coupDeCoeur": true,
+      "atouts": [
+        "Terrasse"
+      ],
+      "dpe": {
+        "classe": null,
+        "valeur": null,
+        "date": null
+      },
+      "ges": {
+        "classe": null,
+        "valeur": null
+      },
+      "depensesEnergie": {
+        "min": null,
+        "max": null,
+        "anneeReferencePrix": null
+      },
+      "copropriete": {
+        "estEnCopropriete": null,
+        "nombreLots": null,
+        "chargesAnnuelles": null,
+        "procedureEnCours": null
+      },
+      "conseiller": null,
+      "photos": [],
+      "description": null,
+      "delaiDeVenteJours": null,
+      "coordonnees": null
+    }
+  ]
+}

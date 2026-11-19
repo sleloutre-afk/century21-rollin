@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Galerie plein écran · Maison de ville bourgeoise, Palais Gallien</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#252526}
+*{box-sizing:border-box}
+a:focus-visible,button:focus-visible{outline:2px solid #BEAF87;outline-offset:2px}
+</style>
+</helmet>
+<div role="dialog" aria-label="Galerie photos du bien" style="width: 100%; min-height: 900px; height: 100vh; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, Helvetica, sans-serif; display: flex; flex-direction: column">
+  <div style="height: 72px; flex: none; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid rgba(230,231,232,0.15)">
+    <div role="tablist" aria-label="Médias" style="display: flex; gap: 6px">
+      <button type="button" role="tab" aria-selected="true" style="height: 44px; padding: 0 18px; border: 0; background: #BEAF87; color: #252526; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Photos</button>
+      <button type="button" role="tab" aria-selected="false" style="height: 44px; padding: 0 18px; border: 1px solid rgba(230,231,232,0.4); background: transparent; color: #FFFFFF; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Vidéo</button>
+      <button type="button" role="tab" aria-selected="false" style="height: 44px; padding: 0 18px; border: 1px solid rgba(230,231,232,0.4); background: transparent; color: #FFFFFF; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Visite virtuelle</button>
+      <button type="button" role="tab" aria-selected="false" style="height: 44px; padding: 0 18px; border: 1px solid rgba(230,231,232,0.4); background: transparent; color: #FFFFFF; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Plan</button>
+    </div>
+    <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; letter-spacing: 0.1em">Maison de ville bourgeoise · Palais Gallien · 1 099 000 €</span>
+    <div style="display: flex; align-items: center; gap: 16px">
+      <a href="#" style="display: inline-flex; align-items: center; height: 44px; padding: 0 18px; background: #BEAF87; color: #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Demander une visite</a>
+      <a href="FicheDesktop.dc.html" aria-label="Fermer la galerie" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; color: #FFFFFF">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <div style="flex: 1; min-height: 0; display: flex; align-items: center; gap: 24px; padding: 32px">
+    <button type="button" aria-label="Photo précédente" onClick="{{prev}}" style="width: 56px; height: 56px; flex: none; border: 1px solid rgba(230,231,232,0.4); background: transparent; color: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg></button>
+    <figure style="flex: 1; height: 100%; min-height: 560px; margin: 0; background: #3A3A3B; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px">
+      <figcaption style="display: flex; justify-content: space-between; align-items: center; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #E6E7E8"><span>{{current}}</span><span>{{counter}}</span></figcaption>
+    </figure>
+    <button type="button" aria-label="Photo suivante" onClick="{{next}}" style="width: 56px; height: 56px; flex: none; border: 0; background: #BEAF87; color: #252526; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg></button>
+  </div>
+
+  <div style="flex: none; padding: 0 112px 28px; display: flex; gap: 10px; justify-content: center">
+    <sc-for list="{{thumbs}}" as="t" hint-placeholder-count="5">
+      <sc-if value="{{t.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-label="{{t.label}}" aria-current="true" style="width: 120px; height: 76px; border: 2px solid #BEAF87; background: #4A4A4B; padding: 0"></button></sc-if>
+      <sc-if value="{{t.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-label="{{t.label}}" onClick="{{t.pick}}" style="width: 120px; height: 76px; border: 2px solid transparent; background: #3A3A3B; padding: 0; cursor: pointer"></button></sc-if>
+    </sc-for>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { i: 0 };
+  }
+  renderVals() {
+    const labels = ['Photo 1 · façade en pierre de taille', 'Photo 2 · séjour', 'Photo 3 · terrasse', 'Photo 4 · escalier', 'Photo 5 · chambre'];
+    const i = this.state.i;
+    const n = labels.length;
+    return {
+      current: labels[i],
+      counter: (i + 1) + ' / [nombre total de photos]',
+      prev: () => this.setState({ i: (i + n - 1) % n }),
+      next: () => this.setState({ i: (i + 1) % n }),
+      thumbs: labels.map((l, k) => ({ label: l, on: k === i, off: k !== i, pick: () => this.setState({ i: k }) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

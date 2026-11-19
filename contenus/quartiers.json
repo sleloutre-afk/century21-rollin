@@ -1,0 +1,54 @@
+{
+  "_source": "6 secteurs de vente. Prix au m² : aucun chiffre sans source datée.",
+  "secteurs": [
+    {
+      "slug": "chartrons",
+      "nom": "Chartrons",
+      "accroche": "L'ancien quartier des négociants en vin, entre les quais et le Jardin Public. Notre quartier depuis 1993.",
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    },
+    {
+      "slug": "jardin-public",
+      "nom": "Jardin Public",
+      "accroche": null,
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    },
+    {
+      "slug": "fondaudege-david-johnston",
+      "nom": "Fondaudège–David Johnston",
+      "accroche": null,
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    },
+    {
+      "slug": "parc-riviere",
+      "nom": "Parc Rivière",
+      "accroche": null,
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    },
+    {
+      "slug": "allee-haussmann",
+      "nom": "Allée Haussmann",
+      "accroche": null,
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    },
+    {
+      "slug": "bassins-a-flot",
+      "nom": "Bassins à flot",
+      "accroche": "Les anciens bassins portuaires, devenus un quartier en pleine transformation, au nord des Chartrons.",
+      "prixMoyenM2": null,
+      "sourcePrix": null,
+      "conseillerReferent": null
+    }
+  ],
+  "detail": "Le contenu complet des pages Chartrons et Bassins à flot (En bref, Vivre, FAQ) est dans maquette/planches/QuartierDesktop.dc.html (objet data du script). Les 4 autres secteurs : textes à fournir."
+}

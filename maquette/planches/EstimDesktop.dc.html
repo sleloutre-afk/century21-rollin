@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Estimation en ligne · desktop · Cabinet Rollin – CENTURY 21 Les Chartrons</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 100%; min-width: 0; min-height: 900px; box-sizing: border-box; display: flex; flex-direction: column; font-family: Oakes, Arial, Helvetica, sans-serif; color: #252526; background: #FFFFFF">
+
+  <!-- En-tête du module -->
+  <header style="height: 72px; box-sizing: border-box; border-bottom: 1px solid #E6E7E8; padding: 0 clamp(24px, 4vw, 56px); display: flex; align-items: center; justify-content: space-between; gap: 24px">
+    <a href="Main.dc.html" aria-label="Retour à l'accueil" style="display: flex; flex-direction: column; gap: 3px; text-decoration: none; color: #252526">
+      <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 600; font-size: 21px; letter-spacing: 0.07em; line-height: 1">CENTURY 21.</span>
+      <span style="font-size: 11px; line-height: 1">Cabinet Rollin · Les Chartrons</span>
+    </a>
+    <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase">Estimation en ligne · {{stepLabel}}</span>
+    <div style="display: flex; align-items: center; gap: 24px">
+      <a href="tel:+33557877979" style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 18px; font-weight: 500; text-decoration: none; color: #252526">05 57 87 79 79</a>
+      <a href="Main.dc.html" style="font-size: 14px; color: #252526">Quitter</a>
+    </div>
+  </header>
+  <div role="progressbar" aria-label="Progression de l'estimation" aria-valuemin="0" aria-valuemax="5" aria-valuenow="{{progressNow}}" style="height: 4px; background: #E6E7E8">
+    <div style="height: 4px; background: #252526; width: {{progressPct}}; transition: width .5s"></div>
+  </div>
+
+  <div style="flex: 1; display: flex; flex-wrap: wrap">
+    <!-- Colonne principale -->
+    <main style="flex: 1.7 1 560px; box-sizing: border-box; padding: 56px clamp(24px, 6vw, 104px); display: flex; flex-direction: column; gap: 32px">
+
+      <sc-if value="{{s1}}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Étape 1 sur 5 · Adresse</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Où se situe votre bien ?</h1>
+          <p style="margin: 0; font-size: 17px; line-height: 1.5">L'adresse exacte change le prix : on l'estime à la rue près.</p>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 8px; font-size: 15px; max-width: 640px">Adresse du bien
+          <input type="text" placeholder="Numéro et rue, Bordeaux" value="" autocomplete="street-address" style="height: 64px; box-sizing: border-box; border: 1px solid #252526; padding: 0 18px; font-family: Oakes, Arial, sans-serif; font-size: 19px; color: #252526">
+        </label>
+        <p style="margin: 0; font-size: 14px; max-width: 640px; line-height: 1.5">Saisie depuis l'accueil ? Elle est déjà pré-remplie. Location et gestion : toute la métropole bordelaise.</p>
+      </sc-if>
+
+      <sc-if value="{{s2}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Étape 2 sur 5 · Votre bien</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Parlez-nous de votre bien</h1>
+        </div>
+        <fieldset style="border: 0; margin: 0; padding: 0">
+          <legend style="font-size: 15px; padding: 0; margin-bottom: 12px">Type de bien</legend>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+            <sc-for list="{{typeOpts}}" as="o" hint-placeholder-count="2">
+              <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="min-height: 56px; padding: 0 28px; border: 1px solid #252526; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, sans-serif; font-size: 17px">{{o.label}}</button></sc-if>
+              <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="min-height: 56px; padding: 0 28px; border: 1px solid #808285; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 17px; cursor: pointer">{{o.label}}</button></sc-if>
+            </sc-for>
+          </div>
+        </fieldset>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; max-width: 720px">
+          <label style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Surface habitable (m²)<input type="number" inputmode="decimal" placeholder="Ex. 75" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          <label style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Pièces<input type="number" inputmode="numeric" placeholder="Ex. 3" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          <label style="flex: 1 1 120px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Chambres<input type="number" inputmode="numeric" placeholder="Ex. 2" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          <sc-if value="{{isMaison}}" hint-placeholder-val="{{ false }}">
+            <label style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Terrain (m²)<input type="number" inputmode="decimal" placeholder="Ex. 120" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{s3}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Étape 3 sur 5 · Caractéristiques</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Quelques précisions</h1>
+        </div>
+        <sc-for list="{{groups3}}" as="g" hint-placeholder-count="3">
+          <fieldset style="border: 0; margin: 0; padding: 0">
+            <legend style="font-size: 15px; padding: 0; margin-bottom: 12px">{{g.legend}}</legend>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px">
+              <sc-for list="{{g.opts}}" as="o" hint-placeholder-count="4">
+                <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="min-height: 52px; padding: 0 22px; border: 1px solid #252526; background: #252526; color: #FFFFFF; font-family: Oakes, Arial, sans-serif; font-size: 16px">{{o.label}}</button></sc-if>
+                <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="min-height: 52px; padding: 0 22px; border: 1px solid #808285; background: #FFFFFF; color: #252526; font-family: Oakes, Arial, sans-serif; font-size: 16px; cursor: pointer">{{o.label}}</button></sc-if>
+              </sc-for>
+            </div>
+          </fieldset>
+        </sc-for>
+      </sc-if>
+
+      <sc-if value="{{s4}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Étape 4 sur 5 · Votre projet</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Quel est votre projet ?</h1>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; max-width: 760px">
+          <sc-for list="{{projetOpts}}" as="o" hint-placeholder-count="4">
+            <sc-if value="{{o.on}}" hint-placeholder-val="{{ false }}"><button type="button" aria-pressed="true" style="min-height: 104px; padding: 20px 24px; border: 1px solid #252526; background: #252526; color: #FFFFFF; text-align: left; display: flex; flex-direction: column; gap: 6px; font-family: Oakes, Arial, sans-serif"><span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 24px; font-weight: 500; text-transform: uppercase">{{o.label}}</span><span style="font-size: 14px; color: #E6E7E8">{{o.sub}}</span></button></sc-if>
+            <sc-if value="{{o.off}}" hint-placeholder-val="{{ true }}"><button type="button" aria-pressed="false" onClick="{{o.pick}}" style="min-height: 104px; padding: 20px 24px; border: 1px solid #808285; background: #FFFFFF; color: #252526; text-align: left; display: flex; flex-direction: column; gap: 6px; font-family: Oakes, Arial, sans-serif; cursor: pointer"><span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 24px; font-weight: 500; text-transform: uppercase">{{o.label}}</span><span style="font-size: 14px">{{o.sub}}</span></button></sc-if>
+          </sc-for>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{s5}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Étape 5 sur 5 · Coordonnées</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Où vous envoyer votre estimation ?</h1>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; max-width: 720px">
+          <label style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Prénom et nom<input type="text" autocomplete="name" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          <label style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">E-mail<input type="email" autocomplete="email" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+          <label style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">Téléphone<input type="tel" autocomplete="tel" style="height: 56px; box-sizing: border-box; border: 1px solid #808285; padding: 0 14px; font-family: Oakes, Arial, sans-serif; font-size: 17px; color: #252526"></label>
+        </div>
+        <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; max-width: 720px"><input type="checkbox" style="width: 20px; height: 20px; margin: 0; flex: none; accent-color: #252526">J'accepte que mes données soient utilisées pour établir mon estimation et être recontacté par l'agence. [Mention RGPD complète et lien vers la politique de confidentialité à rédiger]</label>
+      </sc-if>
+
+      <sc-if value="{{s6}}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase">Votre résultat</p>
+          <h1 style="margin: 0; font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-weight: 500; font-size: 48px; line-height: 1.02; text-transform: uppercase">Votre première fourchette</h1>
+        </div>
+        <div style="background: #BEAF87; padding: 32px 36px; display: flex; flex-direction: column; gap: 10px; max-width: 760px">
+          <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase">{{resultLabel}}</span>
+          <span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 60px; font-weight: 600; line-height: 1">{{resultRange}}</span>
+          <span style="font-size: 15px">{{resultSub}}</span>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; max-width: 720px">Fourchette indicative, calculée à partir de [source des données à définir]. Seule la visite d'un expert du quartier permet d'établir un prix précis.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px">
+          <a href="#" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 30px; background: #252526; color: #FFFFFF; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Être rappelé par un expert du quartier</a>
+          <a href="#" style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 28px; border: 1px solid #252526; color: #252526; text-decoration: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase">Recevoir seulement mon estimation</a>
+        </div>
+        <button type="button" onClick="{{restart}}" style="align-self: flex-start; border: 0; background: transparent; padding: 0; font-family: Oakes, Arial, sans-serif; font-size: 15px; color: #252526; text-decoration: underline; cursor: pointer; min-height: 44px">Modifier mes réponses</button>
+      </sc-if>
+
+      <sc-if value="{{showNav}}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; gap: 14px; align-items: center; margin-top: 8px">
+          <sc-if value="{{canBack}}" hint-placeholder-val="{{ false }}">
+            <button type="button" onClick="{{back}}" style="min-height: 60px; padding: 0 26px; border: 1px solid #252526; background: #FFFFFF; color: #252526; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer">Retour</button>
+          </sc-if>
+          <button type="button" onClick="{{next}}" style="min-height: 60px; padding: 0 40px; border: 0; background: #BEAF87; color: #252526; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer">{{nextLabel}}</button>
+        </div>
+      </sc-if>
+    </main>
+
+    <!-- Colonne latérale -->
+    <aside aria-label="Votre estimation en cours" style="flex: 1 1 360px; box-sizing: border-box; background: #252526; color: #FFFFFF; padding: 56px clamp(24px, 4vw, 56px); display: flex; flex-direction: column; gap: 28px">
+      <sc-if value="{{notResult}}" hint-placeholder-val="{{ true }}">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase; color: #BEAF87">Votre parcours</p>
+        <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+          <sc-for list="{{track}}" as="t" hint-placeholder-count="5">
+            <li style="display: flex; align-items: center; gap: 16px; min-height: 56px; border-bottom: 1px solid rgba(230,231,232,0.2)">
+              <sc-if value="{{t.done}}" hint-placeholder-val="{{ false }}"><span aria-label="Terminé" style="width: 28px; height: 28px; border-radius: 50%; background: #BEAF87; color: #252526; display: flex; align-items: center; justify-content: center; flex: none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg></span></sc-if>
+              <sc-if value="{{t.current}}" hint-placeholder-val="{{ false }}"><span aria-label="En cours" style="width: 28px; height: 28px; box-sizing: border-box; border-radius: 50%; border: 2px solid #BEAF87; color: #BEAF87; display: flex; align-items: center; justify-content: center; flex: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px">{{t.n}}</span></sc-if>
+              <sc-if value="{{t.todo}}" hint-placeholder-val="{{ true }}"><span style="width: 28px; height: 28px; box-sizing: border-box; border-radius: 50%; border: 1px solid rgba(230,231,232,0.5); color: #E6E7E8; display: flex; align-items: center; justify-content: center; flex: none; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px">{{t.n}}</span></sc-if>
+              <span style="font-size: 16px; color: #FFFFFF">{{t.label}}</span>
+            </li>
+          </sc-for>
+        </ol>
+        <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #E6E7E8">2 minutes environ. Vos réponses restent modifiables jusqu'au résultat.</p>
+      </sc-if>
+      <sc-if value="{{s6}}" hint-placeholder-val="{{ false }}">
+        <p style="margin: 0; font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase; color: #BEAF87">Votre conseiller référent</p>
+        <div aria-hidden="true" style="width: 100%; max-width: 300px; aspect-ratio: 4 / 5; background: #3A3A3B; display: flex; align-items: flex-end; padding: 14px; box-sizing: border-box"><span style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #E6E7E8">Portrait du conseiller du secteur</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <span style="font-family: Typold, 'Barlow Semi Condensed', Arial, sans-serif; font-size: 28px; font-weight: 500">[Prénom Nom]</span>
+          <span style="font-size: 15px; color: #E6E7E8">Conseiller transaction · secteur [Chartrons]</span>
+        </div>
+        <a href="tel:+33557877979" style="font-family: 'Barlow Semi Condensed', Arial, sans-serif; font-size: 26px; font-weight: 500; color: #BEAF87; text-decoration: none">[Ligne directe]</a>
+      </sc-if>
+    </aside>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"startStep":{"editor":"enum","options":[1,2,3,4,5,6],"default":1},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    const s = Number(props.startStep) || 1;
+    this.state = { step: s, type: 'Appartement', epoque: 'Avant 1949', etat: 'Bon état', parking: 'Aucun', projet: 'Vendre' };
+  }
+  componentDidUpdate(prev) {
+    if (prev.startStep !== this.props.startStep) this.setState({ step: Number(this.props.startStep) || 1 });
+  }
+  renderVals() {
+    const st = this.state;
+    const step = st.step;
+    const self = this;
+    const opts = (key, labels) => labels.map((l) => ({ label: l, on: st[key] === l, off: st[key] !== l, pick: () => self.setState({ [key]: l }) }));
+    const names = ['Adresse', 'Votre bien', 'Caractéristiques', 'Projet', 'Coordonnées'];
+    const louer = st.projet === 'Faire louer' || st.projet === 'Confier la gestion';
+    return {
+      s1: step === 1, s2: step === 2, s3: step === 3, s4: step === 4, s5: step === 5, s6: step === 6,
+      notResult: step !== 6,
+      showNav: step < 6,
+      canBack: step > 1 && step < 6,
+      nextLabel: step === 5 ? 'Voir mon estimation' : 'Continuer',
+      stepLabel: step === 6 ? 'résultat' : ('étape ' + step + ' sur 5'),
+      progressNow: Math.min(step, 5),
+      progressPct: (Math.min(step, 5) * 20) + '%',
+      next: () => this.setState({ step: Math.min(step + 1, 6) }),
+      back: () => this.setState({ step: Math.max(step - 1, 1) }),
+      restart: () => this.setState({ step: 1 }),
+      isMaison: st.type === 'Maison',
+      typeOpts: opts('type', ['Appartement', 'Maison']),
+      groups3: [
+        { legend: 'Époque de construction', opts: opts('epoque', ['Avant 1949', '1949 – 1974', '1975 – 2000', 'Après 2000']) },
+        { legend: 'État général', opts: opts('etat', ['À rénover', 'À rafraîchir', 'Bon état', 'Refait à neuf']) },
+        { legend: 'Stationnement', opts: opts('parking', ['Aucun', 'Place de parking', 'Box ou garage']) }
+      ],
+      projetOpts: [
+        { label: 'Vendre', sub: 'Estimer le prix de vente' },
+        { label: 'Faire louer', sub: 'Estimer le loyer' },
+        { label: 'Confier la gestion', sub: 'Estimer le loyer et la gestion' },
+        { label: 'Simple curiosité', sub: 'Connaître la valeur de mon bien' }
+      ].map((o) => ({ ...o, on: st.projet === o.label, off: st.projet !== o.label, pick: () => self.setState({ projet: o.label }) })),
+      track: names.map((n, i) => ({ n: i + 1, label: n, done: i + 1 < step, current: i + 1 === step, todo: i + 1 > step })),
+      resultLabel: louer ? 'Loyer mensuel estimé, hors charges' : 'Prix de vente estimé',
+      resultRange: louer ? 'X XXX € – X XXX €' : 'XXX 000 € – XXX 000 €',
+      resultSub: louer ? 'Plafond de l’encadrement des loyers à Bordeaux vérifié [si le dispositif est prolongé]' : 'Soit [X XXX] € / m² · valeur médiane du secteur : [à venir]'
+    };
+  }
+}
+</script>
+</body>
+</html>
