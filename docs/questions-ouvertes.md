@@ -114,3 +114,12 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Alerte e-mail** : demande transmise (simulée), rien n'est stocké. L'envoi automatique à chaque nouveau bien demande le back-office et l'outil d'e-mail (désinscription en un clic). — Qui : Simon · Après V1
 - [ ] **Page « introuvable » d'un bien vendu ou supprimé** : elle s'affiche bien, marquée « noindex », mais avec le code 200 au lieu de 404 (fonctionnement de Next.js avec la préparation partielle des pages). Sans gravité pour Google. À revoir au lot 10 (page 404 complète, éventuelle redirection des biens vendus vers `/biens-vendus`). — Lot : 10
 - [ ] **Étapes 5 et 6 de la page Acheter** : partenaires de financement et rôle exact de l'agence dans l'avant-contrat, à confirmer (« [Partenaires à confirmer] » conservé). — Qui : Agence
+
+## 9. Points ouverts au lot 5 (Faire louer ou gérer)
+
+- [x] **Réserves entre crochets** → *Simon, 19/11/2026 : retirées*, en gardant le texte existant. « Relevé de gérance », « Garantie des loyers impayés en option », étape 5 « Vous suivez vos loyers et vos dépenses. ». Première ligne de l'offre de mise en location reformulée sans parler de l'encadrement : « Estimation du loyer, plafonds applicables compris » (reprise de l'étape 1 du déroulé). Textes à relire avec l'agence. — Qui : Agence
+- [x] **Deux questions de la FAQ bailleurs sans réponse** → *Simon, 19/11/2026 : masquées* jusqu'à la réponse de l'agence : « Puis-je confier un bien déjà loué ? » et « Que couvre la garantie des loyers impayés ? ». — Qui : Agence
+- [ ] **Garantie des loyers impayés** : assureur, conditions d'éligibilité, plafonds et coût, à fournir. Nécessaire pour la question masquée et l'encart « Garanties ». — Qui : Agence
+- [ ] **Relevé de gérance** : format et périodicité. — Qui : Agence
+- [ ] **Réponse sur l'encadrement des loyers** (FAQ bailleurs) : phrase factuelle conservée (« prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation »). À mettre à jour selon le vote de la prolongation. — Qui : Agence / Juriste
+- [x] **Section équipe** : fond blanc au lieu du Light Grey de la maquette, pour que les emplacements de portraits restent visibles (à revoir quand les vraies photos seront là).

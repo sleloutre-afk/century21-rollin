@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CarteVendu } from "@/components/biens/CarteVendu";
 import { dernieresVentes } from "@/lib/biens/ventes";
 import { FormulaireAdresse } from "@/components/estimation/FormulaireAdresse";
+import { CarteMembre } from "@/components/equipe/CarteMembre";
 import { BoutonLien, LienFleche } from "@/components/ui/Bouton";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { Faq } from "@/components/ui/Faq";
@@ -61,18 +62,6 @@ const METHODE = [
 function roleConseiller(m: Membre): string {
   if (m.pole !== "transaction" || m.role !== "Transaction") return m.role;
   return `${m.role} · secteur ${m.secteurs ?? "[à préciser]"}`;
-}
-
-function CarteConseiller({ membre }: { membre: Membre }) {
-  return (
-    <Link href={`${ROUTES.equipe}/${membre.slug}`} className="group flex flex-col gap-3.5 text-grey-dark no-underline">
-      <EmplacementPhoto libelle="Portrait à fournir" className="aspect-[4/5]" />
-      <div className="flex flex-col gap-1">
-        <h3 className="m-0 text-xl font-medium md:text-[22px]">{membre.nom}</h3>
-        <span className="text-sm md:text-[15px]">{roleConseiller(membre)}</span>
-      </div>
-    </Link>
-  );
 }
 
 export default function PageVendre() {
@@ -242,14 +231,14 @@ export default function PageVendre() {
           <ul className="m-0 hidden list-none grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-x-6 gap-y-8 p-0 md:grid">
             {conseillers.map((m) => (
               <li key={m.slug}>
-                <CarteConseiller membre={m} />
+                <CarteMembre membre={m} role={roleConseiller(m)} />
               </li>
             ))}
           </ul>
           <div className="md:hidden">
             <RangeeDefilable libelle="Conseillers transaction" largeurElement="w-[180px]" fleches={false}>
               {conseillers.map((m) => (
-                <CarteConseiller key={m.slug} membre={m} />
+                <CarteMembre key={m.slug} membre={m} role={roleConseiller(m)} />
               ))}
             </RangeeDefilable>
           </div>

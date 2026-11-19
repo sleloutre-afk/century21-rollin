@@ -1,5 +1,5 @@
 {
-  "_source": "FAQ des pages, reprises de la maquette (planche VendreDesktop). Réserves entre crochets retirées à la demande de Simon le 19/11/2026 : textes à relire avec l'agence avant mise en ligne.",
+  "_source": "FAQ des pages, reprises de la maquette (planches VendreDesktop, GererDesktop). Réserves entre crochets retirées à la demande de Simon le 19/11/2026 : textes à relire avec l'agence avant mise en ligne. Page « gerer » : 2 questions sans réponse masquées (bien déjà loué, garantie des loyers impayés) ; réponse sur l'encadrement des loyers à mettre à jour selon le vote de la prolongation.",
   "vendre": [
     {
       "q": "Combien coûte l'estimation ?",
@@ -20,6 +20,24 @@
     {
       "q": "Qui me suit après le compromis ?",
       "a": "Gwendoline Delaire suit chaque vente, du mandat à l'acte. Votre conseiller reste aussi votre interlocuteur."
+    },
+    {
+      "q": "Quels sont vos honoraires ?",
+      "a": "Ils figurent dans notre barème d'honoraires, accessible depuis toutes les pages du site."
+    }
+  ],
+  "gerer": [
+    {
+      "q": "Mon logement est classé F ou G : puis-je le louer ?",
+      "a": "Un logement classé G ne peut plus faire l'objet d'un nouveau bail, d'un renouvellement ni d'une reconduction tacite depuis le 1er janvier 2025. Pour les F, ce sera à partir du 1er janvier 2028 ; pour les E, en 2034. Les loyers des logements F et G sont gelés. Faites le point avec notre équipe avant de relouer."
+    },
+    {
+      "q": "Le loyer est-il encadré à Bordeaux ?",
+      "a": "L'encadrement des loyers s'applique à Bordeaux aux baux signés depuis le 15 juillet 2022. L'expérimentation prend fin le 24 novembre 2026, sauf adoption définitive de sa prolongation."
+    },
+    {
+      "q": "Mise en location ou gestion : quelle différence ?",
+      "a": "Avec la mise en location, nous trouvons le locataire et signons le bail ; vous gérez ensuite. Avec la gestion locative, nous nous occupons aussi des loyers, des charges, des travaux et de la sortie du locataire."
     },
     {
       "q": "Quels sont vos honoraires ?",

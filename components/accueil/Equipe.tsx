@@ -1,12 +1,10 @@
-import Link from "next/link";
-import { Badge } from "@/components/ui/Badge";
+import { CarteMembre } from "@/components/equipe/CarteMembre";
 import { LienFleche } from "@/components/ui/Bouton";
-import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";
 import { getMembres, getPoles } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
-import type { Membre, Pole } from "@/lib/schemas/equipe";
+import type { Membre } from "@/lib/schemas/equipe";
 
 /**
  * « Un spécialiste pour chaque besoin » (brief §7.8 ; maquette Accueil-desktop-2 et Accueil-mobile-2).
@@ -24,25 +22,6 @@ const SELECTION = [
   "gwenaelle-aubin",
   "cecile-boirie",
 ];
-
-function CarteMembre({ membre, pole }: { membre: Membre; pole?: Pole }) {
-  const role = membre.specialite ? `${membre.role} · ${membre.specialite}` : membre.role;
-  return (
-    <Link href={`${ROUTES.equipe}/${membre.slug}`} className="group flex flex-col gap-3.5 text-grey-dark no-underline">
-      <EmplacementPhoto libelle="Portrait à fournir" className="aspect-[4/5]">
-        {pole && (
-          <Badge variante="pole" className="absolute left-3.5 top-3.5">
-            {pole.nom}
-          </Badge>
-        )}
-      </EmplacementPhoto>
-      <div className="flex flex-col gap-1">
-        <h3 className="m-0 text-xl font-medium md:text-2xl">{membre.nom}</h3>
-        <span className="text-sm md:text-[15px]">{role}</span>
-      </div>
-    </Link>
-  );
-}
 
 export function Equipe() {
   const poles = getPoles();

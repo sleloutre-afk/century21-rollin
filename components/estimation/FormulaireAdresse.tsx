@@ -9,17 +9,21 @@ export function FormulaireAdresse({
   libelle = "Adresse de votre bien",
   bouton = "Estimer",
   variante = "sombre",
+  projet,
   className = "",
 }: {
   id: string;
   libelle?: string;
   bouton?: string;
   variante?: "sombre" | "or";
+  /** Projet pré-sélectionné dans l'estimation (ex. « faire-louer »). */
+  projet?: string;
   className?: string;
 }) {
   const couleurs = variante === "or" ? "bg-gold text-grey-dark hover:bg-gold-dark" : "bg-grey-dark text-white hover:text-gold";
   return (
     <form action={ROUTES.estimation} method="get" className={`flex flex-col gap-2 bg-white p-2 md:flex-row md:flex-wrap ${className}`}>
+      {projet && <input type="hidden" name="projet" value={projet} />}
       <label htmlFor={id} className="sr-only">
         {libelle}
       </label>
