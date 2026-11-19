@@ -6,7 +6,7 @@ import { Logo } from "@/components/layout/Logo";
 import { IconeFermer, IconeTelephone } from "@/components/ui/Icones";
 import { envoyerEstimation, preciserSuite } from "@/lib/estimation/actions";
 import { EPOQUES, erreursEtape, ETAPES, ETATS, PROJETS, STATIONNEMENTS, TYPES, type ValeursParcours } from "@/lib/estimation/schema";
-import { CHAMP_PIEGE } from "@/lib/formulaires/schemas";
+import { CHAMP_PIEGE, MENTION_DEMO } from "@/lib/formulaires/schemas";
 import { ROUTES } from "@/lib/navigation";
 import { ChampAdresse } from "./ChampAdresse";
 
@@ -586,7 +586,7 @@ function Resultat({
           {suite === "rappel"
             ? "C'est noté : un expert du quartier vous rappelle."
             : "C'est noté : vous recevrez votre estimation, sans être rappelé."}{" "}
-          [Démonstration : aucun message n&apos;est encore transmis à l&apos;agence.]
+          {MENTION_DEMO}
         </p>
       ) : (
         <div className="flex flex-col gap-3 md:flex-row md:flex-wrap">

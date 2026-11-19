@@ -53,6 +53,7 @@ Site vitrine et de génération de contacts de l'agence immobilière **Cabinet R
 | `npm run lint` | Vérifie la qualité du code (ESLint) |
 | `npm test` | Tests de logique (Vitest, `tests/unit/`) : schémas des contenus, formatage |
 | `npm run test:e2e` | Tests de parcours dans un navigateur, desktop 1440 px et mobile 390 px (Playwright, `tests/e2e/`) ; construit et lance le site sur le port 3100 |
+| `BASE_URL=https://… npm run test:en-ligne` | Mêmes tests de parcours, sur un site déjà en ligne (démonstration Vercel), sans serveur local |
 
 Fin de lot : `npm run lint && npm run build && npm test && npm run test:e2e`.
 

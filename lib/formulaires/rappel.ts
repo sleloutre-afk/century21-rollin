@@ -3,7 +3,7 @@
 import { headers } from "next/headers";
 import { transmettreDemande } from "./envoi";
 import { autoriserEnvoi } from "./limiteur";
-import { CHAMP_PIEGE, demandeRappelSchema, PROJETS, type DemandeRappel, type EtatFormulaire } from "./schemas";
+import { CHAMP_PIEGE, demandeRappelSchema, MENTION_DEMO, PROJETS, type DemandeRappel, type EtatFormulaire } from "./schemas";
 
 /**
  * Formulaire « Un conseiller vous rappelle » (accueil, contact).
@@ -59,5 +59,4 @@ export async function demanderRappel(_precedent: EtatFormulaire, formulaire: For
 }
 
 // À VALIDER : retirer la mention « démonstration » quand l'envoi réel sera branché.
-const MESSAGE_ENVOYE =
-  "Merci. Votre demande est enregistrée : un conseiller vous rappelle. [Démonstration : aucun message n'est encore transmis à l'agence.]";
+const MESSAGE_ENVOYE = `Merci. Votre demande est enregistrée : un conseiller vous rappelle. ${MENTION_DEMO}`;

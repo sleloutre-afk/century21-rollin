@@ -1,6 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
 const PORT = 3100;
+/** Adresse d'un site déjà en ligne (ex. démonstration Vercel) : les tests s'y exécutent, sans lancer de serveur local. */
+const EN_LIGNE = process.env.BASE_URL;
 
 export default defineConfig({
   testDir: "./tests/e2e",
@@ -9,7 +11,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: "list",
   use: {
-    baseURL: `http://localhost:${PORT}`,
+    baseURL: EN_LIGNE ?? `http://localhost:${PORT}`,
     trace: "on-first-retry",
   },
   // Desktop (1440 px) et mobile (390 px), comme les planches de la maquette.
@@ -18,10 +20,12 @@ export default defineConfig({
     { name: "mobile", use: { ...devices["Pixel 7"], viewport: { width: 390, height: 844 } } },
   ],
   // Teste la version de production du site (build puis démarrage).
-  webServer: {
-    command: `npm run build && npm run start -- --port ${PORT}`,
-    url: `http://localhost:${PORT}`,
-    reuseExistingServer: !process.env.CI,
-    timeout: 180_000,
-  },
+  webServer: EN_LIGNE
+    ? undefined
+    : {
+        command: `npm run build && npm run start -- --port ${PORT}`,
+        url: `http://localhost:${PORT}`,
+        reuseExistingServer: !process.env.CI,
+        timeout: 180_000,
+      },
 });
