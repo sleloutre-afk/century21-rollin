@@ -154,3 +154,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Auteurs des articles 1, 3 et 4**, date de mise à jour de chaque article, visuels. — Qui : Agence
 - [ ] **Lettre des propriétaires** : outil d'envoi, fréquence, durée de conservation des adresses. Inscription simulée, rien n'est stocké. — Qui : Simon + Agence
 - [ ] **Appel à l'action de l'article DPE** : le bouton « Prendre rendez-vous » mène à la page Faire louer ou gérer (lien de la maquette). Il pourra mener à la page Contact (lot 9). — Qui : Simon
+
+## 13. Points ouverts au lot 9 (avis, agence, contact, pages légales)
+
+- [x] **Blocs sans contenu masqués** → *Simon, 19/11/2026* : « Mot des dirigeants » (page L'agence), bouton « Laisser un avis Google » (remplacé par « Nous contacter » dans le bloc final de la page Avis), détails d'accès « Venir à l'agence » (tram, bus, stationnement, accessibilité ; l'adresse et l'emplacement de carte restent). Réserves retirées : délai de réponse (Contact), années et critères de la distinction Centurion.
+- [ ] **Encart « D'où viennent ces avis ? »** (obligation d'information sur les avis en ligne, Code de la consommation) : emplacements conservés, texte à fournir par l'agence. Qualitelis : organisme indépendant [à confirmer]. — Qui : Agence / Juriste
+- [ ] **Pages légales** (`/mentions-legales`, `/confidentialite`, `/cookies`, `/honoraires`) : plans et emplacements uniquement. À fournir : forme juridique, RCS, TVA, directeur de la publication, hébergeur de production, finalités et durées de conservation des données, droits, barème d'honoraires. — Qui : Agence / Juriste · bloquant pour la mise en production
+- [x] **Cookies — état technique vérifié le 19/11/2026** : après visite des pages principales et envoi d'un formulaire, aucun cookie n'est déposé et aucun traceur n'est chargé. Aucun bandeau de consentement n'est donc nécessaire à ce jour. À revoir si un outil de mesure d'audience est ajouté (CLAUDE.md, règle 7).
+- [ ] **Mot de Dominique et Myriam Rollin**, photos de la façade et de l'équipe, visuel officiel Centurion. — Qui : Agence
+- [ ] **Lien « Laisser un avis Google »** (fiche Google de l'agence) et lien « Réseau CENTURY 21 » du pied de page. — Qui : Agence
+- [ ] **Accès à l'agence** : station de tram, lignes de bus, stationnement, accessibilité. — Qui : Agence
+- [ ] **Appel à l'action de l'article DPE** : peut désormais mener à `/contact#rendez-vous` plutôt qu'à la page Faire louer ou gérer. À décider. — Qui : Simon

@@ -56,6 +56,6 @@ Site vitrine et de génération de contacts de l'agence immobilière **Cabinet R
 
 Fin de lot : `npm run lint && npm run build && npm test && npm run test:e2e`.
 
-Après un changement de structure d'un fichier de `contenus/` (nouveau champ), redémarrer `npm run dev` : le serveur local garde en mémoire les données déjà lues.
+Après un changement de structure d'un fichier de `contenus/` (nouveau champ) ou l'ajout d'une constante exportée dans `lib/` utilisée par un composant navigateur (ex. `lib/formulaires/schemas.ts`), redémarrer `npm run dev` : le serveur local garde en mémoire l'ancienne version. En cas d'erreur 500 en local seulement, redémarrer d'abord.
 
 Stack en place : Next.js 16 (App Router, Cache Components), React 19, Tailwind CSS 4 (jetons dans `app/globals.css`, palette par défaut supprimée), zod 4. Next.js 16 diffère des versions plus anciennes : consulter `node_modules/next/dist/docs/` avant d'utiliser une API (voir `AGENTS.md`). Projet de référence pour les choix techniques : `../Doxamed/New Site` (Tailwind, Payload, Resend).

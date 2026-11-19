@@ -72,6 +72,27 @@ export const lettreSchema = z.object({
   consentement: z.literal("oui", { error: "Votre accord est nécessaire pour recevoir la lettre." }),
 });
 
+/** Formulaire de la page Contact : 6 projets, chacun orienté vers un pôle (maquette ContactDesktop). */
+export const PROJETS_CONTACT = [
+  { id: "vendre", libelle: "Vendre", pole: "transaction", texte: "Votre demande sera transmise au pôle transaction." },
+  { id: "faire-louer", libelle: "Faire louer", pole: "location", texte: "Votre demande sera transmise au pôle location." },
+  { id: "faire-gerer", libelle: "Faire gérer", pole: "gestion-locative", texte: "Votre demande sera transmise au pôle gestion locative." },
+  { id: "acheter", libelle: "Acheter", pole: "transaction", texte: "Votre demande sera transmise au pôle transaction." },
+  { id: "louer-un-logement", libelle: "Louer un logement", pole: "location", texte: "Votre demande sera transmise au pôle location." },
+  { id: "autre", libelle: "Autre", pole: "accueil", texte: "Votre demande sera transmise à l'accueil." },
+] as const satisfies readonly { id: string; libelle: string; pole: Pole["id"]; texte: string }[];
+
+type ProjetContactId = (typeof PROJETS_CONTACT)[number]["id"];
+
+export const contactSchema = z.object({
+  projet: z.enum(PROJETS_CONTACT.map((p) => p.id) as [ProjetContactId, ...ProjetContactId[]], { error: "Choisissez votre projet." }),
+  nom: z.string().trim().min(2, "Indiquez votre nom.").max(120, "Nom trop long."),
+  telephone,
+  email: z.union([z.literal(""), z.email("Indiquez une adresse e-mail valide.")]).optional().default(""),
+  message: z.string().trim().max(2000, "Message trop long (2 000 caractères au maximum).").optional().default(""),
+  consentement: z.literal("oui", { error: "Votre accord est nécessaire pour être recontacté." }),
+});
+
 /** Résultat renvoyé au formulaire après l'envoi. */
 export type EtatFormulaire = {
   statut: "initial" | "envoye" | "erreur";
