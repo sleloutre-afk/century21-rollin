@@ -1,5 +1,5 @@
 {
-  "_source": "4 articles rédigés pour la maquette (500–700 mots). Faits vérifiés au 19/11/2026 ; [crochets] = à compléter ; relecture de l'agence obligatoire.",
+  "_source": "4 articles rédigés pour la maquette (500–700 mots). Faits vérifiés au 19/11/2026. Réserves entre crochets retirées et éléments sans contenu masqués à la demande de Simon le 19/11/2026 ; restent les auteurs à confirmer et la date de la note Qualitelis. Relecture de l'agence obligatoire.",
   "articles": {
     "1": {
       "cat": "Louer · Faire gérer",
@@ -35,8 +35,7 @@
           "h2": "Qui est concerné ?",
           "p": [
             "D'abord les logements chauffés à l'électricité. Ce sont eux qui profitent du nouveau calcul.",
-            "Selon le gouvernement, la réforme fait sortir plusieurs centaines de milliers de logements du statut de passoire thermique. La première estimation parlait d'environ 850 000 logements, sur la base du parc au 1er janvier 2023.",
-            "Parmi les biens que nous gérons, la part de logements chauffés à l'électricité est de [chiffre à fournir]."
+            "Selon le gouvernement, la réforme fait sortir plusieurs centaines de milliers de logements du statut de passoire thermique. La première estimation parlait d'environ 850 000 logements, sur la base du parc au 1er janvier 2023."
           ]
         },
         {
@@ -52,9 +51,9 @@
           "id": "loyers",
           "h2": "Gel des loyers : ce qu'il faut savoir",
           "p": [
-            "Les logements classés F et G sont soumis au gel des loyers : leur loyer ne peut pas être augmenté. [Détail des cas concernés à faire valider par l'agence.]",
+            "Les logements classés F et G sont soumis au gel des loyers : leur loyer ne peut pas être augmenté.",
             "Un logement qui passe de F à E grâce au nouveau calcul n'est plus concerné par ce gel. Encore faut-il que son DPE en tienne compte.",
-            "À Bordeaux, l'encadrement des loyers s'ajoute à ces règles. [Point à mettre à jour selon le vote définitif de sa prolongation.]"
+            "À Bordeaux, l'encadrement des loyers s'ajoute à ces règles."
           ]
         },
         {
@@ -62,7 +61,7 @@
           "h2": "Ce que nous vous conseillons",
           "p": [
             "Un DPE établi avant 2026 a été calculé avec l'ancien coefficient. Il ne reflète donc peut-être plus la classe réelle de votre logement.",
-            "Avant de relouer ou de mettre en vente, faites vérifier s'il peut être mis à jour. [Conditions de l'attestation mise à jour proposée sur le site de l'ADEME : à vérifier.]",
+            "Avant de relouer ou de mettre en vente, faites vérifier s'il peut être mis à jour.",
             "Si votre logement reste classé F ou G, anticipez. Les travaux prennent du temps, et l'échéance de 2028 arrive vite."
           ]
         }
@@ -73,7 +72,7 @@
       "faq": [
         {
           "q": "Mon DPE réalisé en 2024 est-il encore valable ?",
-          "a": "Il a été calculé avec l'ancien coefficient. Pour un logement chauffé à l'électricité, sa classe a pu changer. [Durée de validité et démarche de mise à jour à confirmer avec l'agence.]"
+          "a": "Il a été calculé avec l'ancien coefficient. Pour un logement chauffé à l'électricité, sa classe a pu changer."
         },
         {
           "q": "Mon logement est chauffé au gaz : suis-je concerné ?",
@@ -101,7 +100,7 @@
       "court": "Estimer aux Chartrons",
       "chapeau": "Deux appartements de même surface, dans le même quartier, peuvent avoir des prix très différents. Aux Chartrons plus qu'ailleurs, le prix se joue sur des détails. Voici les critères que nous regardons, un par un.",
       "auteur": "Grégory Coutant",
-      "role": "Manager transaction [auteur à confirmer]",
+      "role": "Manager transaction",
       "photo": "Visuel · parquet, moulures et lumière",
       "bref": [
         "À surface égale, deux biens des Chartrons peuvent valoir des prix très différents.",
@@ -172,7 +171,7 @@
         },
         {
           "q": "Combien de temps dure une visite d'estimation ?",
-          "a": "[Durée à confirmer par l'agence.] Le conseiller visite le bien, puis vous remet un avis de valeur argumenté."
+          "a": "Le conseiller visite le bien, puis vous remet un avis de valeur argumenté."
         },
         {
           "q": "Le DPE change-t-il vraiment le prix ?",
@@ -203,7 +202,7 @@
         "Il rédige le bail et réalise les états des lieux.",
         "Il encaisse les loyers et suit les impayés.",
         "Il gère charges, travaux, sinistres et veille réglementaire.",
-        "Notre pôle gestion suit plus de 600 biens, noté 9,3/10 sur Qualitelis."
+        "Notre pôle gestion suit plus de 600 biens, noté 9,3/10 sur Qualitelis [date à fournir]."
       ],
       "sections": [
         {
@@ -226,7 +225,7 @@
           "id": "loyers",
           "h2": "Les loyers, chaque mois",
           "p": [
-            "Le gestionnaire encaisse les loyers et vous les reverse. Vous n'avez rien à réclamer, et vous suivez tout grâce au relevé de gérance [périodicité à confirmer].",
+            "Le gestionnaire encaisse les loyers et vous les reverse. Vous n'avez rien à réclamer, et vous suivez tout grâce au relevé de gérance.",
             "En cas de retard, il relance le locataire. En cas d'impayé, il suit le dossier et engage les démarches nécessaires."
           ]
         },
@@ -235,7 +234,7 @@
           "h2": "Charges, travaux et sinistres",
           "p": [
             "Chaque année, il régularise les charges : il compare les provisions versées par le locataire aux dépenses réelles.",
-            "Une fuite, une panne, un dégât des eaux ? Le gestionnaire fait intervenir les artisans, suit les travaux et gère les déclarations de sinistre avec les assurances. Pour les dépenses importantes, il vous demande votre accord [seuil à définir avec vous]."
+            "Une fuite, une panne, un dégât des eaux ? Le gestionnaire fait intervenir les artisans, suit les travaux et gère les déclarations de sinistre avec les assurances. Pour les dépenses importantes, il vous demande votre accord."
           ]
         },
         {
@@ -257,7 +256,7 @@
           "id": "chiffres",
           "h2": "Ce que disent les chiffres",
           "p": [
-            "Notre pôle gestion locative suit plus de 600 biens. Nos clients lui donnent une note de 9,3/10 sur Qualitelis [date de la mesure à préciser].",
+            "Notre pôle gestion locative suit plus de 600 biens. Nos clients lui donnent une note de 9,3/10 sur Qualitelis [date à fournir].",
             "Derrière ces chiffres, une équipe : gestionnaires, comptabilité, assistance. Chacun son rôle, et un interlocuteur identifié pour chaque bien."
           ]
         }
@@ -267,16 +266,12 @@
       "acheteurs": false,
       "faq": [
         {
-          "q": "Puis-je confier la gestion d'un bien déjà loué ?",
-          "a": "[À confirmer par l'agence : reprise de la gestion en cours de bail et formalités.]"
-        },
-        {
           "q": "Combien coûte la gestion locative ?",
           "a": "Nos honoraires figurent dans notre barème, accessible depuis toutes les pages du site."
         },
         {
           "q": "Qui sera mon interlocuteur ?",
-          "a": "Un gestionnaire de notre pôle gestion locative, qui suit votre bien au quotidien. [Organisation à préciser par l'agence.]"
+          "a": "Un gestionnaire de notre pôle gestion locative, qui suit votre bien au quotidien."
         }
       ],
       "cta": {
@@ -343,8 +338,7 @@
           "h2": "Le quotidien",
           "p": [
             "Le tram longe les quais et relie le quartier au centre de Bordeaux.",
-            "Commerces de bouche, marchés, terrasses : la vie de quartier se fait à pied, et l'on connaît vite ses commerçants. Ici, on prend le temps : un café en terrasse, un marché, une promenade sur les quais.",
-            "[Écoles, crèches et équipements du quartier : à compléter par l'agence.]"
+            "Commerces de bouche, marchés, terrasses : la vie de quartier se fait à pied, et l'on connaît vite ses commerçants. Ici, on prend le temps : un café en terrasse, un marché, une promenade sur les quais."
           ]
         },
         {
@@ -358,16 +352,15 @@
       ],
       "conseilApres": 5,
       "conseil": "Avant de vendre, faites la liste de ce qui rend votre bien unique dans le quartier : une vue, un patio, une cheminée, une rue calme. Ce sont ces détails qu'il faut mettre en avant.",
-      "acheteurs": true,
-      "acheteursApres": 4,
+      "acheteurs": false,
       "faq": [
         {
           "q": "Les Chartrons sont-ils bien desservis ?",
-          "a": "Le tram longe les quais et relie le quartier au centre-ville. [Lignes de bus et stations à compléter.]"
+          "a": "Le tram longe les quais et relie le quartier au centre-ville."
         },
         {
           "q": "Le quartier convient-il aux familles ?",
-          "a": "Le Jardin Public, les quais et les commerces de proximité en font un quartier agréable au quotidien. [Écoles du secteur à compléter.]"
+          "a": "Le Jardin Public, les quais et les commerces de proximité en font un quartier agréable au quotidien."
         },
         {
           "q": "Quelle différence avec les Bassins à flot ?",

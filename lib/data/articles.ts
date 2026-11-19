@@ -8,10 +8,24 @@ export type ArticleNumerote = Article & {
   slug: string;
   /** Temps de lecture en minutes, calculé sur le texte de l'article. */
   tempsLecture: number;
+  /** Lien de l'appel à l'action, converti des planches de la maquette vers les pages du site. */
+  lienCta: string;
 };
 
+/** Planches de la maquette citées dans les articles → pages du site. */
+const PAGES_MAQUETTE: Record<string, string> = {
+  "GererDesktop.dc.html": "/faire-louer-ou-gerer",
+  "EstimDesktop.dc.html": "/estimation",
+  "VendreDesktop.dc.html": "/vendre",
+  "ContactDesktop.dc.html": "/contact",
+};
+
+function convertirLien(href: string): string {
+  return href.startsWith("/") ? href : (PAGES_MAQUETTE[href] ?? "/contact");
+}
+
 /** Vitesse de lecture retenue pour le calcul du temps de lecture (mots par minute). */
-const MOTS_PAR_MINUTE = 230;
+const MOTS_PAR_MINUTE = 200;
 
 /** « Estimer aux Chartrons » → « estimer-aux-chartrons ». */
 export function versSlug(texte: string): string {
@@ -39,6 +53,7 @@ export function getArticles(): ArticleNumerote[] {
       numero: Number(numero),
       slug: article.slug ?? versSlug(article.court),
       tempsLecture: tempsDeLecture(article),
+      lienCta: convertirLien(article.cta.href),
     }))
     .sort((a, b) => a.numero - b.numero);
   return cache;

@@ -66,6 +66,12 @@ export const rendezVousSchema = z.object({
   consentement: z.literal("oui", { error: "Votre accord est nécessaire pour organiser le rendez-vous." }),
 });
 
+/** Inscription à la lettre des propriétaires (page Ressources). */
+export const lettreSchema = z.object({
+  email: z.email("Indiquez une adresse e-mail valide."),
+  consentement: z.literal("oui", { error: "Votre accord est nécessaire pour recevoir la lettre." }),
+});
+
 /** Résultat renvoyé au formulaire après l'envoi. */
 export type EtatFormulaire = {
   statut: "initial" | "envoye" | "erreur";

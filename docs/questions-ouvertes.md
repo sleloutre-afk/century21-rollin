@@ -143,3 +143,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Prise de rendez-vous** : créneaux d'exemple (lun.–ven., 9h30–17h00, repris de la maquette), sans réservation réelle ; la demande est transmise (simulée) et l'agence rappelle pour confirmer. Outil d'agenda à choisir. — Qui : Simon + Agence
 - [ ] **Photo de l'équipe devant l'agence** (haut de la page Équipe). — Qui : Agence
 - [x] **Défaut corrigé (tous les formulaires)** : après une erreur (champ manquant), la case de consentement se décochait et le visiteur devait la recocher. Elle reste désormais cochée.
+
+## 12. Points ouverts au lot 8 (ressources et articles)
+
+- [x] **Réserves des 4 articles** → *Simon, 19/11/2026 : retirées* ; éléments sans contenu masqués : question « Puis-je confier la gestion d'un bien déjà loué ? », paragraphe « Écoles, crèches et équipements », encart « Ce que recherchent les acheteurs aux Chartrons », phrase sur la part de logements chauffés à l'électricité (chiffre manquant). Emplacements conservés : auteurs non confirmés et date de la note Qualitelis (règles absolues). Relecture de l'agence obligatoire. — Qui : Agence
+- [x] **« Relu par l'agence »** (sous le titre des articles dans la maquette) : non affiché tant que la relecture n'a pas eu lieu. À ajouter après relecture.
+- [x] **Temps de lecture** : 200 mots par minute, comme la maquette (3 min pour l'article DPE, 2 min pour les autres).
+- [x] **Note Qualitelis sans date** dans le « En bref » de l'article 3 : complétée par « [date à fournir] ». Un test vérifie désormais qu'aucune note n'apparaît sans date dans les textes.
+- [ ] **Points juridiques des articles, réserves retirées à la demande de Simon** : gel des loyers des logements F et G (cas concernés), phrase « À Bordeaux, l'encadrement des loyers s'ajoute à ces règles » (à revoir après le 24/11/2026), attestation DPE mise à jour sur le site de l'ADEME. À faire valider par l'agence ou son juriste avant mise en ligne. — Qui : Agence / Juriste
+- [ ] **Auteurs des articles 1, 3 et 4**, date de mise à jour de chaque article, visuels. — Qui : Agence
+- [ ] **Lettre des propriétaires** : outil d'envoi, fréquence, durée de conservation des adresses. Inscription simulée, rien n'est stocké. — Qui : Simon + Agence
+- [ ] **Appel à l'action de l'article DPE** : le bouton « Prendre rendez-vous » mène à la page Faire louer ou gérer (lien de la maquette). Il pourra mener à la page Contact (lot 9). — Qui : Simon
