@@ -45,4 +45,15 @@ Site vitrine et de génération de contacts de l'agence immobilière **Cabinet R
 
 ## Commandes
 
-À compléter au lot 0 (`npm run dev`, `npm run build`, `npm run lint`, `npm test`).
+| Commande | Effet |
+|---|---|
+| `npm run dev` | Site en local sur http://localhost:3000, mis à jour à chaque modification |
+| `npm run build` | Construit la version de production ; échoue si un fichier de `contenus/` est invalide |
+| `npm run start` | Lance la version construite (après `npm run build`) |
+| `npm run lint` | Vérifie la qualité du code (ESLint) |
+| `npm test` | Tests de logique (Vitest, `tests/unit/`) : schémas des contenus, formatage |
+| `npm run test:e2e` | Tests de parcours dans un navigateur, desktop 1440 px et mobile 390 px (Playwright, `tests/e2e/`) ; construit et lance le site sur le port 3100 |
+
+Fin de lot : `npm run lint && npm run build && npm test && npm run test:e2e`.
+
+Stack en place : Next.js 16 (App Router, Cache Components), React 19, Tailwind CSS 4 (jetons dans `app/globals.css`, palette par défaut supprimée), zod 4. Next.js 16 diffère des versions plus anciennes : consulter `node_modules/next/dist/docs/` avant d'utiliser une API (voir `AGENTS.md`). Projet de référence pour les choix techniques : `../Doxamed/New Site` (Tailwind, Payload, Resend).

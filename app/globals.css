@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/*
+ * Jetons de la charte CENTURY 21 (docs/04-charte-graphique.md).
+ * Les couleurs et polices par défaut de Tailwind sont supprimées
+ * (« initial ») : seules les valeurs ci-dessous existent dans le site.
+ * Exception à venir (lot 4) : couleurs réglementaires des étiquettes DPE / GES.
+ */
+@theme {
+  --color-*: initial;
+  --color-gold: #beaf87; /* Relentless Gold — aplats, boutons, filets. Jamais en texte sur blanc. */
+  --color-gold-dark: #a19276; /* Dark Gold — survol, filets, focus. Jamais en texte sur blanc. */
+  --color-grey-dark: #252526; /* Obsessed Grey — texte courant, fonds sombres */
+  --color-grey-medium: #808285; /* Medium Grey — texte secondaire sur fond sombre, filets */
+  --color-grey-light: #e6e7e8; /* Light Grey — fonds de section, emplacements photo */
+  --color-white: #ffffff;
+
+  /* Aucune police à empattements : seules ces deux familles existent. */
+  --font-*: initial;
+  --font-sans: Arial, Helvetica, sans-serif; /* Texte courant (alternative officielle à Oakes) */
+}
+
+@theme inline {
+  /* Titres, chiffres, accroches, mentions (en attendant les licences Typold) */
+  --font-display: var(--font-barlow), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-white);
+    color: var(--color-grey-dark);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+  }
+
+  /* Focus visible partout : filet Dark Gold 2 px (spec §9). */
+  :focus-visible {
+    outline: 2px solid var(--color-gold-dark);
+    outline-offset: 2px;
+  }
+
+  /* Animations coupées si l'utilisateur le demande (CLAUDE.md, règle 6). */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
