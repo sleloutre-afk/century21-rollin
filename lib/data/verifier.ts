@@ -3,6 +3,7 @@ import { getAgence } from "./agence";
 import { getAnnonces } from "./annonces";
 import { getArticles } from "./articles";
 import { getMembres, getPoles } from "./equipe";
+import { getPagesFaq } from "./faq";
 import { getSecteurs } from "./quartiers";
 
 function doublons(valeurs: string[]): string[] {
@@ -20,6 +21,7 @@ export function verifierContenus() {
   const poles = getPoles();
   const membres = getMembres();
   const secteurs = getSecteurs();
+  const pagesFaq = getPagesFaq();
 
   const problemes: string[] = [];
   const slugsMembres = new Set(membres.map((m) => m.slug));
@@ -61,5 +63,6 @@ export function verifierContenus() {
     membres: membres.length,
     poles: poles.length,
     secteurs: secteurs.length,
+    pagesFaq: pagesFaq.length,
   };
 }

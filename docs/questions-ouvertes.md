@@ -86,3 +86,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Anti-spam en production** : la limite de 5 envois en 10 minutes par visiteur est gardée en mémoire du serveur. Suffisant pour la démonstration ; à renforcer à la mise en production (stockage partagé ou protection de l'outil d'envoi). — Qui : Simon · Lot : 11
 - [ ] **Lien « Itinéraire »** (planche Accueil-mobile-2, bloc contact) : non réalisé, il dépend du fournisseur de carte à choisir. — Qui : Simon · Lot : 9
 - [ ] **Temps de lecture des articles** : calculé à 230 mots par minute (résultat : 2 minutes pour les 4 articles). — Qui : Simon · Lot : 8
+
+## 7. Points ouverts au lot 3 (Vendre et estimation)
+
+- [x] **Suggestions d'adresses** → *accord de Simon, 19/11/2026.* Base Adresse Nationale, via le service public de géocodage de la Géoplateforme (IGN), gratuit et sans clé. Les recherches passent par le site (`/api/adresses`) : l'adresse IP des visiteurs n'est pas transmise. Suggestions limitées à la Gironde. Reste à vérifier : limite de requêtes du service avant la mise en production. — Qui : Simon · Lot : 11
+- [x] **FAQ vendeurs** → *Simon, 19/11/2026 : réserves entre crochets retirées, à relire avec l'agence.* Textes dans `contenus/faq.json`. Deux réponses ont été raccourcies, sans rien ajouter : « Combien coûte l'estimation ? » (la gratuité n'est pas affirmée) et « Combien de temps faut-il pour vendre ? » (pas de délai moyen). — Qui : Agence (relecture)
+- [ ] **Résultat de l'estimation** : aucun chiffre affiché (spec §6). Il faut choisir la source des prix (DVF, base notariale, données de l'agence) et la méthode de calcul pour afficher une fourchette. — Qui : Simon + Agence
+- [ ] **Conseiller référent sur l'écran de résultat** : table « secteur → conseiller » à fournir, et rattachement d'une adresse à un secteur (contours des 6 secteurs). En attendant : « [Prénom Nom] · secteur [selon l'adresse] ». — Qui : Agence
+- [ ] **Deux envois par estimation** : la demande complète part à l'étape 5 (pour ne pas perdre le contact s'il quitte l'écran de résultat), puis le choix « être rappelé » ou « recevoir seulement mon estimation » part dans un second message. À confirmer avec l'agence quand l'envoi réel sera branché. — Qui : Agence
+- [ ] **Encadrement des loyers** sur le résultat « faire louer / confier la gestion » : « [vérification à prévoir] » (sujet reporté par Simon). — Qui : Agence / Juriste
+- [ ] **Choix pré-sélectionnés** du parcours (Appartement, Avant 1949, Bon état, Aucun stationnement, Vendre), repris de la maquette. Ils accélèrent la saisie mais peuvent être validés sans y penser : à garder ou à retirer ? — Qui : Simon
+- [x] **Couleurs hors charte de la planche Vendre** : gris #DADBDC des emplacements de la méthode (remplacé par un filet Medium Grey) et numéros d'étapes en or foncé sur blanc (affichés en Obsessed Grey).

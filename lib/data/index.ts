@@ -7,5 +7,6 @@ export { getAgence } from "./agence";
 export { getAnnonce, getAnnonces } from "./annonces";
 export { getArticle, getArticles, type ArticleNumerote } from "./articles";
 export { getMembre, getMembres, getPoles } from "./equipe";
+export { getFaq, getPagesFaq } from "./faq";
 export { getLocalisations, getSecteur, getSecteurs } from "./quartiers";
 export { verifierContenus } from "./verifier";
