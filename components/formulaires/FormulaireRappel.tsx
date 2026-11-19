@@ -133,6 +133,7 @@ export function FormulaireRappel({ titre = "Un conseiller vous rappelle" }: { ti
             name="consentement"
             value="oui"
             required
+            defaultChecked={v.consentement === "oui"}
             aria-invalid={!!e.consentement}
             aria-describedby={decrit("consentement")}
             className="m-0 size-5 flex-none accent-grey-dark"

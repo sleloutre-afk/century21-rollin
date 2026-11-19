@@ -62,7 +62,7 @@ export function FormulaireAlerte({ criteres, lienModifier }: { criteres: string[
         )}
       </div>
       <ChampPiege />
-      <CaseConsentement id={id} texte="J'accepte de recevoir les nouveaux biens correspondant à ma recherche. Désinscription en un clic." erreur={e.consentement} />
+      <CaseConsentement id={id} texte="J'accepte de recevoir les nouveaux biens correspondant à ma recherche. Désinscription en un clic." erreur={e.consentement} coche={etat.valeurs?.consentement === "oui"} />
     </form>
   );
 }

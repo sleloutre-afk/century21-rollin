@@ -6,7 +6,7 @@
  */
 
 export type Demande = {
-  formulaire: "rappel" | "estimation" | "estimation-suite" | "visite" | "alerte";
+  formulaire: "rappel" | "estimation" | "estimation-suite" | "visite" | "alerte" | "rendez-vous";
   pole: string;
   donnees: Record<string, string>;
 };

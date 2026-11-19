@@ -26,7 +26,7 @@ export function FormulaireVisite({ annonce }: { annonce: string }) {
       <Champ id={id} nom="email" libelle="E-mail (facultatif)" type="email" autoComplete="email" valeur={v.email} erreur={e.email} />
       <Champ id={id} nom="message" libelle="Vos disponibilités ou questions (facultatif)" multiligne valeur={v.message} erreur={e.message} />
       <ChampPiege />
-      <CaseConsentement id={id} texte="J'accepte que mes données soient utilisées pour organiser la visite et être recontacté." erreur={e.consentement} />
+      <CaseConsentement id={id} texte="J'accepte que mes données soient utilisées pour organiser la visite et être recontacté." erreur={e.consentement} coche={v.consentement === "oui"} />
       <button
         type="submit"
         disabled={enCours}

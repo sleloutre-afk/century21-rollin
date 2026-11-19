@@ -50,6 +50,22 @@ export const alerteSchema = z.object({
   consentement: z.literal("oui", { error: "Votre accord est nécessaire pour recevoir les nouveaux biens." }),
 });
 
+/**
+ * Prise de rendez-vous (fiche conseiller, contact). Créneaux d'EXEMPLE (maquette ConseillerDesktop) :
+ * ils viendront de l'agenda du conseiller quand l'outil sera choisi (spec §6).
+ */
+export const JOURS_RDV = ["Lun.", "Mar.", "Mer.", "Jeu.", "Ven."] as const;
+export const HEURES_RDV = ["9h30", "10h30", "11h30", "14h00", "15h00", "16h00", "17h00"] as const;
+
+export const rendezVousSchema = z.object({
+  conseiller: z.string().trim().max(80).optional().default(""),
+  jour: z.enum(JOURS_RDV, { error: "Choisissez un jour." }),
+  heure: z.enum(HEURES_RDV, { error: "Choisissez une heure." }),
+  nom: z.string().trim().min(2, "Indiquez votre nom.").max(120, "Nom trop long."),
+  telephone,
+  consentement: z.literal("oui", { error: "Votre accord est nécessaire pour organiser le rendez-vous." }),
+});
+
 /** Résultat renvoyé au formulaire après l'envoi. */
 export type EtatFormulaire = {
   statut: "initial" | "envoye" | "erreur";

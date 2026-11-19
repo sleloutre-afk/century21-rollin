@@ -27,6 +27,12 @@ import type { Annonce } from "@/lib/schemas/annonce";
  * - À VALIDER : liste des mentions obligatoires à faire valider par l'agence ou son juriste avant mise en ligne.
  */
 
+/**
+ * Navigation « bloquante » assumée : chaque page de ce gabarit est préparée à l'avance (generateStaticParams),
+ * le serveur la renvoie immédiatement. Évite l'avertissement de Next.js sur la lecture de l'adresse (params).
+ */
+export const instant = false;
+
 type Props = { params: Promise<{ slug: string }> };
 
 /** Pages préparées à l'avance : annonces en vente, sous compromis ou en location (pas les biens vendus ou loués). */

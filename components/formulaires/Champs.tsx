@@ -51,7 +51,8 @@ export function Champ({
   );
 }
 
-export function CaseConsentement({ id, texte, erreur }: { id: string; texte: string; erreur?: string }) {
+/** `coche` : garde la case cochée après une erreur (React vide le formulaire à chaque envoi). */
+export function CaseConsentement({ id, texte, erreur, coche = false }: { id: string; texte: string; erreur?: string; coche?: boolean }) {
   const idErreur = `${id}-consentement-erreur`;
   return (
     <div className="flex flex-col gap-1.5">
@@ -60,6 +61,7 @@ export function CaseConsentement({ id, texte, erreur }: { id: string; texte: str
           type="checkbox"
           name="consentement"
           value="oui"
+          defaultChecked={coche}
           aria-invalid={!!erreur}
           aria-describedby={erreur ? idErreur : undefined}
           className="m-0 size-5 flex-none accent-grey-dark"

@@ -26,6 +26,12 @@ import { dansLeQuartier } from "@/lib/quartiers";
  * - Aucun bien en vente dans le secteur → état « aucun bien » avec la création d'alerte.
  */
 
+/**
+ * Navigation « bloquante » assumée : chaque page de ce gabarit est préparée à l'avance (generateStaticParams),
+ * le serveur la renvoie immédiatement. Évite l'avertissement de Next.js sur la lecture de l'adresse (params).
+ */
+export const instant = false;
+
 type Props = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {

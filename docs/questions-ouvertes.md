@@ -134,3 +134,12 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Conseiller référent de chaque secteur** (avec sa présentation à la première personne) : à fournir. — Qui : Agence
 - [ ] **Préposition des 4 secteurs sans texte** : « dans le secteur Parc Rivière », faute de mieux (« au Jardin Public », « à Fondaudège » ?). Champ `prep` à compléter. — Qui : Agence
 - [x] **Défaut corrigé** : sur téléphone, le champ « Adresse de votre bien » des blocs d'estimation (Vendre, Biens vendus, fiche bien, Acheter, Faire louer ou gérer, quartiers) était démesuré.
+
+## 11. Points ouverts au lot 7 (équipe et fiche conseiller)
+
+- [x] **Blocs vides des fiches** → *Simon, 19/11/2026 : masqués* (présentation, spécialité, chiffres, biens en vente, dernières ventes) ; ils apparaissent dès que les données sont saisies dans `contenus/equipe.json` (présentation, spécialité, secteurs) et `contenus/annonces.json` (champ `conseiller`). Cartes de la page Équipe : spécialité et quartiers seulement s'ils sont connus. Emplacements d'avis gardés pour les pôles transaction, location et gestion.
+- [ ] **Pour chaque membre** : portrait (avec accord écrit), présentation à la première personne, spécialité, secteurs, ligne directe, e-mail. — Qui : Agence
+- [ ] **Chiffres par conseiller** (biens vendus sur une période, avis le mentionnant) : la maquette les prévoit ; à fournir ou à calculer par le back-office. — Qui : Agence · Après V1
+- [ ] **Prise de rendez-vous** : créneaux d'exemple (lun.–ven., 9h30–17h00, repris de la maquette), sans réservation réelle ; la demande est transmise (simulée) et l'agence rappelle pour confirmer. Outil d'agenda à choisir. — Qui : Simon + Agence
+- [ ] **Photo de l'équipe devant l'agence** (haut de la page Équipe). — Qui : Agence
+- [x] **Défaut corrigé (tous les formulaires)** : après une erreur (champ manquant), la case de consentement se décochait et le visiteur devait la recocher. Elle reste désormais cochée.
