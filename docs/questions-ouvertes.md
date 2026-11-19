@@ -63,4 +63,14 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Consigne « ne pas toucher à `docs/` »** : le plan du lot 0 demande pourtant de créer ce fichier et de compléter la section « Commandes » de `CLAUDE.md`. Seules ces deux modifications ont été faites au lot 0 ; rien d'autre n'a changé dans `docs/`, `maquette/` et `contenus/` (hors correction « 600 biens gérés » demandée par Simon ensuite).
 - [ ] **Champs qui manquent dans les données pour appliquer la spec** : pas de champs « location » (loyer, charges, dépôt de garantie…), pas de date de mise en ligne, pas de date ni de slug pour les articles. Ils sont prévus dans les schémas (facultatifs), sans modification des fichiers de `contenus/`.
 - [ ] **Paramètre `?vue=carte`** : la maquette l'utilise pour la vue carte de la recherche, la spec ne le cite pas dans la liste des filtres de l'URL. Je l'ajouterai aux paramètres de l'URL (lot 4).
-- [ ] **Avis, Agence et Contact absents du menu principal** (brief §7) : accessibles par le pied de page et les boutons de contenu. À confirmer.
+- [x] **Avis, Agence et Contact absents du menu principal** (brief §7) → résolu par la maquette : ils sont dans la barre utilitaire de l'en-tête (avec le barème), dans le menu mobile et dans le pied de page.
+- [x] **Deux couleurs hors charte dans la maquette** : gris #3A3A3B (emplacements photo sur fond sombre) et noir #000000 (survol des boutons sombres et des liens). → *Proposition acceptée par Simon le 19/11/2026* : emplacements sur fond sombre en Obsessed Grey avec filet Medium Grey ; boutons sombres dont le texte passe en or au survol.
+- [ ] **« Plus de 600 propriétaires nous confient déjà leur bien »** : même formulation dans la carte « Je fais louer ou gérer » de la planche d'accueil (Main). Sera écrite « plus de 600 biens gérés » au lot 2, comme décidé pour l'article 3.
+
+## 5. Points ouverts au lot 1 (gabarit et composants)
+
+- [ ] **Menu mobile** : non dessiné dans la maquette (seul le bouton l'est). Réalisé en plein écran, même style que l'en-tête : à valider sur `/styleguide` et sur téléphone. — Qui : Simon
+- [ ] **Badge « Nouveau »** : non dessiné dans la maquette. Réalisé en blanc avec texte Obsessed Grey, à côté du badge « Exclusivité ». Durée proposée : 15 jours (`lib/biens.ts`). — Qui : Simon
+- [ ] **Lien « Réseau CENTURY 21 » du pied de page** : adresse du site du réseau non fournie dans le dossier. Affiché « [lien à fournir] ». — Qui : Agence
+- [ ] **Période des « biens en gestion »** : la maquette affiche « 600+ biens en gestion » sans période. Par prudence (un chiffre d'activité s'affiche avec sa période), la période est ajoutée comme pour les ventes et les locations, en attendant la réponse de l'agence. — Qui : Agence
+- [ ] **Barre utilitaire** : « 32 cours Evrard de Fayolle, Bordeaux · Du lundi au vendredi », comme dans la maquette. À compléter si l'agence ouvre le samedi. — Qui : Agence
