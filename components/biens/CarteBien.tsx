@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
-import { etiquetteEnergie, mentionPrix, prixAffiche, resumeBien } from "@/lib/biens";
+import { etiquetteEnergie, mentionPrix, prixAffiche, resumeBien } from "@/lib/biens/affichage";
 import type { Annonce } from "@/lib/schemas/annonce";
 
 /**
  * Carte d'annonce (maquette : Main, « Nos coups de cœur »). Mêmes champs pour toutes les annonces.
  * - format « grande » : carte vedette (photo 480 px, titre plus grand) ;
  * - format « standard » : photo 300 px.
- * Le badge « Nouveau » est calculé par la page appelante (voir lib/biens.ts).
+ * Le badge « Nouveau » est calculé par la page appelante (voir lib/biens/affichage.ts et lib/biens/nouveaux.ts).
  */
 
 type Props = {
@@ -33,6 +33,7 @@ export function CarteBien({ annonce, format = "standard", nouveau = false, nivea
         <div className="absolute left-3.5 top-3.5 flex gap-2 md:left-[18px] md:top-[18px]">
           {annonce.exclusivite && <Badge variante="exclusivite" />}
           {nouveau && <Badge variante="nouveau" />}
+          {annonce.statut === "sous_compromis" && <Badge variante="compromis" />}
         </div>
       </EmplacementPhoto>
       <div className="flex flex-col gap-1.5 pt-4 md:gap-2 md:pt-5">

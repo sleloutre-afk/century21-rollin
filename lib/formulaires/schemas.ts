@@ -33,11 +33,31 @@ export const demandeRappelSchema = z.object({
 
 export type DemandeRappel = z.infer<typeof demandeRappelSchema>;
 
+/** Formulaire « Demander une visite » de la fiche bien. */
+export const demandeVisiteSchema = z.object({
+  annonce: z.string().trim().min(1),
+  nom: z.string().trim().min(2, "Indiquez votre nom.").max(120, "Nom trop long."),
+  telephone,
+  email: z.union([z.literal(""), z.email("Indiquez une adresse e-mail valide.")]).optional().default(""),
+  message: z.string().trim().max(2000, "Message trop long (2 000 caractères au maximum).").optional().default(""),
+  consentement: z.literal("oui", { error: "Votre accord est nécessaire pour être recontacté." }),
+});
+
+/** Alerte e-mail (recherche, Acheter) : critères de la recherche en cours. */
+export const alerteSchema = z.object({
+  email: z.email("Indiquez une adresse e-mail valide."),
+  criteres: z.string().trim().max(500).optional().default(""),
+  consentement: z.literal("oui", { error: "Votre accord est nécessaire pour recevoir les nouveaux biens." }),
+});
+
 /** Résultat renvoyé au formulaire après l'envoi. */
 export type EtatFormulaire = {
   statut: "initial" | "envoye" | "erreur";
   message?: string;
-  erreurs?: Partial<Record<keyof DemandeRappel, string>>;
+  erreurs?: Record<string, string>;
   /** Valeurs saisies, renvoyées en cas d'erreur pour ne pas les perdre. */
-  valeurs?: Partial<Record<keyof DemandeRappel, string>>;
+  valeurs?: Record<string, string>;
 };
+
+/** Mention affichée tant que l'envoi réel n'est pas branché. À VALIDER : à retirer au branchement de Resend. */
+export const MENTION_DEMO = "[Démonstration : aucun message n'est encore transmis à l'agence.]";

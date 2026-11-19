@@ -15,6 +15,23 @@
   --color-grey-light: #e6e7e8; /* Light Grey — fonds de section, emplacements photo */
   --color-white: #ffffff;
 
+  /* Seule exception à la charte : couleurs réglementaires des étiquettes DPE et GES
+     (reprises de maquette/planches/FicheDesktop.dc.html). Réservées à ces étiquettes. */
+  --color-dpe-a: #009c6d;
+  --color-dpe-b: #52b153;
+  --color-dpe-c: #78bd76;
+  --color-dpe-d: #f4e70f;
+  --color-dpe-e: #f0b40f;
+  --color-dpe-f: #eb8235;
+  --color-dpe-g: #d7221f;
+  --color-ges-a: #a3dbfc;
+  --color-ges-b: #8ab5d2;
+  --color-ges-c: #7692b1;
+  --color-ges-d: #5f6e8d;
+  --color-ges-e: #4d5271;
+  --color-ges-f: #393551;
+  --color-ges-g: #281b35;
+
   /* Aucune police à empattements : seules ces deux familles existent. */
   --font-*: initial;
   --font-sans: Arial, Helvetica, sans-serif; /* Texte courant (alternative officielle à Oakes) */

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CarteVendu, dernieresVentes } from "@/components/biens/CarteVendu";
+import { CarteVendu } from "@/components/biens/CarteVendu";
+import { dernieresVentes } from "@/lib/biens/ventes";
+import { FormulaireAdresse } from "@/components/estimation/FormulaireAdresse";
 import { BoutonLien, LienFleche } from "@/components/ui/Bouton";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { Faq } from "@/components/ui/Faq";
@@ -70,30 +72,6 @@ function CarteConseiller({ membre }: { membre: Membre }) {
         <span className="text-sm md:text-[15px]">{roleConseiller(membre)}</span>
       </div>
     </Link>
-  );
-}
-
-function FormulaireAdresse({ id }: { id: string }) {
-  return (
-    <form action={ROUTES.estimation} method="get" className="flex flex-[1_1_520px] flex-col gap-2 bg-white p-2 md:flex-row md:flex-wrap">
-      <label htmlFor={id} className="sr-only">
-        Adresse de votre bien
-      </label>
-      <input
-        id={id}
-        name="adresse"
-        type="text"
-        placeholder="Adresse de votre bien"
-        autoComplete="street-address"
-        className="h-14 min-w-0 flex-[1_1_280px] border-0 px-4 text-lg text-grey-dark md:h-[60px]"
-      />
-      <button
-        type="submit"
-        className="min-h-14 cursor-pointer bg-grey-dark px-9 font-display text-base font-semibold uppercase tracking-[0.14em] text-white hover:text-gold md:min-h-[60px]"
-      >
-        Estimer
-      </button>
-    </form>
   );
 }
 
@@ -316,7 +294,7 @@ export default function PageVendre() {
             </h2>
             <p className="m-0 text-[17px] leading-normal md:text-lg">Une première fourchette en 2 minutes, puis l&apos;avis d&apos;un expert de votre quartier.</p>
           </div>
-          <FormulaireAdresse id="vendre-adresse" />
+          <FormulaireAdresse id="vendre-adresse" className="flex-[1_1_520px]" />
         </div>
       </section>
     </>

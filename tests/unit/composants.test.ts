@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getAnnonce } from "@/lib/data";
-import { estNouveau, etiquetteEnergie, mentionPrix, prixAffiche, resumeBien } from "@/lib/biens";
+import { estNouveau, etiquetteEnergie, mentionPrix, prixAffiche, resumeBien } from "@/lib/biens/affichage";
 import { decouperCompteur } from "@/lib/format/compteur";
 import { estActif } from "@/lib/navigation";
 

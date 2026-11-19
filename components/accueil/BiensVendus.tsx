@@ -1,4 +1,5 @@
-import { CarteVendu, dernieresVentes } from "@/components/biens/CarteVendu";
+import { CarteVendu } from "@/components/biens/CarteVendu";
+import { dernieresVentes } from "@/lib/biens/ventes";
 import { BoutonLien, LienFleche } from "@/components/ui/Bouton";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";

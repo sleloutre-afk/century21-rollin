@@ -94,6 +94,10 @@ export const annonceSchema = z
     stationnement: texteSchema.optional(),
     quartierPage: texteSchema.optional(),
     // Champs prévus par la spec, absents des données de démonstration
+    reference: texteSchema.nullable().optional(),
+    video: texteSchema.nullable().optional(),
+    visiteVirtuelle: texteSchema.nullable().optional(),
+    plan: texteSchema.nullable().optional(),
     dateMiseEnLigne: dateSchema.nullable().optional(),
     location: locationSchema.nullable().optional(),
   })

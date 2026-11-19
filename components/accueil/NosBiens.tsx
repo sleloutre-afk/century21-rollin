@@ -2,6 +2,7 @@ import { CarteBien } from "@/components/biens/CarteBien";
 import { MiniMoteur } from "@/components/biens/MiniMoteur";
 import { BoutonLien, LienFleche } from "@/components/ui/Bouton";
 import { TitreSection } from "@/components/ui/TitreSection";
+import { slugsNouveaux } from "@/lib/biens/nouveaux";
 import { getAnnonces, getLocalisations } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 
@@ -9,7 +10,8 @@ import { ROUTES } from "@/lib/navigation";
  * « Nos coups de cœur » (brief §7.4 ; maquette Main et Accueil-mobile-1).
  * Sélection : annonces cochées « coup de cœur » et encore en vente (5 sur desktop, 2 sur mobile).
  */
-export function NosBiens() {
+export async function NosBiens() {
+  const nouveaux = await slugsNouveaux();
   const annonces = getAnnonces();
   const enVente = annonces.filter((a) => a.transaction === "vente" && a.statut === "en_vente");
   const selection = enVente.filter((a) => a.coupDeCoeur).slice(0, 5);
@@ -39,7 +41,7 @@ export function NosBiens() {
                 i >= 2 ? "hidden md:block" : "",
               ].join(" ")}
             >
-              <CarteBien annonce={annonce} format={i < 2 ? "grande" : "standard"} />
+              <CarteBien annonce={annonce} format={i < 2 ? "grande" : "standard"} nouveau={nouveaux.includes(annonce.slug)} />
             </div>
           ))}
         </div>

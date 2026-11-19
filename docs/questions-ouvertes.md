@@ -97,3 +97,20 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Encadrement des loyers** sur le résultat « faire louer / confier la gestion » : « [vérification à prévoir] » (sujet reporté par Simon). — Qui : Agence / Juriste
 - [ ] **Choix pré-sélectionnés** du parcours (Appartement, Avant 1949, Bon état, Aucun stationnement, Vendre), repris de la maquette. Ils accélèrent la saisie mais peuvent être validés sans y penser : à garder ou à retirer ? — Qui : Simon
 - [x] **Couleurs hors charte de la planche Vendre** : gris #DADBDC des emplacements de la méthode (remplacé par un filet Medium Grey) et numéros d'étapes en or foncé sur blanc (affichés en Obsessed Grey).
+
+## 8. Points ouverts au lot 4 (biens, fiche, biens vendus, Acheter)
+
+- [x] **Quartiers des annonces** → *Simon, 19/11/2026 : OK.* Rattachées dans `contenus/annonces.json` : 4 aux Chartrons, Palais Gallien, Croix de Seguey, Saint-Seurin, Bacalan (grand T4). Seules les annonces des 6 secteurs mènent à une page quartier.
+- [x] **Vue carte** → *Simon, 19/11/2026 : OK.* Emplacement « carte · fournisseur à choisir », sans étiquettes de prix (coordonnées non fournies).
+- [x] **Dates de mise en ligne** → *Simon, 19/11/2026 : dates FICTIVES sur les 30 derniers jours* (du 21/10 au 17/11/2026), pour le tri « Plus récents » et le badge « Nouveau ». À remplacer par les vraies dates. — Qui : Agence
+- [x] **Descriptions des biens** → *Simon, 19/11/2026 : rédigées pour la démonstration*, à partir des seules caractéristiques connues (type, quartier, surface, pièces, atouts). À remplacer par les textes des conseillers. — Qui : Agence
+- [x] **Nombre de chambres du grand T4** : 3 (repris de son titre « Grand T4, 3 chambres »).
+- [ ] **Favoris** (cœur sur les cartes de la maquette) : non réalisés. Il faudrait garder la liste dans le navigateur du visiteur. À décider plus tard. — Qui : Simon
+- [ ] **Vidéo, visite virtuelle, plan** : champs prévus (`video`, `visiteVirtuelle`, `plan`), vides pour l'instant. Comme le prévoit la spec, les onglets et blocs correspondants n'apparaissent que si le média est fourni. Format des fichiers à définir avec l'agence. — Qui : Agence
+- [ ] **Caractéristiques non fournies** (année de construction, chauffage, taxe foncière) : présentes dans la maquette, absentes des données. Masquées. À ajouter au schéma si l'agence les fournit. — Qui : Agence
+- [ ] **Référence des annonces** : « Réf. [—] » (champ `reference` prévu, vide). — Qui : Agence
+- [ ] **Conseiller de chaque annonce** : bloc « [Prénom Nom] », bouton d'appel vers le standard de l'agence en attendant les lignes directes. — Qui : Agence
+- [ ] **Seuils du filtre « Surface min. »** (30, 50, 75, 100, 150 m²) : choisis par défaut, la maquette n'en donnait pas. — Qui : Simon
+- [ ] **Alerte e-mail** : demande transmise (simulée), rien n'est stocké. L'envoi automatique à chaque nouveau bien demande le back-office et l'outil d'e-mail (désinscription en un clic). — Qui : Simon · Après V1
+- [ ] **Page « introuvable » d'un bien vendu ou supprimé** : elle s'affiche bien, marquée « noindex », mais avec le code 200 au lieu de 404 (fonctionnement de Next.js avec la préparation partielle des pages). Sans gravité pour Google. À revoir au lot 10 (page 404 complète, éventuelle redirection des biens vendus vers `/biens-vendus`). — Lot : 10
+- [ ] **Étapes 5 et 6 de la page Acheter** : partenaires de financement et rôle exact de l'agence dans l'avant-contrat, à confirmer (« [Partenaires à confirmer] » conservé). — Qui : Agence

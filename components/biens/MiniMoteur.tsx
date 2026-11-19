@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { BoutonLien } from "@/components/ui/Bouton";
+import { BUDGETS } from "@/lib/biens/recherche";
 import { ROUTES } from "@/lib/navigation";
 
 /**
@@ -9,11 +10,6 @@ import { ROUTES } from "@/lib/navigation";
  * Envoie ses filtres à la page de recherche dans l'adresse (?transaction=…&type=…&budget=…&quartier=…).
  * Tranches de budget : celles de la maquette (proposition acceptée par Simon le 19/11/2026).
  */
-
-const BUDGETS = {
-  vente: [300_000, 500_000, 800_000, 1_200_000],
-  location: [800, 1_200, 1_800],
-} as const;
 
 type Transaction = keyof typeof BUDGETS;
 

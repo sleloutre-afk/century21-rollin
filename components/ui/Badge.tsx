@@ -5,11 +5,12 @@
  * - vendu / categorie : fond or, texte Obsessed Grey.
  */
 
-export type VarianteBadge = "exclusivite" | "nouveau" | "vendu" | "categorie" | "pole";
+export type VarianteBadge = "exclusivite" | "nouveau" | "compromis" | "vendu" | "categorie" | "pole";
 
 const VARIANTES: Record<VarianteBadge, string> = {
   exclusivite: "bg-grey-dark text-gold px-3 py-[7px] text-[13px] tracking-[0.18em]",
   nouveau: "bg-white text-grey-dark px-3 py-[7px] text-[13px] tracking-[0.18em]",
+  compromis: "bg-white text-grey-dark px-3 py-[7px] text-[13px] tracking-[0.18em]",
   vendu: "bg-gold text-grey-dark px-3.5 py-2 text-sm font-semibold tracking-[0.22em]",
   categorie: "bg-gold text-grey-dark px-2.5 py-[5px] text-[13px] font-semibold tracking-[0.16em]",
   pole: "bg-grey-dark text-gold px-2.5 py-[5px] text-xs tracking-[0.16em]",
@@ -18,6 +19,7 @@ const VARIANTES: Record<VarianteBadge, string> = {
 const LIBELLES: Partial<Record<VarianteBadge, string>> = {
   exclusivite: "Exclusivité",
   nouveau: "Nouveau",
+  compromis: "Sous compromis",
   vendu: "Vendu",
 };
 

@@ -1,5 +1,5 @@
 {
-  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies.",
+  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies. DÉMONSTRATION (décisions de Simon, 19/11/2026) : dates de mise en ligne fictives (30 derniers jours) et descriptions courtes rédigées à partir des seules caractéristiques connues, à remplacer par les vraies. Quartiers rattachés le 19/11/2026.",
   "annonces": [
     {
       "slug": "maison-de-ville-bourgeoise-palais-gallien",
@@ -8,7 +8,7 @@
       "type": "maison",
       "titre": "Maison de ville bourgeoise",
       "quartierLibelle": "Palais Gallien",
-      "secteur": null,
+      "secteur": "palais-gallien",
       "surfaceHabitable": 189,
       "pieces": 8,
       "chambres": null,
@@ -45,13 +45,14 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "Maison de ville bourgeoise en pierre de taille, dans le quartier du Palais Gallien. 189 m² sur trois niveaux, huit pièces, une terrasse et un box.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
       "niveaux": 3,
       "exterieur": "Terrasse · [surface à fournir]",
       "stationnement": "Box",
-      "quartierPage": "[à choisir : Chartrons ou autre]"
+      "quartierPage": "[à choisir : Chartrons ou autre]",
+      "dateMiseEnLigne": "2026-11-17"
     },
     {
       "slug": "maison-bourgeoise-croix-de-seguey",
@@ -60,7 +61,7 @@
       "type": "maison",
       "titre": "Maison bourgeoise",
       "quartierLibelle": "Croix de Seguey",
-      "secteur": null,
+      "secteur": "croix-de-seguey",
       "surfaceHabitable": 278.84,
       "pieces": 10,
       "chambres": null,
@@ -95,9 +96,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "Maison bourgeoise de 278,84 m² à Croix de Seguey. Dix pièces, des cheminées et un jardin.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-11-12"
     },
     {
       "slug": "maison-de-charme-chartrons-cours-journu-auber",
@@ -106,7 +108,7 @@
       "type": "maison",
       "titre": "Maison de charme",
       "quartierLibelle": "Chartrons · cours Journu-Auber",
-      "secteur": null,
+      "secteur": "chartrons",
       "surfaceHabitable": 136,
       "pieces": 4,
       "chambres": null,
@@ -141,9 +143,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "Maison de charme de 136 m², cours Journu-Auber, aux Chartrons. Quatre pièces, tout le charme de l'ancien, dans un quartier familial.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-11-08"
     },
     {
       "slug": "grand-t4-3-chambres-chartrons-cote-bacalan",
@@ -152,10 +155,10 @@
       "type": "appartement",
       "titre": "Grand T4, 3 chambres",
       "quartierLibelle": "Chartrons · côté Bacalan [localisation exacte à confirmer]",
-      "secteur": null,
+      "secteur": "bacalan",
       "surfaceHabitable": 147,
       "pieces": 4,
-      "chambres": null,
+      "chambres": 3,
       "prixHonorairesInclus": 665000,
       "prixHorsHonoraires": null,
       "partHonorairesAcquereurPct": null,
@@ -188,9 +191,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "Grand appartement de 147 m², côté Bacalan. Quatre pièces dont trois chambres, un jardin de 120 m² et un patio, au calme.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-11-03"
     },
     {
       "slug": "t3-traversant-saint-seurin",
@@ -199,7 +203,7 @@
       "type": "appartement",
       "titre": "T3 traversant",
       "quartierLibelle": "Saint-Seurin",
-      "secteur": null,
+      "secteur": "saint-seurin",
       "surfaceHabitable": 88,
       "pieces": 3,
       "chambres": null,
@@ -234,9 +238,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "T3 traversant de 88 m² à Saint-Seurin, dans un immeuble en pierre. Des volumes généreux.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-10-30"
     },
     {
       "slug": "t3-bis-refait-a-neuf-chartrons-place-picard",
@@ -245,7 +250,7 @@
       "type": "appartement",
       "titre": "T3 bis refait à neuf",
       "quartierLibelle": "Chartrons · place Picard",
-      "secteur": null,
+      "secteur": "chartrons",
       "surfaceHabitable": 75,
       "pieces": 3,
       "chambres": null,
@@ -280,9 +285,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "T3 bis de 75 m² refait à neuf, place Picard, aux Chartrons. Lumineux et calme.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-10-27"
     },
     {
       "slug": "t3-cle-en-main-chartrons-pres-des-quais",
@@ -291,7 +297,7 @@
       "type": "appartement",
       "titre": "T3 clé en main",
       "quartierLibelle": "Chartrons · près des quais",
-      "secteur": null,
+      "secteur": "chartrons",
       "surfaceHabitable": 70.5,
       "pieces": 3,
       "chambres": null,
@@ -323,9 +329,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "T3 clé en main de 70,50 m², aux Chartrons, près des quais.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-10-24"
     },
     {
       "slug": "t3-avec-terrasse-chartrons-cours-du-medoc",
@@ -334,7 +341,7 @@
       "type": "appartement",
       "titre": "T3 avec terrasse",
       "quartierLibelle": "Chartrons · cours du Médoc",
-      "secteur": null,
+      "secteur": "chartrons",
       "surfaceHabitable": 64.54,
       "pieces": 3,
       "chambres": null,
@@ -368,9 +375,10 @@
       },
       "conseiller": null,
       "photos": [],
-      "description": null,
+      "description": "T3 de 64,54 m² avec terrasse, cours du Médoc, aux Chartrons.",
       "delaiDeVenteJours": null,
-      "coordonnees": null
+      "coordonnees": null,
+      "dateMiseEnLigne": "2026-10-21"
     }
   ]
 }
