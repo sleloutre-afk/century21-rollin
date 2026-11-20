@@ -117,6 +117,10 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Page « introuvable » d'un bien vendu ou supprimé** : elle s'affiche bien, marquée « noindex », mais avec le code 200 au lieu de 404 (fonctionnement de Next.js avec la préparation partielle des pages). Sans gravité pour Google. À revoir au lot 10 (page 404 complète, éventuelle redirection des biens vendus vers `/biens-vendus`). — Lot : 10
 - [ ] **Étapes 5 et 6 de la page Acheter** : partenaires de financement et rôle exact de l'agence dans l'avant-contrat, à confirmer (« [Partenaires à confirmer] » conservé). — Qui : Agence
 
+- [ ] **Mentions des 8 annonces reprises du site actuel (20/11/2026)** : DPE, GES, date du DPE, dépenses d'énergie, honoraires (tous à la charge du vendeur), copropriété, référence, conseiller et descriptions complètes. Classes DPE et GES lues sur les étiquettes du site actuel (cohérentes avec les valeurs). Restent à fournir : dépenses d'énergie de la maison Croix de Seguey et du T3 Saint-Seurin (absentes du site actuel aussi), statut de copropriété des 3 maisons, conseiller des 4 annonces sans mention « Bien proposé par ». — Qui : Agence
+- [ ] **Mention des agents commerciaux** : reprise telle quelle du site actuel (« Bien proposé par … EI, agent commercial (RSAC …) »). Formulation à faire valider. — Qui : Juriste
+- [ ] **Mention sous le prix quand les honoraires sont payés par le vendeur** : « Honoraires à la charge du vendeur » (le site actuel écrit « Honoraires charge vendeur »). — Qui : Agence
+
 ## 9. Points ouverts au lot 5 (Faire louer ou gérer)
 
 - [x] **Réserves entre crochets** → *Simon, 19/11/2026 : retirées*, en gardant le texte existant. « Relevé de gérance », « Garantie des loyers impayés en option », étape 5 « Vous suivez vos loyers et vos dépenses. ». Première ligne de l'offre de mise en location reformulée sans parler de l'encadrement : « Estimation du loyer, plafonds applicables compris » (reprise de l'étape 1 du déroulé). Textes à relire avec l'agence. — Qui : Agence

@@ -43,7 +43,7 @@ export function mentionPrix(annonce: Pick<Annonce, "transaction" | "partHonorair
   if (annonce.transaction === "location") return "Charges comprises";
   const pct = annonce.partHonorairesAcquereurPct;
   if (pct === null) return "Honoraires inclus · part acquéreur [à préciser]";
-  if (pct === 0) return "Honoraires inclus · à la charge du vendeur";
+  if (pct === 0) return "Honoraires à la charge du vendeur";
   const pctTexte = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 2 }).format(pct);
   return `Honoraires inclus · ${pctTexte} % à la charge de l'acquéreur`;
 }

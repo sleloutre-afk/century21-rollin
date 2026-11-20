@@ -62,6 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const TYPES: Record<Annonce["type"], string> = { maison: "Maison", appartement: "Appartement" };
 const aFournir = (v: string | number | null | undefined) => (v === null || v === undefined || v === "" ? "[à fournir]" : String(v));
 const montant = (v: number | null | undefined) => (v === null || v === undefined ? "[à fournir]" : formaterPrix(v));
+const anneesReference = (a: number[] | null) =>
+  a === null ? "sur [années à fournir]" : a.length === 1 ? `sur l'année ${a[0]}` : `sur les années ${a.slice(0, -1).join(", ")} et ${a[a.length - 1]}`;
 const ouiNon = (v: boolean | null | undefined) => (v === null || v === undefined ? "[à fournir]" : v ? "Oui" : "Non");
 const dater = (d: string | null | undefined) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[à fournir]");
 
@@ -207,10 +209,14 @@ export default async function FicheBien({ params }: Props) {
           )}
 
           <Section id="h-desc" titre="Le bien">
-            <p className="m-0 max-w-[680px] text-[17px] leading-relaxed">
-              {/* Description de démonstration (contenus/annonces.json) : à remplacer par celle du conseiller. */}
-              {annonce.description ?? "[Description à rédiger par le conseiller : distribution des pièces, état, exposition, prestations.]"}
-            </p>
+            {/* Description reprise du site actuel ; paragraphes séparés par une ligne vide. */}
+            {(annonce.description ?? "[Description à rédiger par le conseiller : distribution des pièces, état, exposition, prestations.]")
+              .split(/\n\s*\n/)
+              .map((paragraphe, i) => (
+                <p key={i} className="m-0 max-w-[680px] text-[17px] leading-relaxed">
+                  {paragraphe}
+                </p>
+              ))}
           </Section>
 
           <Section id="h-carac" titre="Caractéristiques">
@@ -225,7 +231,7 @@ export default async function FicheBien({ params }: Props) {
             {classeExcessive && <p className="m-0 border-l-4 border-dpe-g bg-grey-light px-4 py-3 text-base font-bold">Logement à consommation énergétique excessive</p>}
             <p className="m-0 text-[15px] leading-relaxed">
               Montant estimé des dépenses annuelles d&apos;énergie pour un usage standard : entre {montant(annonce.depensesEnergie.min)} et{" "}
-              {montant(annonce.depensesEnergie.max)} par an, prix moyens des énergies indexés au {aFournir(annonce.depensesEnergie.anneeReferencePrix)}. Date du
+              {montant(annonce.depensesEnergie.max)} par an, prix moyens des énergies indexés {anneesReference(annonce.depensesEnergie.anneesReferencePrix)}. Date du
               DPE : {dater(annonce.dpe.date)}.
             </p>
           </Section>
@@ -246,14 +252,25 @@ export default async function FicheBien({ params }: Props) {
                   ]}
                 />
                 <p className="m-0 text-[15px] leading-relaxed">
-                  Prix honoraires inclus : {formaterPrix(annonce.prixHonorairesInclus)}, dont{" "}
-                  {annonce.partHonorairesAcquereurPct === null ? "[—]" : new Intl.NumberFormat("fr-FR").format(annonce.partHonorairesAcquereurPct)} % TTC à la charge de
-                  l&apos;acquéreur, soit {annonce.prixHorsHonoraires === null ? "[—] €" : formaterPrix(annonce.prixHorsHonoraires)} hors honoraires.{" "}
+                  {annonce.partHonorairesAcquereurPct === 0 ? (
+                    <>Prix : {formaterPrix(annonce.prixHonorairesInclus)}, honoraires à la charge du vendeur. </>
+                  ) : (
+                    <>
+                      Prix honoraires inclus : {formaterPrix(annonce.prixHonorairesInclus)}, dont{" "}
+                      {annonce.partHonorairesAcquereurPct === null ? "[—]" : new Intl.NumberFormat("fr-FR").format(annonce.partHonorairesAcquereurPct)} % TTC à la charge
+                      de l&apos;acquéreur, soit {annonce.prixHorsHonoraires === null ? "[—] €" : formaterPrix(annonce.prixHorsHonoraires)} hors honoraires.{" "}
+                    </>
+                  )}
                   <Link href={ROUTES.honoraires} className="font-bold text-grey-dark">
                     Barème d&apos;honoraires
                   </Link>
                   .
                 </p>
+                {annonce.agentCommercial && (
+                  <p className="m-0 text-[15px] leading-relaxed">
+                    Bien proposé par {conseiller?.nom ?? annonce.agentCommercial.nom} EI, agent commercial (RSAC {annonce.agentCommercial.rsac}).
+                  </p>
+                )}
               </>
             ) : (
               // À VALIDER : encadrement des loyers à Bordeaux (fin d'expérimentation prévue le 24/11/2026).

@@ -74,7 +74,8 @@ export const annonceSchema = z
     depensesEnergie: z.strictObject({
       min: montant.nullable(),
       max: montant.nullable(),
-      anneeReferencePrix: z.number().int().min(2000).max(2100).nullable(),
+      // Année(s) des prix moyens de l'énergie : [2021, 2022, 2023] (anciens DPE) ou [2025]…
+      anneesReferencePrix: z.array(z.number().int().min(2000).max(2100)).min(1).nullable(),
     }),
     copropriete: z.strictObject({
       estEnCopropriete: z.boolean().nullable(),
@@ -100,6 +101,9 @@ export const annonceSchema = z
     plan: texteSchema.nullable().optional(),
     dateMiseEnLigne: dateSchema.nullable().optional(),
     location: locationSchema.nullable().optional(),
+    // Mention « Bien proposé par … EI, agent commercial (RSAC …) », reprise du site actuel.
+    // À VALIDER : formulation exacte de la mention obligatoire des agents commerciaux.
+    agentCommercial: z.strictObject({ nom: texteSchema, rsac: texteSchema }).nullable().optional(),
   })
   .superRefine((a, ctx) => {
     const statutsVente = ["en_vente", "sous_compromis", "vendu"];

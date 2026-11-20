@@ -1,5 +1,5 @@
 {
-  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies. DÉMONSTRATION (décisions de Simon, 19/11/2026) : dates de mise en ligne fictives (30 derniers jours) et descriptions courtes rédigées à partir des seules caractéristiques connues, à remplacer par les vraies. Quartiers rattachés le 19/11/2026. Photos et prix revérifiés sur le site actuel de l'agence le 20/11/2026 (8 photos max par annonce).",
+  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies. DÉMONSTRATION (décisions de Simon, 19/11/2026) : dates de mise en ligne fictives (30 derniers jours) et descriptions courtes rédigées à partir des seules caractéristiques connues, à remplacer par les vraies. Quartiers rattachés le 19/11/2026. Photos et prix revérifiés sur le site actuel de l'agence le 20/11/2026 (8 photos max par annonce). Mentions (DPE, GES, dépenses d'énergie, honoraires, copropriété, référence, conseiller) et descriptions reprises des fiches du site actuel le 20/11/2026.",
   "annonces": [
     {
       "slug": "maison-de-ville-bourgeoise-palais-gallien",
@@ -14,7 +14,7 @@
       "chambres": null,
       "prixHonorairesInclus": 1099000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": true,
       "coupDeCoeur": true,
       "atouts": [
@@ -24,18 +24,22 @@
         "Box"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "D",
+        "valeur": 205,
+        "date": "2024-09-10"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "D",
+        "valeur": 40
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 3320.0,
+        "max": 4570.0,
+        "anneesReferencePrix": [
+          2021,
+          2022,
+          2023
+        ]
       },
       "copropriete": {
         "estEnCopropriete": null,
@@ -78,14 +82,15 @@
           "alt": "Maison de ville bourgeoise, Palais Gallien : photo 8"
         }
       ],
-      "description": "Maison de ville bourgeoise en pierre de taille, dans le quartier du Palais Gallien. 189 m² sur trois niveaux, huit pièces, une terrasse et un box.",
+      "description": "PALAIS GALLIEN MAISON DE VILLE TERRASSE BOX FERMÉ\n\nEntre Palais Gallien et Fondaudège, Century 21 Cabinet Rollin vous propose en exclusivité cette élégante maison bourgeoise en pierre de taille, d'environ 190 m² habitables sur trois niveaux.\n\nAu rez-de-chaussée, le salon et le séjour, d'environ 20 m² chacun, communiquent par de grandes portes à double battant. Parquet en pointe de Hongrie, corniches, rosaces, cheminées en marbre et miroirs anciens créent une atmosphère pleine de caractère. Une terrasse intimiste accessible de plain-pied depuis le séjour prolonge l'espace de vie.\n\nLa cuisine indépendante, aménagée sur-mesure en bois brut avec son piano de cuisson La Cornue et son grand évier en céramique, vous offre un espace de travail fonctionnel.\n\nCôté nuit, cette demeure familiale compte six chambres dont une de plus de 20 m² avec balcon sur rue, et trois salles d'eau. Hauteur sous plafond, parquet ancien et grandes fenêtres apportent de la lumière dans toutes les pièces.\n\nUne cave semi-enterrée et un box fermé complètent cette bâtisse bordelaise habitable sans travaux, équipée de la fibre et d'un chauffage individuel au gaz.\n\nUne opportunité à saisir au cœur d'un des quartiers les plus recherchés de Bordeaux.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
       "niveaux": 3,
       "exterieur": "Terrasse · [surface à fournir]",
       "stationnement": "Box",
       "quartierPage": "[à choisir : Chartrons ou autre]",
-      "dateMiseEnLigne": "2026-11-17"
+      "dateMiseEnLigne": "2026-11-17",
+      "reference": "26968"
     },
     {
       "slug": "maison-bourgeoise-croix-de-seguey",
@@ -100,7 +105,7 @@
       "chambres": null,
       "prixHonorairesInclus": 995000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": false,
       "coupDeCoeur": true,
       "atouts": [
@@ -108,18 +113,18 @@
         "Cheminées"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "F",
+        "valeur": 242,
+        "date": "2025-08-04"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "F",
+        "valeur": 73
       },
       "depensesEnergie": {
         "min": null,
         "max": null,
-        "anneeReferencePrix": null
+        "anneesReferencePrix": null
       },
       "copropriete": {
         "estEnCopropriete": null,
@@ -162,10 +167,11 @@
           "alt": "Maison bourgeoise, Croix de Seguey : photo 8"
         }
       ],
-      "description": "Maison bourgeoise de 278,84 m² à Croix de Seguey. Dix pièces, des cheminées et un jardin.",
+      "description": "Bordeaux, Croix de Seguey - Century21 Cabinet Rollin vous présente cette prestigieuse maison bourgeoise en pierre d'environ 280m² avec jardin dans un environnement familial calme et recherché.\n\nParquet d'origine en pointe de Hongrie, moulures, hauteur sous plafond, cheminées... Nul doute que ce lieu de vie familial retrouvera toute son âme et sa superbe après rénovation grâce aux nombreuses prestations anciennes qui ont été conservées.\n\nCette bâtisse édifiée au XIXe siècle comme un sanctuaire consacré à la musique par l'artiste bordelais Pierre-Ariste Ducaunnes-Duval possède à son étage noble un salon pouvant à l'époque accueillir un orgue de cinq mètres. Son imposante cheminée en bois massif et ses grandes ouvertures apportent chaleur et authenticité à cette pièce riche en histoire.\n\nDéployée sur trois niveaux cette demeure familiale a accueilli plusieurs générations en même temps grâce à sa configuration actuelle :\n\n- Rez-de-chaussée : double séjour, cuisine, 1 salle de bain avec WC, 1 chambre. - 1er étage : séjour, cuisine, 2 chambres, 1 salle de bain, 1 WC indépendant - 2e étage : 3 chambres, 1 WC indépendant, 2 vastes greniers sains (de +1m80)\n\nSes beaux volumes vous permettront de repenser son agencement facilement pour répondre à différents types de projets.\n\nSon jardin, au calme et sans vis-à-vis vous offre un espace vert à paysager d'environ 150m².\n\nUne cave et une solution de stationnement complètent ce bien.\n\nÀ proximité immédiate de l'arrêt de tramway « Croix-de-Seguey » (Ligne D qui dessert la gare Saint Jean) vous bénéficierez d'un emplacement idéal entre établissements scolaires de renoms et nombreux commerces de proximité.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-11-12"
+      "dateMiseEnLigne": "2026-11-12",
+      "reference": "26053"
     },
     {
       "slug": "maison-de-charme-chartrons-cours-journu-auber",
@@ -180,7 +186,7 @@
       "chambres": null,
       "prixHonorairesInclus": 749000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": false,
       "coupDeCoeur": true,
       "atouts": [
@@ -188,18 +194,22 @@
         "Quartier familial"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "D",
+        "valeur": 191,
+        "date": "2026-05-27"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "D",
+        "valeur": 31
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 2030.0,
+        "max": 2840.0,
+        "anneesReferencePrix": [
+          2021,
+          2022,
+          2023
+        ]
       },
       "copropriete": {
         "estEnCopropriete": null,
@@ -242,10 +252,11 @@
           "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 8"
         }
       ],
-      "description": "Maison de charme de 136 m², cours Journu-Auber, aux Chartrons. Quatre pièces, tout le charme de l'ancien, dans un quartier familial.",
+      "description": "Bordeaux, Chartrons Cours Journu Aubert\n\nCENTURY 21 Cabinet Rollin a le plaisir de vous présenter en exclusivité cette maison de 136m² alliant charme de l'ancien à des prestations typiquement bordelaises au sein d'un quartier paisible et familial des Chartrons.\n\nDès l'entrée, vous êtes accueilli par un espace généreux et fonctionnel qui s'ouvre sur un séjour de 30m², idéal pour recevoir ou profiter d'un moment de détente, tandis que la cuisine séparée de 18m², agrémentée d'un cellier de 8m², offre tout le confort nécessaire pour préparer vos repas.\n\nTrois chambres, dont une avec sa propre salle d'eau et une autre dotée d'un grand dressing, répondent aux besoins d'une famille, et la salle de bain de 7m² complète l'ensemble.\n\nLe jardin, bucolique, vous invite à profiter d'un coin de verdure au cœur de la ville. Un garage et un abri complètent le bien, assurant un stationnement sécurisé et un espace de rangement supplémentaire.\n\nLe quotidien devient un jeu d'enfant grâce à la proximité immédiate des transports en commun : le tram C (arrêt Émile Counord) se trouve à six minutes à pied, et plusieurs lignes de bus desservent le secteur en moins de dix minutes, garantissant un accès fluide au centre-ville et aux environs.\n\nLe quartier est également très prisé par les familles, avec plusieurs établissements scolaires privés (école maternelle, primaire, collège) à cinqsix minutes à pied, offrant un cadre éducatif complet à proximité du domicile.\n\nEn dehors de la vie domestique, vous profiterez d'un environnement riche en loisirs et services. De nombreux commerces, dont de grands supermarchés ainsi que plusieurs salles de sport et centres de fitness sont accessibles en moins de dix minutes.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-11-08"
+      "dateMiseEnLigne": "2026-11-08",
+      "reference": "26754"
     },
     {
       "slug": "grand-t4-3-chambres-chartrons-cote-bacalan",
@@ -260,7 +271,7 @@
       "chambres": 3,
       "prixHonorairesInclus": 665000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": false,
       "coupDeCoeur": true,
       "atouts": [
@@ -269,26 +280,28 @@
         "Calme"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "D",
+        "valeur": 201,
+        "date": "2026-01-26"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "B",
+        "valeur": 8
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 2873.0,
+        "max": 3930.0,
+        "anneesReferencePrix": [
+          2026
+        ]
       },
       "copropriete": {
-        "estEnCopropriete": null,
-        "nombreLots": null,
-        "chargesAnnuelles": null,
-        "procedureEnCours": null
+        "estEnCopropriete": true,
+        "nombreLots": 7,
+        "chargesAnnuelles": 1000.0,
+        "procedureEnCours": "Aucune"
       },
-      "conseiller": null,
+      "conseiller": "thomas-boret",
       "photos": [
         {
           "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/1.jpg",
@@ -323,10 +336,15 @@
           "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 8"
         }
       ],
-      "description": "Grand appartement de 147 m², côté Bacalan. Quatre pièces dont trois chambres, un jardin de 120 m² et un patio, au calme.",
+      "description": "QUAI DE BACALAN - QUAI DES CHARTRONS\n\nAPPARTEMENT COUP DE COEUR DE 147M² - 3 CHAMBRES - CALME ABSOLU - CACHET - JARDIN DE 120M² - PATIO\n\nIdéalement situé entre les quais de Bacalan et les quais des Chartrons, l'agence Century 21 Cabinet Rollin vous présente à la vente en exclusivité cet appartement familial de 147m², situé en rez-de-chaussée sur cour avec jardin et patio.\n\nCe bien se compose d'une entrée spacieuse de caractère, une pièce de vie de 50m², une cuisine indépendante, 2 chambres spacieuses avec rangements donnant sur le jardin, salle d'eau, WC séparés, jardin de 120m² et patio. Possibilité d'aménagement en T4, avec cuisine ouverte sur le séjour.\n\nVous serez séduit par son cachet, le volume de ses pièces, son jardin de 120m² au calme absolu, ainsi que son patio intérieur. Cet appartement se vit comme une vraie maison de ville avec jardin, au cœur d'une vie de quartier avec commerces et commodités, le tout dans un environnement calme et bucolique.\n\nVous bénéficierez d'un local vélos au sein de la copropriété.\n\nAu pied du tram B : les Hangars ou Cours du Médoc.\n\nOpportunité très rare, idéale pour résidence principale ou pied à terre au sein d'un quartier très recherché.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-11-03"
+      "dateMiseEnLigne": "2026-11-03",
+      "reference": "26276",
+      "agentCommercial": {
+        "nom": "Thomas boret",
+        "rsac": "953975406"
+      }
     },
     {
       "slug": "t3-traversant-saint-seurin",
@@ -341,7 +359,7 @@
       "chambres": null,
       "prixHonorairesInclus": 380100,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": false,
       "coupDeCoeur": true,
       "atouts": [
@@ -349,24 +367,24 @@
         "Volumes généreux"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "C",
+        "valeur": 123,
+        "date": "2023-05-12"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "C",
+        "valeur": 26
       },
       "depensesEnergie": {
         "min": null,
         "max": null,
-        "anneeReferencePrix": null
+        "anneesReferencePrix": null
       },
       "copropriete": {
-        "estEnCopropriete": null,
-        "nombreLots": null,
-        "chargesAnnuelles": null,
-        "procedureEnCours": null
+        "estEnCopropriete": true,
+        "nombreLots": 9,
+        "chargesAnnuelles": 1520.0,
+        "procedureEnCours": "Aucune"
       },
       "conseiller": null,
       "photos": [
@@ -403,10 +421,11 @@
           "alt": "T3 traversant, Saint-Seurin : photo 8"
         }
       ],
-      "description": "T3 traversant de 88 m² à Saint-Seurin, dans un immeuble en pierre. Des volumes généreux.",
+      "description": "Bordeaux, Saint Seurin - Votre agence CENTURY21 Cabinet Rollin à le plaisir de vous présenter cet appartement T3 traversant d'environ 88 m² situé au 1er étage d'un immeuble en pierre.\n\nDès l'entrée vous serez séduits par les volumes de sa pièce de vie avec 35m² de surface et une belle hauteur sous plafond. Une cuisine semi-ouverte sur le séjour de 8m² vous offre un espace fonctionnel et pourra facilement s'ouvrir pour s'intégrer parfaitement à la pièce de vie.\n\nVous retrouverez dans tout l'appartement le plancher bois brut d'origine qui retrouvera sa superbe grâce à un simple ponçage et vernissage.\n\nUn vaste dégagement faisant guise actuellement de salle à manger, deux chambres de 13m² et 14m², ainsi qu'une salle de bains et un WC indépendant complètent l'appartement.\n\nVous disposerez également d'un espace extérieur sans vis-à-vis grâce à un balcon au calme sur l'arrière de la copropriété.\n\nNotez que des travaux de rafraîchissements sont à envisager (cuisine, salle de bain, peintures, plancher).\n\nCe quartier tant apprécié pour son cadre familial bénéficie à quelques pas de plusieurs établissements d'enseignement - crèche, école maternelle et élémentaire, ainsi que deux collèges. Le parc Place des Martyrs de la Résistance, le square GeorgesMandel et deux centres sportifs, dont une piscine, offrent de nombreuses possibilités de loisirs. Une offre gourmande riche et variée se développe tout autour de cette adresse, avec de nombreux restaurants et commerces de bouches. Côté praticité, le secteur bénéficie d'une bonne desserte en transports : plusieurs arrêts de bus se trouvent à moins de dix minutes à pied, assurant un accès rapide aux lignes principales de la ville.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-10-30"
+      "dateMiseEnLigne": "2026-10-30",
+      "reference": "26936"
     },
     {
       "slug": "t3-bis-refait-a-neuf-chartrons-place-picard",
@@ -421,7 +440,7 @@
       "chambres": null,
       "prixHonorairesInclus": 320000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": false,
       "coupDeCoeur": true,
       "atouts": [
@@ -429,26 +448,30 @@
         "Calme"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "D",
+        "valeur": 183,
+        "date": "2026-01-07"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "B",
+        "valeur": 7
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 1460.0,
+        "max": 2020.0,
+        "anneesReferencePrix": [
+          2021,
+          2022,
+          2023
+        ]
       },
       "copropriete": {
-        "estEnCopropriete": null,
-        "nombreLots": null,
-        "chargesAnnuelles": null,
-        "procedureEnCours": null
+        "estEnCopropriete": true,
+        "nombreLots": 10,
+        "chargesAnnuelles": 500.0,
+        "procedureEnCours": "Aucune"
       },
-      "conseiller": null,
+      "conseiller": "gregory-bourdil",
       "photos": [
         {
           "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/1.jpg",
@@ -479,10 +502,15 @@
           "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 7"
         }
       ],
-      "description": "T3 bis de 75 m² refait à neuf, place Picard, aux Chartrons. Lumineux et calme.",
+      "description": "BORDEAUX CHARTRONS - PLACE PICARD - APPARTEMENT T3bis - REFAIT A NEUF - LUMINEUX - CALME\n\nAu cœur des Chartrons, au 1er étage d'un bel immeuble en pierre, situé en deuxième ligne, venez découvrir cet appartement de 75m² entièrement refait à neuf.\n\nDécouvrez une belle pièce de vie baignée de lumière avec mezzanine et cheminée. Très belle hauteur sous plafond. Vous apprécierez la vue dégagée sur le quartier des Chartrons.\n\nVous profiterez de 2 belles chambres avec chacune sa salle d'eau. Une des deux chambres comporte également un coin bureau.\n\nEntrée à aménager selon vos souhaits, WC séparés.\n\nUn bien atypique au caractère indéniable situé dans le quartier le plus recherché de Bordeaux !\n\nA découvrir sans attendre !\n\nTaxe foncière et charges de copropriété à définir.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-10-27"
+      "dateMiseEnLigne": "2026-10-27",
+      "reference": "26821",
+      "agentCommercial": {
+        "nom": "Grégory bourdil",
+        "rsac": "943364679"
+      }
     },
     {
       "slug": "t3-cle-en-main-chartrons-pres-des-quais",
@@ -497,31 +525,33 @@
       "chambres": null,
       "prixHonorairesInclus": 260000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": true,
       "coupDeCoeur": true,
       "atouts": [],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "B",
+        "valeur": 109,
+        "date": "2026-09-21"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "A",
+        "valeur": 4
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 760.0,
+        "max": 1090.0,
+        "anneesReferencePrix": [
+          2025
+        ]
       },
       "copropriete": {
-        "estEnCopropriete": null,
-        "nombreLots": null,
-        "chargesAnnuelles": null,
-        "procedureEnCours": null
+        "estEnCopropriete": true,
+        "nombreLots": 301,
+        "chargesAnnuelles": 1392.0,
+        "procedureEnCours": "Aucune"
       },
-      "conseiller": null,
+      "conseiller": "laurence-lebreton",
       "photos": [
         {
           "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/1.jpg",
@@ -556,10 +586,15 @@
           "alt": "T3 clé en main, Chartrons · près des quais : photo 8"
         }
       ],
-      "description": "T3 clé en main de 70,50 m², aux Chartrons, près des quais.",
+      "description": "Bordeaux Chartrons - proche des Quais\n\nVotre agence Century 21 Cabinet Rollin vous présente en exclusivité cet appartement clé en main, idéalement situé aux Chartrons, à proximité des Quais.\n\nD'une superficie d'environ 71 m², cet appartement 3 pièces au 2ème étage, parfaitement agencé et baigné de lumière, offre un cadre de vie à la fois confortable, fonctionnel et agréable.\n\nDès l'entrée, vous découvrirez un espace accueillant bénéficiant d'un grand placard entièrement aménagé, avec de nombreux rangements et étagères.\n\nL'espace de vie constitue le véritable cœur de l'appartement. Il se compose d'une belle pièce de réception avec cuisine ouverte, offrant un volume convivial et lumineux, prolongé par une très agréable terrasse couverte, au calme. Véritable prolongement de la pièce de vie, cette terrasse constitue un espace à part entière, idéal pour profiter des beaux jours, déjeuner ou simplement se détendre.\n\nL'espace nuit, parfaitement indépendant, se compose de deux chambres ainsi que d'une vaste salle de bains.\n\nDes WC indépendants, facilement accessibles depuis l'entrée, complètent l'agencement de ce bien.\n\nUne place de parking couverte et entièrement sécurisée vient également parfaire les prestations de cet appartement.\n\nLes plus de ce bien : une belle luminosité, un agencement parfaitement optimisé, une terrasse couverte offrant un véritable espace de vie supplémentaire et une place de stationnement sécurisée.\n\nSon emplacement constitue également un véritable atout : à proximité immédiate des commerces, des transports et des Quais, vous bénéficiez d'un environnement pratique et recherché, permettant de profiter pleinement de la vie bordelaise.\n\nUn appartement clé en main, lumineux et fonctionnel, offrant un cadre de vie particulièrement agréable à proximité des Quais.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-10-24"
+      "dateMiseEnLigne": "2026-10-24",
+      "reference": "26950",
+      "agentCommercial": {
+        "nom": "Laurence lebreton",
+        "rsac": "939023206"
+      }
     },
     {
       "slug": "t3-avec-terrasse-chartrons-cours-du-medoc",
@@ -574,33 +609,37 @@
       "chambres": null,
       "prixHonorairesInclus": 250000,
       "prixHorsHonoraires": null,
-      "partHonorairesAcquereurPct": null,
+      "partHonorairesAcquereurPct": 0,
       "exclusivite": true,
       "coupDeCoeur": true,
       "atouts": [
         "Terrasse"
       ],
       "dpe": {
-        "classe": null,
-        "valeur": null,
-        "date": null
+        "classe": "C",
+        "valeur": 168,
+        "date": "2025-02-18"
       },
       "ges": {
-        "classe": null,
-        "valeur": null
+        "classe": "A",
+        "valeur": 5
       },
       "depensesEnergie": {
-        "min": null,
-        "max": null,
-        "anneeReferencePrix": null
+        "min": 880.0,
+        "max": 1230.0,
+        "anneesReferencePrix": [
+          2021,
+          2022,
+          2023
+        ]
       },
       "copropriete": {
-        "estEnCopropriete": null,
-        "nombreLots": null,
-        "chargesAnnuelles": null,
-        "procedureEnCours": null
+        "estEnCopropriete": true,
+        "nombreLots": 30,
+        "chargesAnnuelles": 1168.0,
+        "procedureEnCours": "Aucune"
       },
-      "conseiller": null,
+      "conseiller": "gregory-bourdil",
       "photos": [
         {
           "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/1.jpg",
@@ -635,10 +674,15 @@
           "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 8"
         }
       ],
-      "description": "T3 de 64,54 m² avec terrasse, cours du Médoc, aux Chartrons.",
+      "description": "BORDEAUX - COURS DU MEDOC - APPARTEMENT 3 PIECES AVEC TERRASSE\n\nDans le quartier des Chartrons, cours du Médoc, votre agence Century 21 Cabinet Rollin vous propose ce bel appartement T3, au calme, au sein d'une résidence bien entretenue.\n\nProfitez dès l'entrée d'une cuisine ouverte sur le séjour, donnant sur la terrasse. L'espace extérieur est orienté sur l'arrière de la copropriété pour des moments de calme.\n\nLa partie nuit se compose de deux chambres avec placard, d'une salle de bain et d'un WC indépendant.\n\nUn place de parking complète cet ensemble prêt à habiter.\n\nVenez profiter du quartier des Chartrons avec la proximité des commerces et des transports, ses nombreuses activités et son mode de vie si apprécié !",
       "delaiDeVenteJours": null,
       "coordonnees": null,
-      "dateMiseEnLigne": "2026-10-21"
+      "dateMiseEnLigne": "2026-10-21",
+      "reference": "26676",
+      "agentCommercial": {
+        "nom": "Grégory bourdil",
+        "rsac": "943364679"
+      }
     }
   ]
 }

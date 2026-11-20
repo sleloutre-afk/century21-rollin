@@ -17,7 +17,11 @@ describe("carte de bien", () => {
   });
 
   it("part acquéreur non fournie : emplacement", () => {
-    expect(mentionPrix(palaisGallien)).toBe("Honoraires inclus · part acquéreur [à préciser]");
+    expect(mentionPrix({ transaction: "vente", partHonorairesAcquereurPct: null })).toBe("Honoraires inclus · part acquéreur [à préciser]");
+  });
+
+  it("honoraires à la charge du vendeur", () => {
+    expect(mentionPrix(palaisGallien)).toBe("Honoraires à la charge du vendeur");
   });
 
   it("part acquéreur fournie", () => {
@@ -27,7 +31,11 @@ describe("carte de bien", () => {
   });
 
   it("classes énergie non fournies : emplacements", () => {
-    expect(etiquetteEnergie(palaisGallien)).toBe("DPE [–] · GES [–]");
+    expect(etiquetteEnergie({ dpe: { classe: null, valeur: null, date: null }, ges: { classe: null, valeur: null } })).toBe("DPE [–] · GES [–]");
+  });
+
+  it("classes énergie fournies", () => {
+    expect(etiquetteEnergie(palaisGallien)).toBe("DPE D · GES D");
   });
 
   it("location sans loyer : emplacement", () => {
