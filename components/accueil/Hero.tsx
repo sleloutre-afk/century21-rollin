@@ -5,7 +5,7 @@ import { HeroFond } from "./HeroFond";
 
 /**
  * Haut de page (brief §7.2 ; maquette Main et Accueil-mobile-1).
- * Desktop : vidéo en boucle ; mobile : image fixe (spec §2). Voir HeroFond.
+ * Vidéo en boucle : version large sur desktop, version verticale sur mobile. Voir HeroFond.
  * Voile Obsessed Grey à 62 % pour la lisibilité. Le champ adresse ouvre /estimation?adresse=….
  */
 

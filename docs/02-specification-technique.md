@@ -19,7 +19,7 @@ Version 1 — 19/11/2026. Les choix marqués **[à valider]** sont des propositi
 
 - Pages générées à la compilation (statique) partout où c'est possible : `generateStaticParams` pour `/biens/[slug]`, `/quartiers/[slug]`, `/equipe/[slug]`, `/ressources/[slug]`.
 - Filtres de la recherche de biens côté client, **état des filtres dans l'URL** (`?transaction=vente&type=maison&budget=…&quartier=…`) pour le partage, le retour arrière et le référencement.
-- Hero : vidéo légère en desktop avec image de remplacement (`poster`), **image seule sur mobile**. Pas de lecture automatique si `prefers-reduced-motion`.
+- Hero : vidéo légère avec image de remplacement (`poster`) ; version verticale plus légère sur mobile (décision de Simon, 20/11/2026, à la place de « image seule sur mobile »). Pas de lecture automatique si `prefers-reduced-motion` ou en mode économie de données.
 - Cible Lighthouse mobile : ≥ 90 en performance, accessibilité, bonnes pratiques et SEO.
 
 ## 3. Routes
