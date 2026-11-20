@@ -178,3 +178,10 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Icône du site (favicon)** : icône provisoire neutre (carré Obsessed Grey, filet or, sans lettres), en attendant l'icône officielle du réseau. — Qui : Agence
 - [ ] **Image d'aperçu de partage** (réseaux sociaux, messageries) : aucune pour l'instant, faute de photo et de logo. — Qui : Agence
 - [ ] **Audit au lecteur d'écran** (VoiceOver) par une personne : les tests automatiques et clavier ne remplacent pas un essai réel. À faire avant la mise en production. — Qui : Simon
+
+## 15. Lot 11 (mise en ligne de démonstration)
+
+- [x] **Démonstration en ligne** (20/11/2026) : https://century21-rollin-sjc3.vercel.app — projet Vercel relié au dépôt GitHub (mise à jour automatique à chaque envoi sur `main`). Vérifié : pages, page 404, `robots.txt` et balises « ne pas référencer », en-têtes de sécurité, suggestions d'adresses ; 151 tests de parcours au vert sur le site en ligne ; Lighthouse mobile 100 / 100 / 100 (référencement volontairement bloqué), affichage principal en 1 s.
+- [ ] **Dépôt GitHub encore public** (vérifié le 20/11/2026) : le brief, les notes internes, la maquette et la charte CENTURY 21 sont lisibles par tous. À passer en privé (*Settings* → *Danger Zone* → *Change visibility*). — Qui : Simon · urgent
+- [ ] **Plan Vercel** : la démonstration tourne sur le plan gratuit (Hobby), réservé aux usages non commerciaux. Acceptable pour une présentation ponctuelle ; à revoir pour la production (Vercel Pro ou Clever Cloud). — Qui : Simon
+- [ ] **Diffusion de l'adresse** : sans mot de passe (option payante), toute personne qui a l'adresse peut voir le site. À ne transmettre qu'à l'agence. — Qui : Simon

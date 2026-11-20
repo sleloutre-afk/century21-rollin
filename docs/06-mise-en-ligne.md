@@ -4,6 +4,8 @@ Guide pas à pas. Version du 19/11/2026.
 
 ## 1. Démonstration (lot 11)
 
+**Adresse de la démonstration : https://century21-rollin-sjc3.vercel.app** (mise en ligne le 20/11/2026).
+
 Objectif : une adresse à montrer à l'agence, **non référencée par Google**. Les formulaires fonctionnent mais n'envoient rien (envoi simulé, signalé à l'écran).
 
 ### Une seule fois
@@ -24,11 +26,12 @@ Si une construction échoue, Vercel garde la version précédente en ligne et en
 Dans le terminal du projet :
 
 ```
-BASE_URL=https://century21-rollin.vercel.app npm run test:en-ligne
+BASE_URL=https://century21-rollin-sjc3.vercel.app npm run test:en-ligne -- --workers=4
 ```
 
 Les mêmes tests que sur le Mac s'exécutent sur le site en ligne (pages, liens, formulaires, accessibilité, clavier).
 Les formulaires sont limités à 5 envois en 10 minutes par visiteur : attendre 10 minutes avant de relancer les tests.
+`--workers=4` limite le nombre de tests simultanés : au-delà, la connexion peut saturer et certains tests échouent par délai dépassé.
 
 ### Ce qui protège la démonstration
 
