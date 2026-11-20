@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { BoutonLien } from "@/components/ui/Bouton";
 import { Compteur } from "@/components/ui/Compteur";
@@ -98,9 +99,15 @@ export default function PageAgence() {
 
       <section aria-labelledby="h-centurion" className="bg-gold py-14 md:py-20">
         <div className="conteneur flex flex-wrap items-center gap-8 md:gap-16">
-          {/* Visuel officiel de la distinction : à fournir par le réseau (ne pas le redessiner). */}
-          <div role="img" aria-label="Emplacement du visuel officiel de la distinction Centurion" className="flex h-[200px] flex-[0_1_320px] items-end border border-grey-dark p-4 md:h-[260px]">
-            <span className="font-display text-xs uppercase tracking-[0.16em]">Visuel officiel de la distinction · fourni par le réseau</span>
+          {/* Visuel de la distinction (trophée et marque Centurion), fourni par Simon le 20/11/2026 : non redessiné. */}
+          <div className="relative aspect-[4/3] w-full flex-[0_1_420px] overflow-hidden bg-grey-dark">
+            <Image
+              src="/images/agence/trophee-centurion.jpg"
+              alt="Trophée Centurion, distinction du réseau CENTURY 21"
+              fill
+              sizes="(min-width: 768px) 420px, 100vw"
+              className="object-cover"
+            />
           </div>
           <div className="flex flex-[1_1_420px] flex-col gap-4">
             <p className="m-0 font-display text-[13px] uppercase tracking-[0.26em] md:text-sm md:tracking-[0.28em]">Distinction du réseau</p>
