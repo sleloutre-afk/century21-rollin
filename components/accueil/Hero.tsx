@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAgence } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { SaisieAdresse } from "@/components/estimation/SaisieAdresse";
 import { HeroFond } from "./HeroFond";
 
 /**
@@ -20,12 +21,12 @@ export function Hero() {
   return (
     <section
       aria-labelledby="h1-accueil"
-      className="relative flex min-h-[720px] flex-col justify-end overflow-hidden bg-grey-dark text-white md:min-h-[max(560px,calc(100svh_-_65px))] md:justify-center xl:min-h-[max(600px,calc(100svh_-_121px))]"
+      className="relative flex min-h-[720px] flex-col justify-end bg-grey-dark text-white md:min-h-[max(560px,calc(100svh_-_65px))] md:justify-center xl:min-h-[max(600px,calc(100svh_-_121px))]"
     >
       {/* Vidéo (desktop) ou image fixe (mobile, ou animations réduites), avec le voile. */}
       <HeroFond />
 
-      <div className="conteneur relative flex flex-col gap-[18px] pb-8 pt-20 md:gap-[clamp(14px,2.6svh,28px)] md:pb-[110px] md:pt-12">
+      <div className="conteneur relative z-10 flex flex-col gap-[18px] pb-8 pt-20 md:gap-[clamp(14px,2.6svh,28px)] md:pb-[110px] md:pt-12">
         <p className="animate-montee m-0 font-display text-[13px] uppercase tracking-[0.26em] text-gold md:text-sm md:tracking-[0.28em]">
           <span className="hidden md:inline">Agence immobilière · </span>Bordeaux Chartrons
         </p>
@@ -42,7 +43,7 @@ export function Hero() {
         <form
           action={ROUTES.estimation}
           method="get"
-          className="animate-montee flex max-w-[760px] flex-col gap-2 bg-white p-2 [animation-delay:300ms] md:flex-row md:flex-wrap"
+          className="animate-montee relative z-20 flex max-w-[760px] flex-col gap-2 bg-white p-2 [animation-delay:300ms] md:flex-row md:flex-wrap"
         >
           <label htmlFor="hero-adresse" className="sr-only">
             Adresse de votre bien
@@ -52,13 +53,13 @@ export function Hero() {
               <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            <input
+            <SaisieAdresse
               id="hero-adresse"
-              name="adresse"
-              type="text"
               placeholder="Adresse de votre bien"
-              autoComplete="street-address"
-              className="h-14 min-w-0 flex-1 border-0 bg-transparent text-[17px] text-grey-dark md:text-lg"
+              className="min-w-0 flex-1"
+              // Liseré or permanent (demande de Simon, 20/11/2026) ; plus épais quand le champ a le focus,
+              // pour que l'indicateur de focus reste visible (accessibilité).
+              classeChamp="h-14 w-full min-w-0 border-0 bg-transparent px-2 text-[17px] text-grey-dark outline-2 outline-offset-2 outline-gold-dark outline-solid focus-visible:outline-[3px] md:text-lg"
             />
           </div>
           <button

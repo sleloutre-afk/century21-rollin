@@ -13,30 +13,41 @@ const SERVICE = "https://data.geopf.fr/geocodage/search";
 
 export type SuggestionAdresse = { libelle: string; codePostal: string; ville: string };
 
+async function chercher(texte: string): Promise<SuggestionAdresse[]> {
+  const url = new URL(SERVICE);
+  url.searchParams.set("q", texte);
+  url.searchParams.set("index", "address");
+  url.searchParams.set("autocomplete", "1");
+  url.searchParams.set("limit", "15");
+  // Priorité aux adresses proches de l'agence (Chartrons).
+  url.searchParams.set("lat", "44.8547");
+  url.searchParams.set("lon", "-0.5744");
+  const reponse = await fetch(url, { signal: AbortSignal.timeout(4000), headers: { Accept: "application/json" } });
+  if (!reponse.ok) return [];
+  const donnees = (await reponse.json()) as {
+    features?: { properties?: { label?: string; postcode?: string; city?: string; depcode?: string } }[];
+  };
+  return (donnees.features ?? [])
+    .map((f) => f.properties ?? {})
+    .filter((p) => p.depcode === "33" && p.label)
+    .map((p) => ({ libelle: p.label!, codePostal: p.postcode ?? "", ville: p.city ?? "" }));
+}
+
 export async function GET(requete: NextRequest) {
   const q = requete.nextUrl.searchParams.get("q")?.trim() ?? "";
   if (q.length < 3 || q.length > 200) return NextResponse.json({ suggestions: [] });
 
-  const url = new URL(SERVICE);
-  url.searchParams.set("q", q);
-  url.searchParams.set("index", "address");
-  url.searchParams.set("autocomplete", "1");
-  url.searchParams.set("limit", "8");
-  // Priorité aux adresses proches de l'agence (Chartrons).
-  url.searchParams.set("lat", "44.8547");
-  url.searchParams.set("lon", "-0.5744");
+  // Deux recherches en parallèle : la saisie telle quelle, et la saisie suivie de « Bordeaux ».
+  // Sans cela, une saisie partielle (« 12 rue notre ») ne renvoie que des adresses hors Gironde.
+  const requetes = [q, ...(/bordeaux/i.test(q) ? [] : [`${q} Bordeaux`])];
 
   try {
-    const reponse = await fetch(url, { signal: AbortSignal.timeout(4000), headers: { Accept: "application/json" } });
-    if (!reponse.ok) return NextResponse.json({ suggestions: [] });
-    const donnees = (await reponse.json()) as {
-      features?: { properties?: { label?: string; postcode?: string; city?: string; depcode?: string } }[];
-    };
-    const suggestions: SuggestionAdresse[] = (donnees.features ?? [])
-      .map((f) => f.properties ?? {})
-      .filter((p) => p.depcode === "33" && p.label)
-      .slice(0, 5)
-      .map((p) => ({ libelle: p.label!, codePostal: p.postcode ?? "", ville: p.city ?? "" }));
+    const resultats = await Promise.all(requetes.map(chercher));
+    const vues = new Set<string>();
+    const suggestions: SuggestionAdresse[] = resultats
+      .flat()
+      .filter((s) => (vues.has(s.libelle) ? false : (vues.add(s.libelle), true)))
+      .slice(0, 5);
     return NextResponse.json({ suggestions }, { headers: { "Cache-Control": "public, max-age=3600" } });
   } catch {
     // Service indisponible : la saisie libre reste possible.
