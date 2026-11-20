@@ -6,6 +6,7 @@ import { CarteVendu } from "@/components/biens/CarteVendu";
 import { PriseRendezVous } from "@/components/formulaires/PriseRendezVous";
 import { Badge } from "@/components/ui/Badge";
 import { LienFleche } from "@/components/ui/Bouton";
+import { PortraitMembre } from "@/components/equipe/PortraitMembre";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { IconeCalendrier, IconeTelephone } from "@/components/ui/Icones";
@@ -81,13 +82,18 @@ export default async function FicheConseiller({ params }: Props) {
       {/* PRÉSENTATION */}
       <section aria-labelledby="h1-conseiller" className="py-10 md:py-16">
         <div className="conteneur flex flex-wrap items-start gap-8 md:gap-16">
-          <EmplacementPhoto libelle={`Portrait de ${membre.nom} · à fournir`} className="aspect-[4/5] w-full max-w-[420px] md:flex-[1_1_360px]">
+          <PortraitMembre
+            membre={membre}
+            libelle={`Portrait de ${membre.nom} · à fournir`}
+            tailles="(min-width: 768px) 420px, 100vw"
+            className="aspect-[4/5] w-full max-w-[420px] md:flex-[1_1_360px]"
+          >
             {pole && (
               <Badge variante="pole" className="absolute left-[18px] top-[18px] text-[13px]">
                 Pôle {pole.nom.toLowerCase()}
               </Badge>
             )}
-          </EmplacementPhoto>
+          </PortraitMembre>
           <div className="flex flex-[1.3_1_480px] flex-col gap-6">
             <p className="m-0 font-display text-[13px] uppercase tracking-[0.26em] md:text-sm md:tracking-[0.28em]">{membre.role}</p>
             <h1 id="h1-conseiller" className="m-0 text-[44px] font-medium uppercase leading-none md:text-[clamp(48px,5vw,76px)]">

@@ -9,7 +9,7 @@ import type { Membre } from "@/lib/schemas/equipe";
 /**
  * « Un spécialiste pour chaque besoin » (brief §7.8 ; maquette Accueil-desktop-2 et Accueil-mobile-2).
  * Sélection de la maquette : 8 personnes (4 sur mobile). Noms publiés (décision de Simon, 19/11/2026).
- * Portraits : emplacements tant que les photos ne sont pas fournies.
+ * Portraits : photos reprises du site actuel de l'agence (voir PortraitMembre).
  */
 
 const SELECTION = [

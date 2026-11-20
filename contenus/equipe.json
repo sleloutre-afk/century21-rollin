@@ -1,5 +1,5 @@
 {
-  "_source": "21 personnes (le texte du site annonce 20 professionnels : à confirmer). Aucune photo ni nom publié sans accord écrit (accordPublication).",
+  "_source": "21 personnes (le texte du site annonce 20 professionnels : à confirmer). Photos reprises du site actuel de l'agence le 20/11/2026 (décision de Simon) ; Lucas Michelon n'a pas de photo.",
   "poles": [
     {
       "id": "direction",
@@ -42,8 +42,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/dominique-rollin.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -55,8 +55,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/myriam-rollin.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -68,8 +68,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/gregory-coutant.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -81,8 +81,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/mely-potet.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -94,8 +94,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/adeline-selles.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -107,8 +107,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/mathilde-rollin.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -120,8 +120,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/thomas-boret.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -133,8 +133,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/gregory-bourdil.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -146,8 +146,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/laurence-lebreton.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -159,8 +159,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/alois-phalip.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -172,8 +172,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/mathieu-seninck.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -185,8 +185,8 @@
       "secteurs": "Tous les secteurs",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/gwendoline-delaire.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -198,8 +198,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/elodie-fournier.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -211,8 +211,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/claire-chevet.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -224,8 +224,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/lena-duporte.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -237,8 +237,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/gwenaelle-aubin.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -250,8 +250,8 @@
       "secteurs": "Toute la métropole",
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/georgia-cross.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -263,8 +263,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/cecile-boirie.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -276,8 +276,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/marie-brac-de-la-perriere.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
@@ -289,8 +289,8 @@
       "secteurs": null,
       "telephoneDirect": null,
       "email": null,
-      "photo": null,
-      "accordPublication": false,
+      "photo": "/images/equipe/avrile-piveteau.jpg",
+      "accordPublication": true,
       "presentation": null
     },
     {
