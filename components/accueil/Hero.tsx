@@ -59,7 +59,7 @@ export function Hero() {
               className="min-w-0 flex-1"
               // Liseré or permanent (demande de Simon, 20/11/2026) ; plus épais quand le champ a le focus,
               // pour que l'indicateur de focus reste visible (accessibilité).
-              classeChamp="h-14 w-full min-w-0 border-0 bg-transparent px-2 text-[17px] text-grey-dark outline-2 outline-offset-2 outline-gold-dark outline-solid focus-visible:outline-[3px] md:text-lg"
+              classeChamp="h-14 w-full min-w-0 border-0 bg-transparent px-2 text-[17px] text-grey-dark outline-1 outline-offset-2 outline-gold-dark outline-solid focus-visible:outline-[3px] md:text-lg"
             />
           </div>
           <button
