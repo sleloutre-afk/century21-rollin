@@ -13,7 +13,8 @@ import { IconeCalendrier, IconeTelephone } from "@/components/ui/Icones";
 import { slugsNouveaux } from "@/lib/biens/nouveaux";
 import { estVisibleEnRecherche } from "@/lib/biens/recherche";
 import { toutesLesVentes } from "@/lib/biens/ventes";
-import { getAgence, getAnnonces, getArticles, getMembre, getMembres, getPoles } from "@/lib/data";
+import { CarteAvis } from "@/components/avis/CarteAvis";
+import { getAgence, getAnnonces, getArticles, getMembre, getMembres, getPoles, getAvis } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { metaPage, NOM_SITE, sansEmplacement, URL_SITE, urlAbsolue } from "@/lib/seo";
@@ -57,6 +58,7 @@ export default async function FicheConseiller({ params }: Props) {
   const sesBiens = getAnnonces().filter((a) => a.conseiller === membre.slug && estVisibleEnRecherche(a));
   const vendusSlugs = new Set(getAnnonces().filter((a) => a.conseiller === membre.slug && a.statut === "vendu").map((a) => a.slug));
   const sesVentes = toutesLesVentes().filter((v) => vendusSlugs.has(v.cle)).slice(0, 4);
+  const sesAvis = getAvis().filter((a) => a.conseiller === membre.slug);
   const sesArticles = getArticles().filter((a) => a.auteur === membre.nom);
   const telephone = membre.telephoneDirect ?? agence.telephone;
   const lieuRdv =
@@ -196,8 +198,8 @@ export default async function FicheConseiller({ params }: Props) {
         </section>
       )}
 
-      {/* AVIS (emplacements, flux Google à brancher). Étoiles : décision de Simon (19/11/2026). */}
-      {POLES_AVIS.includes(membre.pole) && (
+      {/* AVIS citant le conseiller (contenus/avis.json) ; section masquée s'il n'y en a aucun. */}
+      {POLES_AVIS.includes(membre.pole) && sesAvis.length > 0 && (
         <section aria-labelledby="h-avis-conseiller" className="border-t border-grey-light py-14 md:py-[88px]">
           <div className="conteneur flex flex-col gap-8">
             <div className="flex flex-wrap items-end justify-between gap-4">
@@ -205,20 +207,11 @@ export default async function FicheConseiller({ params }: Props) {
                 Ils parlent de {prenom}
               </h2>
               {/* À VALIDER : mention sur le contrôle des avis (Code de la consommation). */}
-              <span className="text-[13px]">Avis Google mentionnant le conseiller. [Mention sur le contrôle des avis à valider]</span>
+              <span className="text-[13px]">Avis clients mentionnant le conseiller, recopiés mot pour mot. [Mention sur le contrôle des avis à valider]</span>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
-              {[1, 2, 3].map((n) => (
-                <figure key={n} className={`m-0 flex-col gap-4 border border-grey-light p-6 md:p-8 ${n > 1 ? "hidden md:flex" : "flex"}`}>
-                  <span role="img" aria-label="Note 5 sur 5" className="text-lg tracking-[3px]">
-                    ★★★★★
-                  </span>
-                  <blockquote className="m-0 flex-1 text-base leading-normal">[Extrait d&apos;avis Google importé automatiquement]</blockquote>
-                  <figcaption className="flex justify-between border-t border-grey-light pt-3.5 text-sm">
-                    <strong>[Prénom]</strong>
-                    <span>[date]</span>
-                  </figcaption>
-                </figure>
+              {sesAvis.slice(0, 3).map((a, i) => (
+                <CarteAvis key={a.id} avis={a} bordure masqueMobile={i > 0} />
               ))}
             </div>
           </div>

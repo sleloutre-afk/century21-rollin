@@ -51,6 +51,7 @@ Le site les affiche comme emplacements. Il ne rédige aucun texte juridique déf
 - [ ] **Mentions professionnelles du pied de page** : carte professionnelle et CCI, garant financier, assurance RCP, médiateur, formulation de la mention d'indépendance exigée par le réseau. — Qui : Agence · Lot : 1
 - [ ] **Textes RGPD** des formulaires, politique de confidentialité, page cookies, durée de conservation des demandes. — Qui : Agence / Juriste · Lot : 3, 9
 - [ ] **Information sur les avis en ligne** (contrôle et classement des avis, Code de la consommation) : texte de l'encart. — Qui : Agence / Juriste · Lot : 2, 9
+- [ ] **Avis affichés en dur (20/11/2026)** : 5 avis recopiés mot pour mot de la page « Notre agence » du site actuel (2 Google, 2 Immodvisor, 1 Qualitelis), dans `contenus/avis.json`, en attendant le branchement dynamique (options présentées à Simon : API Google Places recommandée, API Google Business Profile, widget tiers ; décision du client). — Qui : Agence
 - [ ] **Conditions d'affichage des avis Google** (attribution, mise en cache, nombre d'avis renvoyés par l'API). — Qui : à vérifier au moment du branchement · Lot : après V1
 - [ ] **Article DPE** : gel des loyers F et G depuis le 24/08/2022 et conditions de téléchargement d'une attestation mise à jour sur le site de l'ADEME. — Qui : Agence · Lot : 8
 - [ ] **Barème d'honoraires** : contenu de la page `/honoraires`. — Qui : Agence · Lot : 9

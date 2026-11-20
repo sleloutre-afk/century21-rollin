@@ -9,7 +9,8 @@ import { FilAriane } from "@/components/ui/FilAriane";
 import { IconeTelephone } from "@/components/ui/Icones";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";
-import { getAgence, getArticles, getFaq, getMembres, getPoles } from "@/lib/data";
+import { CarteAvis } from "@/components/avis/CarteAvis";
+import { getAgence, getArticles, getFaq, getMembres, getPoles, getAvis } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import type { Membre } from "@/lib/schemas/equipe";
 import { donneesFaq, metaPage } from "@/lib/seo";
@@ -260,20 +261,14 @@ export default function PageGerer() {
               </div>
             ))}
           </dl>
-          {/* Emplacements d'avis Google de bailleurs (flux à brancher). Étoiles : décision de Simon (19/11/2026). */}
+          {/* Avis de location et de gestion, recopiés du site actuel (contenus/avis.json). */}
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-            {["propriétaire en gestion", "propriétaire bailleur"].map((qui, i) => (
-              <figure key={qui} className={`m-0 flex-col gap-4 border border-grey-light p-6 md:p-8 ${i === 1 ? "hidden md:flex" : "flex"}`}>
-                <span role="img" aria-label="Note 5 sur 5" className="text-lg tracking-[3px]">
-                  ★★★★★
-                </span>
-                <blockquote className="m-0 flex-1 text-base leading-normal md:text-lg">[Extrait d&apos;un avis Google de propriétaire bailleur, importé automatiquement]</blockquote>
-                <figcaption className="flex justify-between border-t border-grey-light pt-3.5 text-sm">
-                  <strong>[Prénom] · {qui}</strong>
-                  <span>[date]</span>
-                </figcaption>
-              </figure>
-            ))}
+            {getAvis()
+              .filter((a) => a.service === "location" || a.service === "gestion")
+              .slice(0, 2)
+              .map((a, i) => (
+                <CarteAvis key={a.id} avis={a} bordure masqueMobile={i > 0} />
+              ))}
           </div>
         </div>
       </section>

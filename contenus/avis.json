@@ -1,0 +1,65 @@
+{
+  "_source": "Avis recopiés mot pour mot depuis la page « Notre agence » du site actuel de l'agence (relevé du 20/11/2026), qui cite un avis par métier avec sa source, sa note et sa date. En attendant le branchement dynamique des avis Google (décision du client). Classés du plus récent au plus ancien.",
+  "avis": [
+    {
+      "id": "philippe-p-2026-11",
+      "metier": "Gestion locative",
+      "service": "gestion",
+      "texte": "Très bonne expérience ! Merci à Élodie pour ses précieux conseils, son accompagnement, sa réactivité et son professionnalisme. Appartement reloué rapidement. Je recommande vivement.",
+      "auteur": "Philippe P.",
+      "source": "Immodvisor",
+      "note": 5,
+      "noteMax": 5,
+      "date": "2026-11",
+      "conseiller": "elodie-fournier"
+    },
+    {
+      "id": "maud-r-2026-10",
+      "metier": "Vente",
+      "service": "vente",
+      "texte": "Un grand merci à Mély Potet pour son accompagnement précieux tout au long de mon projet de vente! Elle s’est montrée disponible, à l’écoute et très efficace. Je ne manquerai pas de conseiller ses services à mes proches.",
+      "auteur": "Maud R.",
+      "source": "Google",
+      "note": 5,
+      "noteMax": 5,
+      "date": "2026-10",
+      "conseiller": "mely-potet"
+    },
+    {
+      "id": "sandrine-l-2026-07",
+      "metier": "Achat",
+      "service": "vente",
+      "texte": "A l'issue de plusieurs expériences, nous sommes pour la 1ere fois confrontés à un professionnalisme sans faille de l'agence (accueil d'une cordialité rare), M BORET(en dépit du modeste caractère de la transaction : studio Bdx) a fait montre de compétences remarquables, de disponibilité, de célérité. Notre notaire l'a également souligné tant les prestations furent qualitatives. Sincère gratitude",
+      "auteur": "Sandrine L.",
+      "source": "Qualitelis",
+      "note": 10,
+      "noteMax": 10,
+      "date": "2026-07",
+      "conseiller": "thomas-boret"
+    },
+    {
+      "id": "annick-2026-03",
+      "metier": "Estimation",
+      "service": "vente",
+      "texte": "Adeline a su me présenter les différentes étapes de la vente avec beaucoup de clarté et de précisions. Elle a su me mettre en confiance en m'établissant une analyse complète du marché.",
+      "auteur": "Annick",
+      "source": "Immodvisor",
+      "note": 5,
+      "noteMax": 5,
+      "date": "2026-03",
+      "conseiller": "adeline-selles"
+    },
+    {
+      "id": "eva-l-2026",
+      "metier": "Location",
+      "service": "location",
+      "texte": "Mon conjoint et moi sommes passés par le Cabinet Rollin pour trouver notre appartement en location et tout s’est très bien passé. Les échanges avec Élodie ont été fluides, réactifs et tout était très clair du début à la fin. Une très bonne expérience, je recommande sans hésiter ! 😊",
+      "auteur": "Eva L.",
+      "source": "Google",
+      "note": 5,
+      "noteMax": 5,
+      "date": "2026",
+      "conseiller": "elodie-fournier"
+    }
+  ]
+}

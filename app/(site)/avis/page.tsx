@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { FluxAvis, FluxAvisAvecParametres } from "@/components/avis/FluxAvis";
 import { BoutonLien } from "@/components/ui/Bouton";
 import { FilAriane } from "@/components/ui/FilAriane";
-import { getAgence } from "@/lib/data";
+import { getAgence, getAvis } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import { metaPage } from "@/lib/seo";
 
@@ -97,8 +97,8 @@ export default function PageAvis() {
 
       <section aria-labelledby="h-flux" className="border-t border-grey-light py-14 md:py-20">
         <div className="conteneur">
-          <Suspense fallback={<FluxAvis />}>
-            <FluxAvisAvecParametres />
+          <Suspense fallback={<FluxAvis avis={getAvis()} />}>
+            <FluxAvisAvecParametres avis={getAvis()} />
           </Suspense>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import { SECTEURS_AVEC_PAGE } from "@/lib/schemas/communs";
 import { getAgence } from "./agence";
 import { getAnnonces } from "./annonces";
+import { getAvis } from "./avis";
 import { getArticles } from "./articles";
 import { getMembres, getPoles } from "./equipe";
 import { getPagesFaq } from "./faq";
@@ -24,6 +25,7 @@ export function verifierContenus() {
   const secteurs = getSecteurs();
   const pagesFaq = getPagesFaq();
   const ventes = getVentesPubliees();
+  const avis = getAvis();
 
   const problemes: string[] = [];
   const slugsMembres = new Set(membres.map((m) => m.slug));
@@ -44,6 +46,11 @@ export function verifierContenus() {
     if (a.conseiller && !slugsMembres.has(a.conseiller)) {
       problemes.push(`annonces.json : « ${a.slug} » cite un conseiller inconnu « ${a.conseiller} »`);
     }
+  }
+
+  for (const id of doublons(avis.map((a) => a.id))) problemes.push(`avis.json : avis en double « ${id} »`);
+  for (const a of avis) {
+    if (a.conseiller && !slugsMembres.has(a.conseiller)) problemes.push(`avis.json : « ${a.id} » cite un conseiller inconnu « ${a.conseiller} »`);
   }
 
   for (const s of secteurs) {
@@ -69,5 +76,6 @@ export function verifierContenus() {
     secteurs: secteurs.length,
     pagesFaq: pagesFaq.length,
     ventes: ventes.length,
+    avis: avis.length,
   };
 }

@@ -1,23 +1,20 @@
+import { CarteAvis } from "@/components/avis/CarteAvis";
 import { LienFleche } from "@/components/ui/Bouton";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";
-import { getAgence } from "@/lib/data";
+import { getAgence, getAvis } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 
 /**
  * Avis clients (brief §7.9 ; maquette Accueil-desktop-2 et Accueil-mobile-2).
- * Notes globales toujours datées. Flux Google à brancher (outil à choisir) : en attendant,
- * emplacements. Défilement manuel uniquement.
- * Étoiles des emplacements : décision de Simon (19/11/2026). Elles seront remplacées par la note
- * réelle de chaque avis à la connexion du flux.
+ * Notes globales toujours datées. Avis : sélection recopiée du site actuel (contenus/avis.json),
+ * en attendant le branchement dynamique des avis Google (décision du client). Défilement manuel uniquement.
  * À VALIDER : mention sur le contrôle des avis (Code de la consommation) et attribution Google.
  */
 
 const nombre = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
 const dater = (d: string | null) => (d ? new Intl.DateTimeFormat("fr-FR").format(new Date(`${d}T00:00:00`)) : "[date à fournir]");
 
-// Services des emplacements, repris de la maquette.
-const EMPLACEMENTS = ["Vente", "Gestion", "Location", "Vente", "Location", "Gestion"].map((service, i) => ({ n: i + 1, service }));
 
 function CarteNote({ titre, note, sur, date }: { titre: string; note: number; sur: number; date: string | null }) {
   return (
@@ -57,28 +54,14 @@ export function Avis() {
           <CarteNote titre="Qualitelis · Gestion" note={avis.qualitelis.gestion} sur={10} date={avis.qualitelis.date} />
         </div>
 
-        <RangeeDefilable libelle="Avis Google" largeurElement="w-[85%] md:w-[calc((100%-48px)/3)]">
-          {EMPLACEMENTS.map((r) => (
-            <figure key={r.n} className="m-0 flex h-full min-h-60 flex-col gap-[18px] bg-white p-6 md:p-8">
-              <div className="flex items-center justify-between">
-                <span role="img" aria-label="Note 5 sur 5" className="text-lg tracking-[3px] text-grey-dark">
-                  ★★★★★
-                </span>
-                <span className="font-display text-[13px] uppercase tracking-[0.14em]">Google · {r.service}</span>
-              </div>
-              <blockquote className="m-0 flex-1 text-base leading-normal md:text-lg">
-                [Extrait de l&apos;avis Google n° {r.n}, importé automatiquement depuis le flux]
-              </blockquote>
-              <figcaption className="flex justify-between border-t border-grey-light pt-3.5 text-sm">
-                <strong>[Prénom]</strong>
-                <span>[date]</span>
-              </figcaption>
-            </figure>
+        <RangeeDefilable libelle="Avis clients" largeurElement="w-[85%] md:w-[calc((100%-48px)/3)]">
+          {getAvis().map((a) => (
+            <CarteAvis key={a.id} avis={a} />
           ))}
         </RangeeDefilable>
 
         <div className="flex flex-wrap justify-between gap-6 text-[13px]">
-          <span>Avis issus de Google, du plus récent au plus ancien. [Mention sur le contrôle des avis à valider]</span>
+          <span>Sélection d&apos;avis publiés sur Google, Immodvisor et Qualitelis, recopiés mot pour mot, du plus récent au plus ancien. [Mention sur le contrôle des avis à valider]</span>
           <LienFleche href={ROUTES.avis}>Lire tous les avis</LienFleche>
         </div>
       </div>

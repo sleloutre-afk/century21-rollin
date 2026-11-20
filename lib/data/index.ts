@@ -5,6 +5,7 @@
  */
 export { getAgence } from "./agence";
 export { getAnnonce, getAnnonces } from "./annonces";
+export { getAvis } from "./avis";
 export { getArticle, getArticles, type ArticleNumerote } from "./articles";
 export { getMembre, getMembres, getPoles } from "./equipe";
 export { getFaq, getPagesFaq } from "./faq";

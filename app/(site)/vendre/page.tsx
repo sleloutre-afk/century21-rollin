@@ -11,7 +11,8 @@ import { FilAriane } from "@/components/ui/FilAriane";
 import { IconeTelephone } from "@/components/ui/Icones";
 import { RangeeDefilable } from "@/components/ui/RangeeDefilable";
 import { TitreSection } from "@/components/ui/TitreSection";
-import { getAgence, getFaq, getMembre, getMembres } from "@/lib/data";
+import { CarteAvis } from "@/components/avis/CarteAvis";
+import { getAgence, getFaq, getMembre, getMembres, getAvis } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
 import type { Membre } from "@/lib/schemas/equipe";
 import { donneesFaq, metaPage } from "@/lib/seo";
@@ -202,19 +203,13 @@ export default function PageVendre() {
               </span>
               <span className="text-sm text-grey-light">Qualitelis, transaction · au {dater(avis.qualitelis.date)}</span>
             </div>
-            {/* Emplacements d'avis Google de vendeurs (flux à brancher). Étoiles : décision de Simon (19/11/2026). */}
-            {[1, 2].map((n) => (
-              <figure key={n} className={`m-0 flex-[1.4_1_360px] flex-col gap-4 bg-white p-6 text-grey-dark md:p-8 ${n === 2 ? "hidden md:flex" : "flex"}`}>
-                <span role="img" aria-label="Note 5 sur 5" className="text-lg tracking-[3px]">
-                  ★★★★★
-                </span>
-                <blockquote className="m-0 flex-1 text-base leading-normal md:text-lg">[Extrait d&apos;un avis Google de vendeur, importé automatiquement]</blockquote>
-                <figcaption className="flex justify-between border-t border-grey-light pt-3.5 text-sm">
-                  <strong>[Prénom] · vendeur</strong>
-                  <span>[date]</span>
-                </figcaption>
-              </figure>
-            ))}
+            {/* Avis de vendeurs (estimation, vente), recopiés du site actuel (contenus/avis.json). */}
+            {getAvis()
+              .filter((a) => a.metier === "Estimation" || a.metier === "Vente")
+              .slice(0, 2)
+              .map((a, i) => (
+                <CarteAvis key={a.id} avis={a} masqueMobile={i > 0} className="h-auto flex-[1.4_1_360px]" />
+              ))}
           </div>
           <LienFleche href={ROUTES.biensVendus} surFondSombre className="md:hidden">
             Tous les biens vendus
