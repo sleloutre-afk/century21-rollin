@@ -33,7 +33,7 @@ export function FormulaireAdresse({
         placeholder={libelle}
         className="min-w-0 md:flex-[1_1_280px]"
         // Liseré or permanent, comme le champ d'accueil (demande de Simon, 20/11/2026) ; plus épais au focus.
-        classeChamp="h-14 w-full min-w-0 border-0 px-4 text-lg text-grey-dark outline-1 outline-offset-2 outline-gold-dark outline-solid focus-visible:outline-[3px] md:h-[60px]"
+        classeChamp="h-14 w-full min-w-0 border-0 px-4 text-lg text-grey-dark outline-1 outline-offset-2 outline-gold-dark outline-solid focus-visible:outline-2 md:h-[60px]"
       />
       <button type="submit" className={`min-h-14 cursor-pointer px-9 font-display text-base font-semibold uppercase tracking-[0.14em] md:min-h-[60px] ${couleurs}`}>
         {bouton}
