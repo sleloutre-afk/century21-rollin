@@ -1,5 +1,5 @@
 {
-  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies. DÉMONSTRATION (décisions de Simon, 19/11/2026) : dates de mise en ligne fictives (30 derniers jours) et descriptions courtes rédigées à partir des seules caractéristiques connues, à remplacer par les vraies. Quartiers rattachés le 19/11/2026.",
+  "_source": "Annonces réelles du site de l'agence au 19/11/2026, à revérifier. Les valeurs null sont à fournir par l'agence : ne jamais les inventer. Coordonnées GPS non fournies. DÉMONSTRATION (décisions de Simon, 19/11/2026) : dates de mise en ligne fictives (30 derniers jours) et descriptions courtes rédigées à partir des seules caractéristiques connues, à remplacer par les vraies. Quartiers rattachés le 19/11/2026. Photos et prix revérifiés sur le site actuel de l'agence le 20/11/2026 (8 photos max par annonce).",
   "annonces": [
     {
       "slug": "maison-de-ville-bourgeoise-palais-gallien",
@@ -44,7 +44,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/1.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 1"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/2.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 2"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/3.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 3"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/4.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 4"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/5.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 5"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/6.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 6"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/7.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 7"
+        },
+        {
+          "src": "/images/biens/maison-de-ville-bourgeoise-palais-gallien/8.jpg",
+          "alt": "Maison de ville bourgeoise, Palais Gallien : photo 8"
+        }
+      ],
       "description": "Maison de ville bourgeoise en pierre de taille, dans le quartier du Palais Gallien. 189 m² sur trois niveaux, huit pièces, une terrasse et un box.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -95,7 +128,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/1.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 1"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/2.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 2"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/3.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 3"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/4.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 4"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/5.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 5"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/6.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 6"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/7.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 7"
+        },
+        {
+          "src": "/images/biens/maison-bourgeoise-croix-de-seguey/8.jpg",
+          "alt": "Maison bourgeoise, Croix de Seguey : photo 8"
+        }
+      ],
       "description": "Maison bourgeoise de 278,84 m² à Croix de Seguey. Dix pièces, des cheminées et un jardin.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -142,7 +208,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/1.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 1"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/2.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 2"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/3.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 3"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/4.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 4"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/5.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 5"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/6.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 6"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/7.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 7"
+        },
+        {
+          "src": "/images/biens/maison-de-charme-chartrons-cours-journu-auber/8.jpg",
+          "alt": "Maison de charme, Chartrons · cours Journu-Auber : photo 8"
+        }
+      ],
       "description": "Maison de charme de 136 m², cours Journu-Auber, aux Chartrons. Quatre pièces, tout le charme de l'ancien, dans un quartier familial.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -190,7 +289,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/1.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 1"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/2.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 2"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/3.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 3"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/4.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 4"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/5.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 5"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/6.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 6"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/7.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 7"
+        },
+        {
+          "src": "/images/biens/grand-t4-3-chambres-chartrons-cote-bacalan/8.jpg",
+          "alt": "Grand T4, 3 chambres, Chartrons · côté Bacalan : photo 8"
+        }
+      ],
       "description": "Grand appartement de 147 m², côté Bacalan. Quatre pièces dont trois chambres, un jardin de 120 m² et un patio, au calme.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -237,7 +369,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/1.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 1"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/2.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 2"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/3.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 3"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/4.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 4"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/5.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 5"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/6.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 6"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/7.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 7"
+        },
+        {
+          "src": "/images/biens/t3-traversant-saint-seurin/8.jpg",
+          "alt": "T3 traversant, Saint-Seurin : photo 8"
+        }
+      ],
       "description": "T3 traversant de 88 m² à Saint-Seurin, dans un immeuble en pierre. Des volumes généreux.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -284,7 +449,36 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/1.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 1"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/2.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 2"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/3.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 3"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/4.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 4"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/5.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 5"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/6.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 6"
+        },
+        {
+          "src": "/images/biens/t3-bis-refait-a-neuf-chartrons-place-picard/7.jpg",
+          "alt": "T3 bis refait à neuf, Chartrons · place Picard : photo 7"
+        }
+      ],
       "description": "T3 bis de 75 m² refait à neuf, place Picard, aux Chartrons. Lumineux et calme.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -301,7 +495,7 @@
       "surfaceHabitable": 70.5,
       "pieces": 3,
       "chambres": null,
-      "prixHonorairesInclus": 280000,
+      "prixHonorairesInclus": 260000,
       "prixHorsHonoraires": null,
       "partHonorairesAcquereurPct": null,
       "exclusivite": true,
@@ -328,7 +522,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/1.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 1"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/2.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 2"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/3.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 3"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/4.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 4"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/5.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 5"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/6.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 6"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/7.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 7"
+        },
+        {
+          "src": "/images/biens/t3-cle-en-main-chartrons-pres-des-quais/8.jpg",
+          "alt": "T3 clé en main, Chartrons · près des quais : photo 8"
+        }
+      ],
       "description": "T3 clé en main de 70,50 m², aux Chartrons, près des quais.",
       "delaiDeVenteJours": null,
       "coordonnees": null,
@@ -374,7 +601,40 @@
         "procedureEnCours": null
       },
       "conseiller": null,
-      "photos": [],
+      "photos": [
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/1.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 1"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/2.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 2"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/3.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 3"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/4.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 4"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/5.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 5"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/6.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 6"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/7.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 7"
+        },
+        {
+          "src": "/images/biens/t3-avec-terrasse-chartrons-cours-du-medoc/8.jpg",
+          "alt": "T3 avec terrasse, Chartrons · cours du Médoc : photo 8"
+        }
+      ],
       "description": "T3 de 64,54 m² avec terrasse, cours du Médoc, aux Chartrons.",
       "delaiDeVenteJours": null,
       "coordonnees": null,

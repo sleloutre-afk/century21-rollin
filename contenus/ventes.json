@@ -1,0 +1,125 @@
+{
+  "_source": "Biens vendus repris de la page « Nos dernières ventes » du site actuel de l'agence le 20/11/2026 (12 plus récents, dans l'ordre du site). Seuls le type, le code postal et la photo y figurent : surface, quartier et délai de vente à fournir par l'agence. Prix jamais affichés (accord du vendeur requis).",
+  "ventes": [
+    {
+      "reference": "26404",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26404.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "26482",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/26482.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33000)"
+      }
+    },
+    {
+      "reference": "26597",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26597.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "25664",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/25664.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33000)"
+      }
+    },
+    {
+      "reference": "26688",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/26688.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33000)"
+      }
+    },
+    {
+      "reference": "26364",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/26364.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33000)"
+      }
+    },
+    {
+      "reference": "26489",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26489.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "26679",
+      "type": "maison",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/26679.jpg",
+        "alt": "Maison vendue par l'agence à Bordeaux (33000)"
+      }
+    },
+    {
+      "reference": "26767",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26767.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "26345",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26345.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "26872",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33300",
+      "photo": {
+        "src": "/images/vendus/26872.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33300)"
+      }
+    },
+    {
+      "reference": "26713",
+      "type": "appartement",
+      "ville": "Bordeaux",
+      "codePostal": "33000",
+      "photo": {
+        "src": "/images/vendus/26713.jpg",
+        "alt": "Appartement vendu par l'agence à Bordeaux (33000)"
+      }
+    }
+  ]
+}

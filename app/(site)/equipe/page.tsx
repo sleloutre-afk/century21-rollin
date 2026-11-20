@@ -1,8 +1,8 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { ListeEquipe, ListeEquipeAvecParametres } from "@/components/equipe/ListeEquipe";
 import { BoutonLien } from "@/components/ui/Bouton";
-import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
 import { FilAriane } from "@/components/ui/FilAriane";
 import { IconeTelephone } from "@/components/ui/Icones";
 import { getAgence, getMembres, getPoles } from "@/lib/data";
@@ -11,7 +11,7 @@ import { metaPage } from "@/lib/seo";
 
 /**
  * « L'équipe » (brief prompt 7 ; maquette EquipeDesktop, EquipeMobile).
- * Noms publiés (décision de Simon, 19/11/2026) ; portraits : emplacements jusqu'à réception des photos.
+ * Noms publiés (décision de Simon, 19/11/2026) ; portraits et photo d’équipe repris de l’agence (20/11/2026).
  */
 
 export const metadata: Metadata = metaPage({
@@ -39,7 +39,17 @@ export default function PageEquipe() {
               Six pôles, un rôle précis pour chacun. Vous savez toujours à qui parler.
             </p>
           </div>
-          <EmplacementPhoto libelle="Photo · l'équipe devant l'agence" surFondSombre className="h-[200px] flex-[1_1_420px] md:h-[300px]" />
+          {/* Photo de l'équipe fournie par Simon le 20/11/2026 (1000 × 666 px). */}
+          <div className="relative aspect-[3/2] flex-[1_1_420px] overflow-hidden bg-grey-medium">
+            <Image
+              src="/images/equipe/equipe-cabinet-rollin.jpg"
+              alt="L'équipe du Cabinet Rollin réunie sur un grand escalier en pierre"
+              fill
+              priority
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
@@ -22,20 +23,34 @@ type Props = {
 export function CarteBien({ annonce, format = "standard", nouveau = false, niveauTitre = 3 }: Props) {
   const Titre = niveauTitre === 2 ? "h2" : "h3";
   const grande = format === "grande";
+  const photo = annonce.photos[0];
+  const hauteur = grande ? "h-[250px] md:h-[480px]" : "h-[250px] md:h-[300px]";
+  const badges = (
+    <div className="absolute left-3.5 top-3.5 flex gap-2 md:left-[18px] md:top-[18px]">
+      {annonce.exclusivite && <Badge variante="exclusivite" />}
+      {nouveau && <Badge variante="nouveau" />}
+      {annonce.statut === "sous_compromis" && <Badge variante="compromis" />}
+    </div>
+  );
   return (
     <Link href={`/biens/${annonce.slug}`} className="group flex flex-col text-grey-dark no-underline">
-      {/* Aucune photo fournie pour l'instant : emplacement étiqueté. Les vraies photos
-          (annonce.photos) seront affichées avec next/image au lot 4. */}
-      <EmplacementPhoto
-        libelle={`Photo · ${annonce.titre}`}
-        className={grande ? "h-[250px] md:h-[480px]" : "h-[250px] md:h-[300px]"}
-      >
-        <div className="absolute left-3.5 top-3.5 flex gap-2 md:left-[18px] md:top-[18px]">
-          {annonce.exclusivite && <Badge variante="exclusivite" />}
-          {nouveau && <Badge variante="nouveau" />}
-          {annonce.statut === "sous_compromis" && <Badge variante="compromis" />}
+      {/* Première photo de l'annonce ; sans photo : emplacement étiqueté. */}
+      {photo ? (
+        <div className={`relative overflow-hidden bg-grey-light ${hauteur}`}>
+          <Image
+            src={photo.src}
+            alt={photo.alt}
+            fill
+            sizes={grande ? "(min-width: 768px) 60vw, 100vw" : "(min-width: 768px) 33vw, 100vw"}
+            className="object-cover transition-transform duration-800 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.045]"
+          />
+          {badges}
         </div>
-      </EmplacementPhoto>
+      ) : (
+        <EmplacementPhoto libelle={`Photo · ${annonce.titre}`} className={hauteur}>
+          {badges}
+        </EmplacementPhoto>
+      )}
       <div className="flex flex-col gap-1.5 pt-4 md:gap-2 md:pt-5">
         <div className="flex items-center justify-between gap-3 md:gap-4">
           <span className="font-display text-[13px] uppercase tracking-[0.16em] md:text-sm md:tracking-[0.18em]">

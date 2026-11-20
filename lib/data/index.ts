@@ -9,4 +9,5 @@ export { getArticle, getArticles, type ArticleNumerote } from "./articles";
 export { getMembre, getMembres, getPoles } from "./equipe";
 export { getFaq, getPagesFaq } from "./faq";
 export { getLocalisations, getSecteur, getSecteurs } from "./quartiers";
+export { getVentesPubliees } from "./ventes";
 export { verifierContenus } from "./verifier";

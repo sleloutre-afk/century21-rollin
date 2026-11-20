@@ -5,13 +5,14 @@ import { getArticles } from "./articles";
 import { getMembres, getPoles } from "./equipe";
 import { getPagesFaq } from "./faq";
 import { getSecteurs } from "./quartiers";
+import { getVentesPubliees } from "./ventes";
 
 function doublons(valeurs: string[]): string[] {
   return [...new Set(valeurs.filter((v, i) => valeurs.indexOf(v) !== i))];
 }
 
 /**
- * Valide les 5 fichiers de contenus/ (chacun avec son schéma), puis les liens entre eux.
+ * Valide les fichiers de contenus/ (chacun avec son schéma), puis les liens entre eux.
  * Appelée par le gabarit racine : si un fichier est invalide, le build échoue.
  */
 export function verifierContenus() {
@@ -22,11 +23,13 @@ export function verifierContenus() {
   const membres = getMembres();
   const secteurs = getSecteurs();
   const pagesFaq = getPagesFaq();
+  const ventes = getVentesPubliees();
 
   const problemes: string[] = [];
   const slugsMembres = new Set(membres.map((m) => m.slug));
 
   for (const slug of doublons(annonces.map((a) => a.slug))) problemes.push(`annonces.json : slug en double « ${slug} »`);
+  for (const ref of doublons(ventes.map((v) => v.reference))) problemes.push(`ventes.json : référence en double « ${ref} »`);
   for (const slug of doublons(membres.map((m) => m.slug))) problemes.push(`equipe.json : slug en double « ${slug} »`);
   for (const id of doublons(poles.map((p) => p.id))) problemes.push(`equipe.json : pôle en double « ${id} »`);
   for (const slug of doublons(secteurs.map((s) => s.slug))) problemes.push(`quartiers.json : secteur en double « ${slug} »`);
@@ -65,5 +68,6 @@ export function verifierContenus() {
     poles: poles.length,
     secteurs: secteurs.length,
     pagesFaq: pagesFaq.length,
+    ventes: ventes.length,
   };
 }
