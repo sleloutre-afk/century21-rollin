@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { EmplacementPhoto } from "@/components/ui/EmplacementPhoto";
@@ -8,7 +9,17 @@ import { ROUTES } from "@/lib/navigation";
 /** Aiguillage par profil (brief §7.3 ; maquette Main et Accueil-mobile-1). Textes de la maquette. */
 export function Aiguillage() {
   const { chiffres } = getAgence();
-  const profils = [
+  const profils: {
+    n: string;
+    cible: string;
+    titre: string;
+    texte: string;
+    action: string;
+    href: string;
+    photo: string;
+    image?: { src: string; alt: string };
+    largeur: string;
+  }[] = [
     {
       n: "01",
       cible: "Propriétaires vendeurs",
@@ -17,6 +28,11 @@ export function Aiguillage() {
       action: "Estimer mon bien",
       href: ROUTES.estimation,
       photo: "Photo · façade en pierre blonde",
+      // Photo fournie par Simon le 20/11/2026.
+      image: {
+        src: "/images/accueil/facade-pierre-blonde.jpg",
+        alt: "Façade bordelaise en pierre blonde, balcons en fer forgé et volets verts",
+      },
       largeur: "md:flex-[1.5_1_440px]",
     },
     {
@@ -58,15 +74,40 @@ export function Aiguillage() {
               href={p.href}
               className={`group flex gap-4 border-b border-grey-light pb-4 text-grey-dark no-underline md:flex-col md:gap-6 md:border-0 md:pb-0 ${p.largeur}`}
             >
-              {/* Mobile : vignette « Photo » sans badge (maquette Accueil-mobile-1). */}
-              <EmplacementPhoto libelle="Photo" className="h-[150px] w-28 flex-none md:hidden" />
-              <EmplacementPhoto libelle={p.photo} className="hidden h-[400px] md:block">
-                <div className="absolute left-[18px] top-[18px]">
-                  <Badge variante="pole" className="text-[13px]">
-                    {p.cible}
-                  </Badge>
-                </div>
-              </EmplacementPhoto>
+              {p.image ? (
+                <>
+                  {/* Mobile : vignette sans badge (maquette Accueil-mobile-1). Desktop : photo avec badge du pôle. */}
+                  <div className="relative h-[150px] w-28 flex-none overflow-hidden md:hidden">
+                    <Image src={p.image.src} alt={p.image.alt} fill sizes="112px" className="object-cover" />
+                  </div>
+                  <div className="relative hidden h-[400px] overflow-hidden md:block">
+                    <Image
+                      src={p.image.src}
+                      alt={p.image.alt}
+                      fill
+                      sizes="(min-width: 768px) 45vw, 112px"
+                      className="object-cover transition-transform duration-800 ease-[cubic-bezier(.2,.7,.2,1)] group-hover:scale-[1.045]"
+                    />
+                    <div className="absolute left-[18px] top-[18px]">
+                      <Badge variante="pole" className="text-[13px]">
+                        {p.cible}
+                      </Badge>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {/* Mobile : vignette « Photo » sans badge (maquette Accueil-mobile-1). */}
+                  <EmplacementPhoto libelle="Photo" className="h-[150px] w-28 flex-none md:hidden" />
+                  <EmplacementPhoto libelle={p.photo} className="hidden h-[400px] md:block">
+                    <div className="absolute left-[18px] top-[18px]">
+                      <Badge variante="pole" className="text-[13px]">
+                        {p.cible}
+                      </Badge>
+                    </div>
+                  </EmplacementPhoto>
+                </>
+              )}
               <div className="flex flex-col justify-center gap-1.5 md:gap-2.5">
                 <span className="font-display text-xl text-grey-dark md:text-[28px]">{p.n}</span>
                 <h3 className="m-0 text-[23px] font-medium uppercase leading-[1.05] md:text-[34px]">{p.titre}</h3>

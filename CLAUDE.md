@@ -28,7 +28,7 @@ Site vitrine et de génération de contacts de l'agence immobilière **Cabinet R
 
 1. **Ne jamais inventer d'information.** Aucun chiffre, prix, avis, nom, date, horaire, texte juridique ou coordonnée qui ne soit pas dans `docs/` ou `contenus/`. Ce qui manque s'affiche comme emplacement entre `[crochets]` ou masque le bloc (voir la spec).
 2. **Une note s'affiche toujours avec sa date** (Google, Qualitelis). Un chiffre d'activité avec sa période.
-3. **Aucun avis inventé**, aucune photo générée ou de banque d'images. En attendant les vraies : emplacements gris étiquetés.
+3. **Aucun avis inventé.** Images générées par IA acceptées (décision de Simon, 20/11/2026), sauf pour représenter un bien réel en vente ou un vrai membre de l'équipe. Pas de photo de banque d'images. Sans image : emplacements gris étiquetés.
 4. **Signaler, ne pas trancher**, tout point juridique ou technique incertain : ajouter une ligne dans `docs/questions-ouvertes.md` (à créer) et un commentaire `// À VALIDER :` dans le code. Points connus : encadrement des loyers à Bordeaux (fin d'expérimentation prévue le 24/11/2026, prolongation à vérifier), mentions RGPD, information sur les avis en ligne, mentions professionnelles, choix d'outils tiers.
 5. **Charte CENTURY 21 stricte** : uniquement les couleurs de `docs/04-charte-graphique.md`. Jamais de texte or sur fond blanc. Aucune police à empattements. Ne jamais redessiner le logo : bloc typographique provisoire jusqu'à réception du SVG officiel.
 6. **Pas de carrousel automatique, pas de pop-up**, animations sobres et désactivées si `prefers-reduced-motion`.
@@ -38,6 +38,7 @@ Site vitrine et de génération de contacts de l'agence immobilière **Cabinet R
 
 - Simon n'est pas développeur : expliquer en français simple ce qui a été fait, ce qui reste, et ce qu'il doit décider. Pas de jargon sans explication.
 - Avancer **lot par lot** selon `docs/03-plan-de-developpement.md`. À la fin de chaque lot : lancer `npm run lint`, `npm run build` et les tests, puis résumer en 5 lignes max et proposer un commit.
+- **Phase d'enrichissement (depuis le 20/11/2026)** : ajout de contenus, peu de changements de structure. Pas de lint, build ni tests après chaque modification ; les proposer seulement si la structure change ou sur demande (jamais les tests e2e sans demande). Pour une simple modification de contenu, lire seulement le fichier concerné.
 - Avant de coder une page, relire sa planche desktop **et** mobile, ses annotations dans `maquette/LISEZMOI.md` et sa section dans `docs/01-brief-projet.md`.
 - Composants réutilisables d'abord (en-tête, pied de page, carte de bien, boutons, FAQ, fil d'Ariane), pages ensuite.
 - Données : toujours passer par la couche `lib/data/` (jamais d'import direct de JSON dans une page), pour pouvoir brancher plus tard un back-office ou le logiciel de l'agence sans réécrire les pages.

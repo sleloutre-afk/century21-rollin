@@ -85,6 +85,7 @@ Elles ne bloquent pas le travail. Je les signale pour que le dossier soit corrig
 - [ ] **Adresses de réception des demandes** par pôle (transaction, location, gestion locative) : à fournir par l'agence, nécessaires pour brancher l'envoi réel (Resend). — Qui : Agence · Lot : 3 ou 9
 - [ ] **Anti-spam en production** : la limite de 5 envois en 10 minutes par visiteur est gardée en mémoire du serveur. Suffisant pour la démonstration ; à renforcer à la mise en production (stockage partagé ou protection de l'outil d'envoi). — Qui : Simon · Lot : 11
 - [ ] **Lien « Itinéraire »** (planche Accueil-mobile-2, bloc contact) : non réalisé, il dépend du fournisseur de carte à choisir. — Qui : Simon · Lot : 9
+- [x] **Photo de façade, carte « Propriétaires vendeurs »** (accueil), intégrée le 20/11/2026. → *Simon, 20/11/2026 : les images générées par IA sont acceptées par principe.*
 - [ ] **Temps de lecture des articles** : calculé à 230 mots par minute (résultat : 2 minutes pour les 4 articles). — Qui : Simon · Lot : 8
 
 ## 7. Points ouverts au lot 3 (Vendre et estimation)
