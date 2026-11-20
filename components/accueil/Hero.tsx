@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { getAgence } from "@/lib/data";
 import { ROUTES } from "@/lib/navigation";
+import { HeroFond } from "./HeroFond";
 
 /**
  * Haut de page (brief §7.2 ; maquette Main et Accueil-mobile-1).
- * Desktop : emplacement vidéo (fichier à fournir) ; mobile : image fixe (spec §2).
- * Voile Obsessed Grey à 55 % pour la lisibilité. Le champ adresse ouvre /estimation?adresse=….
+ * Desktop : vidéo en boucle ; mobile : image fixe (spec §2). Voir HeroFond.
+ * Voile Obsessed Grey à 62 % pour la lisibilité. Le champ adresse ouvre /estimation?adresse=….
  */
 
 const formatNote = (n: number) => new Intl.NumberFormat("fr-FR").format(n);
@@ -19,24 +20,18 @@ export function Hero() {
   return (
     <section
       aria-labelledby="h1-accueil"
-      className="relative flex min-h-[720px] flex-col justify-end overflow-hidden bg-grey-dark text-white md:min-h-[820px] md:justify-center"
+      className="relative flex min-h-[720px] flex-col justify-end overflow-hidden bg-grey-dark text-white md:min-h-[max(560px,calc(100svh_-_65px))] md:justify-center xl:min-h-[max(600px,calc(100svh_-_121px))]"
     >
-      {/* Emplacement vidéo / image (fichiers à fournir) */}
-      <div aria-hidden="true" className="absolute inset-0 flex items-start justify-end p-4 md:p-8">
-        <span className="flex items-center gap-2.5 border border-grey-light/50 px-2.5 py-1.5 font-display text-[11px] uppercase tracking-[0.16em] text-grey-light md:px-3.5 md:py-2 md:text-[13px]">
-          <span className="hidden md:inline">Vidéo · quais et façades des Chartrons · fichier à fournir</span>
-          <span className="md:hidden">Image fixe · remplace la vidéo</span>
-        </span>
-      </div>
-      <div aria-hidden="true" className="absolute inset-0 bg-grey-dark opacity-55" />
+      {/* Vidéo (desktop) ou image fixe (mobile, ou animations réduites), avec le voile. */}
+      <HeroFond />
 
-      <div className="conteneur relative flex flex-col gap-[18px] pb-8 pt-20 md:gap-7 md:pb-[150px] md:pt-24">
+      <div className="conteneur relative flex flex-col gap-[18px] pb-8 pt-20 md:gap-[clamp(14px,2.6svh,28px)] md:pb-[110px] md:pt-12">
         <p className="animate-montee m-0 font-display text-[13px] uppercase tracking-[0.26em] text-gold md:text-sm md:tracking-[0.28em]">
           <span className="hidden md:inline">Agence immobilière · </span>Bordeaux Chartrons
         </p>
         <h1
           id="h1-accueil"
-          className="animate-montee m-0 max-w-[980px] text-[40px] font-medium uppercase leading-[0.98] tracking-[0.01em] [animation-delay:150ms] md:text-[clamp(44px,5.3vw,78px)]"
+          className="animate-montee m-0 max-w-[980px] text-[40px] font-medium uppercase leading-[0.98] tracking-[0.01em] [animation-delay:150ms] md:text-[clamp(40px,min(5.3vw,8.5svh),78px)]"
         >
           Les Chartrons, on les connaît par cœur. <span className="text-gold">Depuis 1993.</span>
         </h1>
