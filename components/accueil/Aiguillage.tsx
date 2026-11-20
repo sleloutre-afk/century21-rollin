@@ -44,6 +44,10 @@ export function Aiguillage() {
       action: "Découvrir nos offres",
       href: ROUTES.gerer,
       photo: "Photo · intérieur, parquet et moulures",
+      image: {
+        src: "/images/accueil/proprietaires-bailleurs.jpg",
+        alt: "Séjour lumineux avec mur en pierre, parquet et moulures",
+      },
       largeur: "md:flex-[1_1_320px]",
     },
     {
@@ -54,6 +58,10 @@ export function Aiguillage() {
       action: "Voir les biens",
       href: ROUTES.biens,
       photo: "Photo · rue Notre-Dame",
+      image: {
+        src: "/images/accueil/acheteurs-locataires.jpg",
+        alt: "Rue commerçante bordée de façades en pierre blonde",
+      },
       largeur: "md:flex-[1_1_320px]",
     },
   ];
